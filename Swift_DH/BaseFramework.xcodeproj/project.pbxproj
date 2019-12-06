@@ -39,6 +39,11 @@
 		04477F37239A3A9D0044B7C4 /* ESTabBarItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F2F239A3A9D0044B7C4 /* ESTabBarItemContainer.swift */; };
 		04477F41239A46950044B7C4 /* ExampleBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F3A239A46940044B7C4 /* ExampleBouncesContentView.swift */; };
 		04477F43239A46950044B7C4 /* ExampleBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F3C239A46940044B7C4 /* ExampleBasicContentView.swift */; };
+		04477F4D239A77FE0044B7C4 /* NewGestureVIew+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F48239A77FE0044B7C4 /* NewGestureVIew+Gesture.swift */; };
+		04477F4E239A77FE0044B7C4 /* NewTapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F49239A77FE0044B7C4 /* NewTapGesture.swift */; };
+		04477F4F239A77FE0044B7C4 /* NewGestureAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F4A239A77FE0044B7C4 /* NewGestureAction.swift */; };
+		04477F50239A77FE0044B7C4 /* NewPanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F4B239A77FE0044B7C4 /* NewPanGesture.swift */; };
+		04477F51239A77FE0044B7C4 /* NewLongPressGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F4C239A77FE0044B7C4 /* NewLongPressGesture.swift */; };
 		2FA7695E2109C56E0014BE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7695D2109C56E0014BE5A /* AppDelegate.swift */; };
 		2FA769632109C56E0014BE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769612109C56E0014BE5A /* Main.storyboard */; };
 		2FA769652109C56F0014BE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769642109C56F0014BE5A /* Assets.xcassets */; };
@@ -99,6 +104,11 @@
 		04477F2F239A3A9D0044B7C4 /* ESTabBarItemContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemContainer.swift; sourceTree = "<group>"; };
 		04477F3A239A46940044B7C4 /* ExampleBouncesContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBouncesContentView.swift; sourceTree = "<group>"; };
 		04477F3C239A46940044B7C4 /* ExampleBasicContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBasicContentView.swift; sourceTree = "<group>"; };
+		04477F48239A77FE0044B7C4 /* NewGestureVIew+Gesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewGestureVIew+Gesture.swift"; sourceTree = "<group>"; };
+		04477F49239A77FE0044B7C4 /* NewTapGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTapGesture.swift; sourceTree = "<group>"; };
+		04477F4A239A77FE0044B7C4 /* NewGestureAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGestureAction.swift; sourceTree = "<group>"; };
+		04477F4B239A77FE0044B7C4 /* NewPanGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPanGesture.swift; sourceTree = "<group>"; };
+		04477F4C239A77FE0044B7C4 /* NewLongPressGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLongPressGesture.swift; sourceTree = "<group>"; };
 		2FA7695A2109C56E0014BE5A /* ARTIST·拙物.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARTIST·拙物.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA7695D2109C56E0014BE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FA769622109C56E0014BE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -173,6 +183,7 @@
 		0447646A239930BC005A4DFE /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				04477F47239A73880044B7C4 /* ViewAddTarget */,
 				044764A623993A2B005A4DFE /* HKUIkit */,
 				044764A323993975005A4DFE /* ProgressHUD */,
 				044764942399379E005A4DFE /* Category */,
@@ -346,6 +357,18 @@
 				04477F3C239A46940044B7C4 /* ExampleBasicContentView.swift */,
 			);
 			path = Content;
+			sourceTree = "<group>";
+		};
+		04477F47239A73880044B7C4 /* ViewAddTarget */ = {
+			isa = PBXGroup;
+			children = (
+				04477F4A239A77FE0044B7C4 /* NewGestureAction.swift */,
+				04477F48239A77FE0044B7C4 /* NewGestureVIew+Gesture.swift */,
+				04477F4C239A77FE0044B7C4 /* NewLongPressGesture.swift */,
+				04477F4B239A77FE0044B7C4 /* NewPanGesture.swift */,
+				04477F49239A77FE0044B7C4 /* NewTapGesture.swift */,
+			);
+			path = ViewAddTarget;
 			sourceTree = "<group>";
 		};
 		2FA769512109C56E0014BE5A = {
@@ -618,16 +641,21 @@
 				0447647C23993308005A4DFE /* HKConfigPCH.swift in Sources */,
 				0447649E2399379E005A4DFE /* Ext+UIColor.swift in Sources */,
 				04477F35239A3A9D0044B7C4 /* ESTabBarItemBadgeView.swift in Sources */,
+				04477F50239A77FE0044B7C4 /* NewPanGesture.swift in Sources */,
 				04477F36239A3A9D0044B7C4 /* ESTabBar.swift in Sources */,
 				0447648723993599005A4DFE /* SecondViewController.swift in Sources */,
 				6890E9CA239A6AF000C71B92 /* HKAutoFitConfig.swift in Sources */,
 				0447648523993572005A4DFE /* HomeViewController.swift in Sources */,
 				04477F31239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift in Sources */,
 				0447647F23993457005A4DFE /* HKNavigationController.swift in Sources */,
+				04477F4E239A77FE0044B7C4 /* NewTapGesture.swift in Sources */,
 				0447649D2399379E005A4DFE /* Ext+UIDevice.swift in Sources */,
 				044764A523993994005A4DFE /* HKProgressHUD.swift in Sources */,
+				04477F51239A77FE0044B7C4 /* NewLongPressGesture.swift in Sources */,
 				0447648B239935DB005A4DFE /* FourViewControlller.swift in Sources */,
+				04477F4D239A77FE0044B7C4 /* NewGestureVIew+Gesture.swift in Sources */,
 				0447649F2399379E005A4DFE /* Ext+UIButton.swift in Sources */,
+				04477F4F239A77FE0044B7C4 /* NewGestureAction.swift in Sources */,
 				04476478239931F1005A4DFE /* HKAppManager.swift in Sources */,
 				044764AA23993A2B005A4DFE /* HKButton.swift in Sources */,
 				044764A22399379E005A4DFE /* Ext+UIImage.swift in Sources */,
