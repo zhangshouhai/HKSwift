@@ -45,6 +45,7 @@
 		2FA769682109C56F0014BE5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769662109C56F0014BE5A /* LaunchScreen.storyboard */; };
 		2FA769732109C56F0014BE5A /* BaseFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA769722109C56F0014BE5A /* BaseFrameworkTests.swift */; };
 		2FA7697E2109C56F0014BE5A /* BaseFrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7697D2109C56F0014BE5A /* BaseFrameworkUITests.swift */; };
+		6890E9CA239A6AF000C71B92 /* HKAutoFitConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6890E9C9239A6AF000C71B92 /* HKAutoFitConfig.swift */; };
 		784E763D8706F15B629B8702 /* libPods-BaseFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6154334FFEDC48B61910955E /* libPods-BaseFramework.a */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +113,7 @@
 		2FA7697F2109C56F0014BE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA769982109C9470014BE5A /* BaseFramework-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseFramework-Bridging-Header.h"; sourceTree = "<group>"; };
 		6154334FFEDC48B61910955E /* libPods-BaseFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6890E9C9239A6AF000C71B92 /* HKAutoFitConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKAutoFitConfig.swift; sourceTree = "<group>"; };
 		86B459FC6505AB857502F297 /* Pods-BaseFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.release.xcconfig"; sourceTree = "<group>"; };
 		95794D4CEE91DA976377A15F /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +183,7 @@
 		0447646B239930BC005A4DFE /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				6890E9C9239A6AF000C71B92 /* HKAutoFitConfig.swift */,
 				0447647B23993308005A4DFE /* HKConfigPCH.swift */,
 			);
 			path = Style;
@@ -617,6 +620,7 @@
 				04477F35239A3A9D0044B7C4 /* ESTabBarItemBadgeView.swift in Sources */,
 				04477F36239A3A9D0044B7C4 /* ESTabBar.swift in Sources */,
 				0447648723993599005A4DFE /* SecondViewController.swift in Sources */,
+				6890E9CA239A6AF000C71B92 /* HKAutoFitConfig.swift in Sources */,
 				0447648523993572005A4DFE /* HomeViewController.swift in Sources */,
 				04477F31239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift in Sources */,
 				0447647F23993457005A4DFE /* HKNavigationController.swift in Sources */,
@@ -828,7 +832,7 @@
 				PRODUCT_NAME = "ARTIST·拙物";
 				PROVISIONING_PROFILE = "516528a9-e17a-4091-8c8d-57ce15ddf302";
 				PROVISIONING_PROFILE_SPECIFIER = ArtistAdHoc;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mac/Desktop/框架与模型 转类/Swift_DH/BaseFramework/Support/BaseFramework-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BaseFramework/Support/BaseFramework-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -855,7 +859,7 @@
 				PRODUCT_NAME = "ARTIST·拙物";
 				PROVISIONING_PROFILE = "516528a9-e17a-4091-8c8d-57ce15ddf302";
 				PROVISIONING_PROFILE_SPECIFIER = ArtistAdHoc;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mac/Desktop/框架与模型 转类/Swift_DH/BaseFramework/Support/BaseFramework-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BaseFramework/Support/BaseFramework-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
