@@ -16,7 +16,6 @@ class HomeViewController: HKBaseViewController {
         
         self.setHideLeftBtn()
 
-       
     }
     
     override func left_click(_ sender: UIButton?) {
