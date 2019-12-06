@@ -12,18 +12,17 @@ import UIKit
     @objc optional func left_button_event()
     @objc optional func right_button_event()
     @objc optional func title_click_event()
-}
-
-@objc protocol HKBaseViewControllerDataSource : NSObjectProtocol {
     @objc optional func set_noNavView()
     @objc optional func set_noLeftButton()
 }
+
+
 
 class HKBaseViewController: UIViewController {
     
     //设置代理
     var delegate:HKBaseViewControllerDelegate?
-    var dataSource:HKBaseViewControllerDataSource?
+   
     
     // 用户信息
     var userInfo: NSDictionary?
@@ -79,7 +78,8 @@ class HKBaseViewController: UIViewController {
         
         self.view.backgroundColor = UIColor.white
         self.setnavViewUI()
-        self.setHideLeftBtn()
+        navView?.addSubview(self.navLeftBtn)
+       
     }
     
     func setnavViewUI() {
@@ -97,17 +97,22 @@ class HKBaseViewController: UIViewController {
     }
     
     func setHideLeftBtn() {
-        if self.delegate!.responds(to: Selector(("set_noLeftButton:"))) {
-            navView?.addSubview(navLeftBtn)
-        }
+
+        
+        self.navLeftBtn.isHidden = true
+        
     }
 
     @objc func left_click(_ sender: UIButton?) {
-        if self.delegate!.responds(to: Selector(("left_button_event:"))) {
-            self.delegate!.left_button_event(sender)
-        } else {
-            navigationController?.popViewController(animated: true)
+        
+        
+        if self.delegate!.responds(to: #selector(HKBaseViewControllerDelegate.left_button_event)){
+            self.delegate!.left_button_event?()
         }
+        else{
+             navigationController?.popViewController(animated: true)
+        }
+
     }
 
     

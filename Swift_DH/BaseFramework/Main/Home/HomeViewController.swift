@@ -13,9 +13,18 @@ class HomeViewController: HKBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navView?.backgroundColor = UIColor.red
+        
+        self.setHideLeftBtn()
 
-        // Do any additional setup after loading the view.
+       
     }
+    
+    override func left_click(_ sender: UIButton?) {
+        print("返回按钮点击事件")
+    }
+    
+   
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
