@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		04476478239931F1005A4DFE /* HKAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04476477239931F1005A4DFE /* HKAppManager.swift */; };
-		0447647A23993263005A4DFE /* HKTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447647923993263005A4DFE /* HKTabBarController.swift */; };
 		0447647C23993308005A4DFE /* HKConfigPCH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447647B23993308005A4DFE /* HKConfigPCH.swift */; };
 		0447647F23993457005A4DFE /* HKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447647E23993457005A4DFE /* HKNavigationController.swift */; };
 		04476481239934EF005A4DFE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04476480239934EF005A4DFE /* LoginViewController.swift */; };
@@ -17,10 +16,6 @@
 		0447648723993599005A4DFE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447648623993599005A4DFE /* SecondViewController.swift */; };
 		04476489239935BA005A4DFE /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04476488239935BA005A4DFE /* ThreeViewController.swift */; };
 		0447648B239935DB005A4DFE /* FourViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447648A239935DB005A4DFE /* FourViewControlller.swift */; };
-		0447648D2399366A005A4DFE /* HKTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447648C2399366A005A4DFE /* HKTabBar.swift */; };
-		0447648F23993696005A4DFE /* HKTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447648E23993696005A4DFE /* HKTabBarView.swift */; };
-		04476491239936F2005A4DFE /* HKTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04476490239936F2005A4DFE /* HKTabBarButton.swift */; };
-		0447649323993734005A4DFE /* HKBadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447649223993734005A4DFE /* HKBadgeButton.swift */; };
 		0447649C2399379E005A4DFE /* Ext+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044764952399379E005A4DFE /* Ext+UITextField.swift */; };
 		0447649D2399379E005A4DFE /* Ext+UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044764962399379E005A4DFE /* Ext+UIDevice.swift */; };
 		0447649E2399379E005A4DFE /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044764972399379E005A4DFE /* Ext+UIColor.swift */; };
@@ -34,6 +29,16 @@
 		044764AD23993AFF005A4DFE /* BaseRequestURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044764AC23993AFF005A4DFE /* BaseRequestURL.swift */; };
 		044764AF23993B9A005A4DFE /* HKHttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044764AE23993B9A005A4DFE /* HKHttpManager.swift */; };
 		044764B123993BC9005A4DFE /* HKAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044764B023993BC9005A4DFE /* HKAPIManager.swift */; };
+		04477F30239A3A9D0044B7C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04477F27239A3A9D0044B7C4 /* Localizable.strings */; };
+		04477F31239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F29239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift */; };
+		04477F32239A3A9D0044B7C4 /* ESTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F2A239A3A9D0044B7C4 /* ESTabBarController.swift */; };
+		04477F33239A3A9D0044B7C4 /* ESTabBarItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F2B239A3A9D0044B7C4 /* ESTabBarItemContentView.swift */; };
+		04477F34239A3A9D0044B7C4 /* ESTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F2C239A3A9D0044B7C4 /* ESTabBarItem.swift */; };
+		04477F35239A3A9D0044B7C4 /* ESTabBarItemBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F2D239A3A9D0044B7C4 /* ESTabBarItemBadgeView.swift */; };
+		04477F36239A3A9D0044B7C4 /* ESTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F2E239A3A9D0044B7C4 /* ESTabBar.swift */; };
+		04477F37239A3A9D0044B7C4 /* ESTabBarItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F2F239A3A9D0044B7C4 /* ESTabBarItemContainer.swift */; };
+		04477F41239A46950044B7C4 /* ExampleBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F3A239A46940044B7C4 /* ExampleBouncesContentView.swift */; };
+		04477F43239A46950044B7C4 /* ExampleBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F3C239A46940044B7C4 /* ExampleBasicContentView.swift */; };
 		2FA7695E2109C56E0014BE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7695D2109C56E0014BE5A /* AppDelegate.swift */; };
 		2FA769632109C56E0014BE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769612109C56E0014BE5A /* Main.storyboard */; };
 		2FA769652109C56F0014BE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769642109C56F0014BE5A /* Assets.xcassets */; };
@@ -62,7 +67,6 @@
 
 /* Begin PBXFileReference section */
 		04476477239931F1005A4DFE /* HKAppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKAppManager.swift; sourceTree = "<group>"; };
-		0447647923993263005A4DFE /* HKTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTabBarController.swift; sourceTree = "<group>"; };
 		0447647B23993308005A4DFE /* HKConfigPCH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKConfigPCH.swift; sourceTree = "<group>"; };
 		0447647E23993457005A4DFE /* HKNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKNavigationController.swift; sourceTree = "<group>"; };
 		04476480239934EF005A4DFE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -71,10 +75,6 @@
 		0447648623993599005A4DFE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		04476488239935BA005A4DFE /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		0447648A239935DB005A4DFE /* FourViewControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewControlller.swift; sourceTree = "<group>"; };
-		0447648C2399366A005A4DFE /* HKTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTabBar.swift; sourceTree = "<group>"; };
-		0447648E23993696005A4DFE /* HKTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTabBarView.swift; sourceTree = "<group>"; };
-		04476490239936F2005A4DFE /* HKTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTabBarButton.swift; sourceTree = "<group>"; };
-		0447649223993734005A4DFE /* HKBadgeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKBadgeButton.swift; sourceTree = "<group>"; };
 		044764952399379E005A4DFE /* Ext+UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ext+UITextField.swift"; sourceTree = "<group>"; };
 		044764962399379E005A4DFE /* Ext+UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ext+UIDevice.swift"; sourceTree = "<group>"; };
 		044764972399379E005A4DFE /* Ext+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ext+UIColor.swift"; sourceTree = "<group>"; };
@@ -88,6 +88,16 @@
 		044764AC23993AFF005A4DFE /* BaseRequestURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestURL.swift; sourceTree = "<group>"; };
 		044764AE23993B9A005A4DFE /* HKHttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKHttpManager.swift; sourceTree = "<group>"; };
 		044764B023993BC9005A4DFE /* HKAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKAPIManager.swift; sourceTree = "<group>"; };
+		04477F28239A3A9D0044B7C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		04477F29239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemMoreContentView.swift; sourceTree = "<group>"; };
+		04477F2A239A3A9D0044B7C4 /* ESTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarController.swift; sourceTree = "<group>"; };
+		04477F2B239A3A9D0044B7C4 /* ESTabBarItemContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemContentView.swift; sourceTree = "<group>"; };
+		04477F2C239A3A9D0044B7C4 /* ESTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItem.swift; sourceTree = "<group>"; };
+		04477F2D239A3A9D0044B7C4 /* ESTabBarItemBadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemBadgeView.swift; sourceTree = "<group>"; };
+		04477F2E239A3A9D0044B7C4 /* ESTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBar.swift; sourceTree = "<group>"; };
+		04477F2F239A3A9D0044B7C4 /* ESTabBarItemContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemContainer.swift; sourceTree = "<group>"; };
+		04477F3A239A46940044B7C4 /* ExampleBouncesContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBouncesContentView.swift; sourceTree = "<group>"; };
+		04477F3C239A46940044B7C4 /* ExampleBasicContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBasicContentView.swift; sourceTree = "<group>"; };
 		2FA7695A2109C56E0014BE5A /* ARTIST·拙物.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARTIST·拙物.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA7695D2109C56E0014BE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FA769622109C56E0014BE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -249,11 +259,8 @@
 		04476475239931CB005A4DFE /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				0447647923993263005A4DFE /* HKTabBarController.swift */,
-				0447648C2399366A005A4DFE /* HKTabBar.swift */,
-				0447648E23993696005A4DFE /* HKTabBarView.swift */,
-				04476490239936F2005A4DFE /* HKTabBarButton.swift */,
-				0447649223993734005A4DFE /* HKBadgeButton.swift */,
+				04477F38239A46940044B7C4 /* Content */,
+				04477F26239A3A9D0044B7C4 /* TabBar_Swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -312,6 +319,30 @@
 				044764B023993BC9005A4DFE /* HKAPIManager.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		04477F26239A3A9D0044B7C4 /* TabBar_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				04477F27239A3A9D0044B7C4 /* Localizable.strings */,
+				04477F29239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift */,
+				04477F2A239A3A9D0044B7C4 /* ESTabBarController.swift */,
+				04477F2B239A3A9D0044B7C4 /* ESTabBarItemContentView.swift */,
+				04477F2C239A3A9D0044B7C4 /* ESTabBarItem.swift */,
+				04477F2D239A3A9D0044B7C4 /* ESTabBarItemBadgeView.swift */,
+				04477F2E239A3A9D0044B7C4 /* ESTabBar.swift */,
+				04477F2F239A3A9D0044B7C4 /* ESTabBarItemContainer.swift */,
+			);
+			path = TabBar_Swift;
+			sourceTree = "<group>";
+		};
+		04477F38239A46940044B7C4 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				04477F3A239A46940044B7C4 /* ExampleBouncesContentView.swift */,
+				04477F3C239A46940044B7C4 /* ExampleBasicContentView.swift */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 		2FA769512109C56E0014BE5A = {
@@ -503,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FA769682109C56F0014BE5A /* LaunchScreen.storyboard in Resources */,
+				04477F30239A3A9D0044B7C4 /* Localizable.strings in Resources */,
 				2FA769652109C56F0014BE5A /* Assets.xcassets in Resources */,
 				2FA769632109C56E0014BE5A /* Main.storyboard in Resources */,
 			);
@@ -530,19 +562,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework-resources.sh",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseFramework/Pods-BaseFramework-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseFramework/Pods-BaseFramework-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaseFramework/Pods-BaseFramework-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7E853A0F16AD0CBF0D14B11B /* [CP] Check Pods Manifest.lock */ = {
@@ -570,33 +599,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04477F34239A3A9D0044B7C4 /* ESTabBarItem.swift in Sources */,
 				044764A02399379E005A4DFE /* Ext+UIView.swift in Sources */,
 				044764B123993BC9005A4DFE /* HKAPIManager.swift in Sources */,
 				04476481239934EF005A4DFE /* LoginViewController.swift in Sources */,
 				0447648323993543005A4DFE /* HKBaseViewController.swift in Sources */,
 				044764A12399379E005A4DFE /* Ext+CGFloat.swift in Sources */,
 				044764A923993A2B005A4DFE /* HKLabel.swift in Sources */,
-				0447648F23993696005A4DFE /* HKTabBarView.swift in Sources */,
+				04477F32239A3A9D0044B7C4 /* ESTabBarController.swift in Sources */,
+				04477F37239A3A9D0044B7C4 /* ESTabBarItemContainer.swift in Sources */,
 				044764AD23993AFF005A4DFE /* BaseRequestURL.swift in Sources */,
+				04477F43239A46950044B7C4 /* ExampleBasicContentView.swift in Sources */,
+				04477F33239A3A9D0044B7C4 /* ESTabBarItemContentView.swift in Sources */,
 				0447649C2399379E005A4DFE /* Ext+UITextField.swift in Sources */,
 				0447647C23993308005A4DFE /* HKConfigPCH.swift in Sources */,
 				0447649E2399379E005A4DFE /* Ext+UIColor.swift in Sources */,
-				04476491239936F2005A4DFE /* HKTabBarButton.swift in Sources */,
-				0447649323993734005A4DFE /* HKBadgeButton.swift in Sources */,
+				04477F35239A3A9D0044B7C4 /* ESTabBarItemBadgeView.swift in Sources */,
+				04477F36239A3A9D0044B7C4 /* ESTabBar.swift in Sources */,
 				0447648723993599005A4DFE /* SecondViewController.swift in Sources */,
 				0447648523993572005A4DFE /* HomeViewController.swift in Sources */,
+				04477F31239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift in Sources */,
 				0447647F23993457005A4DFE /* HKNavigationController.swift in Sources */,
 				0447649D2399379E005A4DFE /* Ext+UIDevice.swift in Sources */,
-				0447647A23993263005A4DFE /* HKTabBarController.swift in Sources */,
 				044764A523993994005A4DFE /* HKProgressHUD.swift in Sources */,
 				0447648B239935DB005A4DFE /* FourViewControlller.swift in Sources */,
 				0447649F2399379E005A4DFE /* Ext+UIButton.swift in Sources */,
-				0447648D2399366A005A4DFE /* HKTabBar.swift in Sources */,
 				04476478239931F1005A4DFE /* HKAppManager.swift in Sources */,
 				044764AA23993A2B005A4DFE /* HKButton.swift in Sources */,
 				044764A22399379E005A4DFE /* Ext+UIImage.swift in Sources */,
 				2FA7695E2109C56E0014BE5A /* AppDelegate.swift in Sources */,
 				04476489239935BA005A4DFE /* ThreeViewController.swift in Sources */,
+				04477F41239A46950044B7C4 /* ExampleBouncesContentView.swift in Sources */,
 				044764AF23993B9A005A4DFE /* HKHttpManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -633,6 +666,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		04477F27239A3A9D0044B7C4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04477F28239A3A9D0044B7C4 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		2FA769612109C56E0014BE5A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

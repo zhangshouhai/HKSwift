@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.3)
+  - CryptoSwift (1.2.0)
   - Kingfisher (4.8.1)
   - MJRefresh (3.1.15.3)
   - Moya (11.0.2):
@@ -14,6 +15,7 @@ PODS:
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
+  - CryptoSwift
   - Kingfisher
   - MJRefresh
   - Moya
@@ -23,7 +25,7 @@ DEPENDENCIES:
   - SwiftyJSON
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Kingfisher
     - MJRefresh
@@ -33,9 +35,12 @@ SPEC REPOS:
     - SnapKit
     - SVProgressHUD
     - SwiftyJSON
+  trunk:
+    - CryptoSwift
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  CryptoSwift: 40e374e45291d8dceedcb0d6184da94533eaabdf
   Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   Moya: a725035953bc1c0eb1be505ab903984501d82440
@@ -45,6 +50,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 833efce38c53e88ac419488903cc2d19b3ffc0e5
+PODFILE CHECKSUM: 378bb301f6ddefb2477e8ededeaaeed31b4f455c
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
