@@ -8,27 +8,17 @@
 
 import Foundation
 
+let appDelegate = (UIApplication.shared.delegate) as! AppDelegate
+
 public func HKFixWidthFlaot(_ width: CGFloat) -> CGFloat {
     var width = width
-    let mainFrme = UIScreen.main.bounds
-    if mainFrme.size.height / 1136 * 2 < 1 {
-        return width
-    }
-    width = width * mainFrme.size.width / 640 * 2
+    width = width*appDelegate.autoSizeScaleW!
     return width
 }
 
 public func HKFixHeightFlaot(_ height: CGFloat) -> CGFloat {
     var height = height
-    let mainFrme = UIScreen.main.bounds
-    if mainFrme.size.height / 1136 * 2 < 1 {
-        return height
-    }
-    if UIScreen.main.bounds.size.height == 812.0 {
-        height = (height * (mainFrme.size.height - 145)) / 1136 * 2
-    } else {
-        height = height * mainFrme.size.height / 1136 * 2
-    }
+    height = height*appDelegate.autoSizeScaleH!
     return height
 }
 

@@ -12,6 +12,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var autoSizeScaleW: CGFloat?
+    var autoSizeScaleH: CGFloat?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -34,8 +37,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 初始化第三方应用
         HKAppManager.sharedInstance.initAppWithApplication(application: application, launchOptions: launchOptions)
         
+        //字体自适配
+        self.initAutoScaleSize()
+        
         return true
     }
+    
+    func initAutoScaleSize() {
+        if (kMainScreen_height==480)
+        {
+            //4s
+            autoSizeScaleW = kMainScreen_width/375;
+            autoSizeScaleH = kMainScreen_height/667;
+        }
+        else if(kMainScreen_height==568)
+        {
+            //5
+            autoSizeScaleW = kMainScreen_width/375;
+            autoSizeScaleH = kMainScreen_height/667;
+        }
+        else if(kMainScreen_height==667)
+        {
+            //6
+            autoSizeScaleW = kMainScreen_width/375;
+            autoSizeScaleH = kMainScreen_height/667;
+        }
+        else if(kMainScreen_height==736)
+        {
+            //6p
+            autoSizeScaleW = kMainScreen_width/375;
+            autoSizeScaleH = kMainScreen_height/667;
+        }
+        else {
+            autoSizeScaleW = 1;
+            autoSizeScaleH = 1;
+        }
+    }
+    
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
