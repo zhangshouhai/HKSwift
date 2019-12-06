@@ -1,20 +1,20 @@
 //
-//  NewGestureAction.swift
+//  HKGestureAction.swift
 //  NiceGesture
 //
-//  Created by 周正飞 on 2018/4/27.
-//  Copyright © 2018年 周正飞. All rights reserved.
+//  Created by DH Add LK on 2018/4/27.
+//  Copyright © 2018 12 04 DH Add LK. All rights reserved.
 //
 
 import UIKit
-class NewGestureAction<T: UIGestureRecognizer> {
-    typealias NewGestureHandler = (_ gestureRecognizer: T) -> Void
+class HKGestureAction<T: UIGestureRecognizer> {
+    typealias HKGestureHandler = (_ gestureRecognizer: T) -> Void
 
-    var beginHandler: NewGestureHandler?
-    var cancelledHandler: NewGestureHandler?
-    var changeHandler: NewGestureHandler?
-    var endedHandler: NewGestureHandler?
-    var failedHandler: NewGestureHandler?
+    var beginHandler: HKGestureHandler?
+    var cancelledHandler: HKGestureHandler?
+    var changeHandler: HKGestureHandler?
+    var endedHandler: HKGestureHandler?
+    var failedHandler: HKGestureHandler?
     
     @objc func gestureAction(gesture: UIGestureRecognizer) {
         switch gesture.state {
@@ -33,26 +33,26 @@ class NewGestureAction<T: UIGestureRecognizer> {
         }
     }
     
-    func whenBegan(handler: @escaping NewGestureHandler) -> NewGestureAction<T> {
+    func whenBegan(handler: @escaping HKGestureHandler) -> HKGestureAction<T> {
         beginHandler = handler
         return self
     }
     
-    func whenCancelled(handler: @escaping NewGestureHandler) -> NewGestureAction<T> {
+    func whenCancelled(handler: @escaping HKGestureHandler) -> HKGestureAction<T> {
         cancelledHandler = handler
         return self
     }
     
-    func whenChanged(handler: @escaping NewGestureHandler) -> NewGestureAction<T> {
+    func whenChanged(handler: @escaping HKGestureHandler) -> HKGestureAction<T> {
         changeHandler = handler
         return self
     }
     
-    func whenEnded(handler: @escaping NewGestureHandler) -> NewGestureAction<T> {
+    func whenEnded(handler: @escaping HKGestureHandler) -> HKGestureAction<T> {
         endedHandler = handler
         return self
     }
-    func whenFailed(handler: @escaping NewGestureHandler) -> NewGestureAction<T> {
+    func whenFailed(handler: @escaping HKGestureHandler) -> HKGestureAction<T> {
         failedHandler = handler
         return self
     }

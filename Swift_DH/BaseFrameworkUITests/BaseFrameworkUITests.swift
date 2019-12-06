@@ -3,7 +3,7 @@
 //  BaseFrameworkUITests
 //
 //  Created by DH add LK on 2018/7/26.
-//  Copyright © 2018年 DH add LK. All rights reserved.
+//  Copyright © 2018 12 04 DH add LK. All rights reserved.
 //
 
 import XCTest
