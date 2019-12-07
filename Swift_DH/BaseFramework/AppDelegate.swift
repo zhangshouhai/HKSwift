@@ -13,8 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var autoSizeScaleW: CGFloat?
-    var autoSizeScaleH: CGFloat?
+    var autoSizeScaleW: CGFloat = 0.0
+    var autoSizeScaleH: CGFloat = 0.0
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
