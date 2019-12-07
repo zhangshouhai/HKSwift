@@ -13,10 +13,7 @@ class HKAppManager: NSObject {
     
     static let sharedInstance = HKAppManager()
     
-    
-    
-    
-    
+
     
     private var myTabBar: ESTabBarController! {
           let tabBarController = ESTabBarController()
