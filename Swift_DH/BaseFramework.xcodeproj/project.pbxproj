@@ -39,6 +39,7 @@
 		04477F37239A3A9D0044B7C4 /* ESTabBarItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F2F239A3A9D0044B7C4 /* ESTabBarItemContainer.swift */; };
 		04477F41239A46950044B7C4 /* ExampleBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F3A239A46940044B7C4 /* ExampleBouncesContentView.swift */; };
 		04477F43239A46950044B7C4 /* ExampleBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F3C239A46940044B7C4 /* ExampleBasicContentView.swift */; };
+		04A80ABA239E3AA800541C7D /* HKViewAddTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AB9239E3AA800541C7D /* HKViewAddTap.swift */; };
 		2FA7695E2109C56E0014BE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7695D2109C56E0014BE5A /* AppDelegate.swift */; };
 		2FA769632109C56E0014BE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769612109C56E0014BE5A /* Main.storyboard */; };
 		2FA769652109C56F0014BE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769642109C56F0014BE5A /* Assets.xcassets */; };
@@ -102,6 +103,7 @@
 		04477F2F239A3A9D0044B7C4 /* ESTabBarItemContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemContainer.swift; sourceTree = "<group>"; };
 		04477F3A239A46940044B7C4 /* ExampleBouncesContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBouncesContentView.swift; sourceTree = "<group>"; };
 		04477F3C239A46940044B7C4 /* ExampleBasicContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBasicContentView.swift; sourceTree = "<group>"; };
+		04A80AB9239E3AA800541C7D /* HKViewAddTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKViewAddTap.swift; sourceTree = "<group>"; };
 		2FA7695A2109C56E0014BE5A /* ARTIST·拙物.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARTIST·拙物.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA7695D2109C56E0014BE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FA769622109C56E0014BE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -180,7 +182,6 @@
 		0447646A239930BC005A4DFE /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				04477F47239A73880044B7C4 /* ViewAddTarget */,
 				044764A623993A2B005A4DFE /* HKUIkit */,
 				044764A323993975005A4DFE /* ProgressHUD */,
 				044764942399379E005A4DFE /* Category */,
@@ -320,6 +321,7 @@
 			children = (
 				044764A723993A2B005A4DFE /* HKLabel.swift */,
 				044764A823993A2B005A4DFE /* HKButton.swift */,
+				04A80AB9239E3AA800541C7D /* HKViewAddTap.swift */,
 			);
 			path = HKUIkit;
 			sourceTree = "<group>";
@@ -356,13 +358,6 @@
 				04477F3C239A46940044B7C4 /* ExampleBasicContentView.swift */,
 			);
 			path = Content;
-			sourceTree = "<group>";
-		};
-		04477F47239A73880044B7C4 /* ViewAddTarget */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewAddTarget;
 			sourceTree = "<group>";
 		};
 		2FA769512109C56E0014BE5A = {
@@ -662,6 +657,7 @@
 				2FA7695E2109C56E0014BE5A /* AppDelegate.swift in Sources */,
 				04476489239935BA005A4DFE /* ThreeViewController.swift in Sources */,
 				04477F41239A46950044B7C4 /* ExampleBouncesContentView.swift in Sources */,
+				04A80ABA239E3AA800541C7D /* HKViewAddTap.swift in Sources */,
 				044764AF23993B9A005A4DFE /* HKHttpManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
