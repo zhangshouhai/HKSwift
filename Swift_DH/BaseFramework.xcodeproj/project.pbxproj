@@ -47,6 +47,7 @@
 		2FA7697E2109C56F0014BE5A /* BaseFrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7697D2109C56F0014BE5A /* BaseFrameworkUITests.swift */; };
 		682067A6239E221100A4B0D4 /* HKBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682067A5239E221100A4B0D4 /* HKBaseTableViewCell.swift */; };
 		6830606F239E243F00362C59 /* tableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6830606E239E243F00362C59 /* tableViewCell.swift */; };
+		68306072239E26D800362C59 /* HKBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68306071239E26D800362C59 /* HKBaseView.swift */; };
 		6890E9CA239A6AF000C71B92 /* HKAutoFitConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6890E9C9239A6AF000C71B92 /* HKAutoFitConfig.swift */; };
 		784E763D8706F15B629B8702 /* libPods-BaseFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6154334FFEDC48B61910955E /* libPods-BaseFramework.a */; };
 /* End PBXBuildFile section */
@@ -117,6 +118,7 @@
 		6154334FFEDC48B61910955E /* libPods-BaseFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		682067A5239E221100A4B0D4 /* HKBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HKBaseTableViewCell.swift; path = BaseFramework/Style/HKBaseTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		6830606E239E243F00362C59 /* tableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewCell.swift; sourceTree = "<group>"; };
+		68306071239E26D800362C59 /* HKBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKBaseView.swift; sourceTree = "<group>"; };
 		6890E9C9239A6AF000C71B92 /* HKAutoFitConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKAutoFitConfig.swift; sourceTree = "<group>"; };
 		86B459FC6505AB857502F297 /* Pods-BaseFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.release.xcconfig"; sourceTree = "<group>"; };
 		95794D4CEE91DA976377A15F /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		04476469239930BC005A4DFE /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				68306070239E26C200362C59 /* BaseView */,
 				0447647D23993443005A4DFE /* BaseNavController */,
 				04476471239931CB005A4DFE /* BaseModel */,
 				04476474239931CB005A4DFE /* BaseTableViewCell */,
@@ -445,6 +448,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		68306070239E26C200362C59 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				68306071239E26D800362C59 /* HKBaseView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -620,6 +631,7 @@
 				044764A02399379E005A4DFE /* Ext+UIView.swift in Sources */,
 				044764B123993BC9005A4DFE /* HKAPIManager.swift in Sources */,
 				04476481239934EF005A4DFE /* LoginViewController.swift in Sources */,
+				68306072239E26D800362C59 /* HKBaseView.swift in Sources */,
 				0447648323993543005A4DFE /* HKBaseViewController.swift in Sources */,
 				044764A12399379E005A4DFE /* Ext+CGFloat.swift in Sources */,
 				044764A923993A2B005A4DFE /* HKLabel.swift in Sources */,
