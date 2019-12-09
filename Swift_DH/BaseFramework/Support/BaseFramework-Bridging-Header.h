@@ -11,6 +11,7 @@
 
 #import "MJRefresh.h"
 #import "SVProgressHUD.h"
+#import "UIView+BlockGesture.h"
 
 #endif /* BaseFramework_Bridging_Header_h */
 

@@ -27,10 +27,13 @@ class SecondViewController: HKBaseViewController {
 //        label.addTapAction { (tap ) in
 //            print("cheshisnds")
 //        }
-        
-        label.whenTapped {
-            print("sdkfhlksdjfla")
+        label.addTapAction { (tap) in
+            print("zhangksdjkjfksdjflsldkdflds")
         }
+        
+//           label.whenTapped { () -> Void in
+//               print("button_1 has been clicked")
+//           }
 
         // Do any additional setup after loading the view.
     }
@@ -39,17 +42,7 @@ class SecondViewController: HKBaseViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
