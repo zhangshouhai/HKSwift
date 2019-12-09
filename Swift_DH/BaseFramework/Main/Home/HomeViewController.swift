@@ -13,8 +13,9 @@ class HomeViewController: HKBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navView?.backgroundColor = UIColor.red
-        self.setHideLeftBtn()
+//        navView?.backgroundColor = UIColor.red
+        self.titleLabel.text = "导航栏"
+//        self.setHideLeftBtn()
         
         
 //        let label = HKLabel(font: 13, color: UIColor.green, text: "zhangshouahi")

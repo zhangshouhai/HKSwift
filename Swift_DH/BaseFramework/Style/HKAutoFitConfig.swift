@@ -8,20 +8,58 @@
 
 import Foundation
 
-let appDelegate = (UIApplication.shared.delegate) as! AppDelegate
+var autoSizeScaleW: CGFloat?
+var autoSizeScaleH: CGFloat?
 
 public func HKFixWidthFlaot(_ width: CGFloat) -> CGFloat {
-    var width = width
-    width = width*appDelegate.autoSizeScaleW
-    return width
+    var autoWidth : CGFloat?
+    //字体自适配
+    autoSizeScaleW = kMainScreen_width/375;
+    autoSizeScaleH = kMainScreen_height/667;
+    autoWidth = width * autoSizeScaleW!
+    return autoWidth!
 }
 
 public func HKFixHeightFlaot(_ height: CGFloat) -> CGFloat {
-    var height = height
-    height = height*appDelegate.autoSizeScaleH
-    return height
+    var autoHeight : CGFloat?
+    //字体自适配
+    autoSizeScaleW = kMainScreen_width/375;
+    autoSizeScaleH = kMainScreen_height/667;
+    autoHeight = height * autoSizeScaleH!
+    return autoHeight!
 }
 
 public func FontWithStr(_ font:CGFloat) -> CGFloat {
     return HKFixWidthFlaot(font)
+}
+
+public func initAutoScaleSize() {
+    if (kMainScreen_height==480)
+    {
+        //4s
+        autoSizeScaleW = kMainScreen_width/375;
+        autoSizeScaleH = kMainScreen_height/667;
+    }
+    else if(kMainScreen_height==568)
+    {
+        //5
+        autoSizeScaleW = kMainScreen_width/375;
+        autoSizeScaleH = kMainScreen_height/667;
+    }
+    else if(kMainScreen_height==667)
+    {
+        //6
+        autoSizeScaleW = kMainScreen_width/375;
+        autoSizeScaleH = kMainScreen_height/667;
+    }
+    else if(kMainScreen_height==736)
+    {
+        //6p
+        autoSizeScaleW = kMainScreen_width/375;
+        autoSizeScaleH = kMainScreen_height/667;
+    }
+    else {
+        autoSizeScaleW = kMainScreen_width/375;
+        autoSizeScaleH = kMainScreen_height/667;
+    }
 }

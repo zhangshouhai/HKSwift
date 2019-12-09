@@ -12,9 +12,6 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    var autoSizeScaleW: CGFloat = 0.0
-    var autoSizeScaleH: CGFloat = 0.0
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -37,41 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 初始化第三方应用
         HKAppManager.sharedInstance.initAppWithApplication(application: application, launchOptions: launchOptions)
         
-        //字体自适配
-        self.initAutoScaleSize()
-        
         return true
-    }
-    
-    func initAutoScaleSize() {
-        if (kMainScreen_height==480)
-        {
-            //4s
-            autoSizeScaleW = kMainScreen_width/375;
-            autoSizeScaleH = kMainScreen_height/667;
-        }
-        else if(kMainScreen_height==568)
-        {
-            //5
-            autoSizeScaleW = kMainScreen_width/375;
-            autoSizeScaleH = kMainScreen_height/667;
-        }
-        else if(kMainScreen_height==667)
-        {
-            //6
-            autoSizeScaleW = kMainScreen_width/375;
-            autoSizeScaleH = kMainScreen_height/667;
-        }
-        else if(kMainScreen_height==736)
-        {
-            //6p
-            autoSizeScaleW = kMainScreen_width/375;
-            autoSizeScaleH = kMainScreen_height/667;
-        }
-        else {
-            autoSizeScaleW = 1;
-            autoSizeScaleH = 1;
-        }
     }
     
     

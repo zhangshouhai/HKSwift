@@ -41,7 +41,7 @@ class HKBaseViewController: UIViewController {
     
     //导航栏标题
     lazy var titleLabel:UILabel = {
-        let titleStr = HKLabel(font: FontWithStr(14), color: UIColor.white, text: "")
+        let titleStr = HKLabel(font: FontWithStr(18), color: UIColor.white, text: "")
         titleStr.textAlignment = NSTextAlignment.center
         return titleStr
     }()
@@ -90,6 +90,12 @@ class HKBaseViewController: UIViewController {
         navView?.backgroundColor = UIColor.colorWithHexString(colorString: "#22B9C8")
         navView?.addSubview(self.titleLabel)
         navView?.addSubview(self.navLeftBtn)
+        
+        self.titleLabel.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview().offset(kMainTopHeight-44)
+            make.height.equalTo(HKFixHeightFlaot(20))
+        }
         
        self.view.addSubview(navView!)
         
