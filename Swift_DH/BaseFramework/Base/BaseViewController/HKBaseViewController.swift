@@ -90,6 +90,7 @@ class HKBaseViewController: UIViewController {
         navView?.backgroundColor = UIColor.colorWithHexString(colorString: "#22B9C8")
         navView?.addSubview(self.titleLabel)
         navView?.addSubview(self.navLeftBtn)
+        navView?.addSubview(self.navRightBtn)
         
         self.titleLabel.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()

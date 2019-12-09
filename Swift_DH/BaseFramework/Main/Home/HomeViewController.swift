@@ -15,7 +15,7 @@ class HomeViewController: HKBaseViewController {
         super.viewDidLoad()
 //        navView?.backgroundColor = UIColor.red
         self.titleLabel.text = "导航栏"
-//        self.setHideLeftBtn()
+        self.navRightBtn.setTitle("done", for: .normal)
         
         
 //        let label = HKLabel(font: 13, color: UIColor.green, text: "zhangshouahi")
@@ -26,7 +26,9 @@ class HomeViewController: HKBaseViewController {
 //            make.height.equalTo(30)
 //            make.width.equalTo(100)
 //        }
-//    
+//
+        
+        
 
     }
     
