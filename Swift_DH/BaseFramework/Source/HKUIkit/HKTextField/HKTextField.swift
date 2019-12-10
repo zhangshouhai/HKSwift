@@ -28,6 +28,7 @@ class HKTextField: HKBaseView,UITextFieldDelegate {
         
         self.addSubview(textfield)
         
+    
         textfield.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(HKFixWidthFlaot(10))
             make.centerY.equalToSuperview()
