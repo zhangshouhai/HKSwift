@@ -42,6 +42,7 @@
 		04A80ABE239E437300541C7D /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ABC239E437300541C7D /* UIView+BlockGesture.m */; };
 		04A80AC0239E462400541C7D /* SecondPushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ABF239E462400541C7D /* SecondPushView.swift */; };
 		04A80AC6239F20D400541C7D /* HKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AC5239F20D400541C7D /* HKImageView.swift */; };
+		04A80AC8239F2BFA00541C7D /* AppStyleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AC7239F2BFA00541C7D /* AppStyleConfiguration.swift */; };
 		2FA7695E2109C56E0014BE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7695D2109C56E0014BE5A /* AppDelegate.swift */; };
 		2FA769632109C56E0014BE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769612109C56E0014BE5A /* Main.storyboard */; };
 		2FA769652109C56F0014BE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769642109C56F0014BE5A /* Assets.xcassets */; };
@@ -109,6 +110,7 @@
 		04A80ABD239E437300541C7D /* UIView+BlockGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlockGesture.h"; sourceTree = "<group>"; };
 		04A80ABF239E462400541C7D /* SecondPushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPushView.swift; sourceTree = "<group>"; };
 		04A80AC5239F20D400541C7D /* HKImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKImageView.swift; sourceTree = "<group>"; };
+		04A80AC7239F2BFA00541C7D /* AppStyleConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyleConfiguration.swift; sourceTree = "<group>"; };
 		2FA7695A2109C56E0014BE5A /* ARTIST·拙物.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARTIST·拙物.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA7695D2109C56E0014BE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FA769622109C56E0014BE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			children = (
 				6890E9C9239A6AF000C71B92 /* HKAutoFitConfig.swift */,
 				0447647B23993308005A4DFE /* HKConfigPCH.swift */,
+				04A80AC7239F2BFA00541C7D /* AppStyleConfiguration.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -670,6 +673,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A80AC8239F2BFA00541C7D /* AppStyleConfiguration.swift in Sources */,
 				04477F34239A3A9D0044B7C4 /* ESTabBarItem.swift in Sources */,
 				044764A02399379E005A4DFE /* Ext+UIView.swift in Sources */,
 				044764B123993BC9005A4DFE /* HKAPIManager.swift in Sources */,
