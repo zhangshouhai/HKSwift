@@ -12,7 +12,7 @@ class ThreeViewController: HKBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-         navView?.backgroundColor = UIColor.orange
+//         navView?.backgroundColor = UIColor.orangex
         // Do any additional setup after loading the view.
     }
 

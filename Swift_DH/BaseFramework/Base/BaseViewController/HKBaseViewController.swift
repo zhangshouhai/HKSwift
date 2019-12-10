@@ -41,24 +41,30 @@ class HKBaseViewController: UIViewController {
     
     //导航栏标题
     lazy var titleLabel:UILabel = {
-        let titleStr = HKLabel(font: FontWithStr(18), color: UIColor.white, text: "")
+        let titleStr = HKLabel(font: FontWithStr(17), color:UIColor.colorWithHexString(colorString: HKNavTitleColor), text: "")
         titleStr.textAlignment = NSTextAlignment.center
         return titleStr
     }()
     
+    lazy var lineView :UIView = {
+        let lineView1 = UIView.init()
+        lineView1.backgroundColor = UIColor.lightGray
+        return lineView1
+    }()
+    
+    
     //导航栏右侧按钮
     lazy var navRightBtn:UIButton = {
-        let btn = HKButton(backColor: UIColor.white, text: "", image: "", isRadius: true)
-        btn.frame=CGRect(x: kMainScreen_width-50, y: kMainTopHeight-34, width: 40, height: 30)
+        let btn = HKButton(backColor: UIColor.clear, text: "", image: "", isRadius: true)
+        btn.frame=CGRect(x: kMainScreen_width-50, y: kMainTopHeight-40, width: 40, height: 30)
         btn.addTarget(self, action: #selector(right_click), for: UIControlEvents.touchUpInside)
         return btn
     }()
     //导航栏左侧按钮
     lazy var navLeftBtn:UIButton = {
-        let btn = HKButton(backColor: UIColor.white, text: "", image: "", isRadius: true)
+        let btn = HKButton(backColor: UIColor.clear, text: "", image: "", isRadius: true)
         btn.addTarget(self, action: #selector(right_click), for: UIControlEvents.touchUpInside)
-        btn.frame = CGRect(x: 0, y: kMainTopHeight - 34, width: 35, height: 22)
-        btn.imageEdgeInsets = UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 0)
+        btn.frame = CGRect(x: 10, y: kMainTopHeight - 40, width: 30, height: 30)
         btn.setImage(UIImage(named: "icon_fanhui_xiangqing"), for: .normal)
         btn.setImage(UIImage(named: "icon_fanhui_xiangqing"), for: .highlighted)
         btn.addTarget(self, action: #selector(left_click(_:)), for: .touchUpInside)
@@ -87,15 +93,28 @@ class HKBaseViewController: UIViewController {
         navView = UIView(frame:CGRect(x: 0, y: 0, width:kMainScreen_width, height: kMainTopHeight))
 
         //当行颜色
-        navView?.backgroundColor = UIColor.colorWithHexString(colorString: "#22B9C8")
+        navView?.backgroundColor = UIColor.colorWithHexString(colorString: HKNavBgColor)
         navView?.addSubview(self.titleLabel)
         navView?.addSubview(self.navLeftBtn)
         navView?.addSubview(self.navRightBtn)
         
+        navView?.addSubview(self.lineView)
+        
+        
+        
+        self.navRightBtn.isHidden = true
+        
         self.titleLabel.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
-            make.top.equalToSuperview().offset(kMainTopHeight-44)
-            make.height.equalTo(HKFixHeightFlaot(20))
+            make.top.equalToSuperview().offset(kMainTopHeight-40)
+            make.height.equalTo(HKFixHeightFlaot(30))
+        }
+        
+        
+        self.lineView.snp.makeConstraints { (make) in
+            make.bottom.equalTo(0)
+            make.left.right.equalTo(0)
+            make.height.equalTo(1)
         }
         
        self.view.addSubview(navView!)
@@ -105,16 +124,13 @@ class HKBaseViewController: UIViewController {
     
     func setHideLeftBtn() {
 
-        
         self.navLeftBtn.isHidden = true
-        
     }
 
     @objc func left_click(_ sender: UIButton?) {
         
-        
-        if self.delegate!.responds(to: #selector(HKBaseViewControllerDelegate.left_button_event)){
-            self.delegate!.left_button_event?()
+        if self.delegate != nil && (self.delegate?.responds(to: Selector.init(("left_button_event"))))! {
+             self.delegate!.left_button_event?()
         }
         else{
              navigationController?.popViewController(animated: true)

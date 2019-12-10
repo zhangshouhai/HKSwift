@@ -1,18 +1,17 @@
 //
-//  SecondViewController.swift
+//  SecondPushView.swift
 //  BaseFramework
 //
-//  Created by mac on 2019/12/5.
-//  Copyright © 2019 DH add LK. All rights reserved.
+//  Created by mac on 2019/12/9.
+//  Copyright © 2019 贾则栋. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class SecondViewController: HKBaseViewController {
+class SecondPushView: HKBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
         
                 let label = HKLabel(font: 13, color: UIColor.green, text: "zhangshouahi")
@@ -24,16 +23,13 @@ class SecondViewController: HKBaseViewController {
                     make.width.equalTo(100)
                 }
         label.isUserInteractionEnabled = true
-
+//        label.addTapAction { (tap ) in
+//            print("cheshisnds")
+//        }
         label.addTapAction { (tap) in
             print("zhangksdjkjfksdjflsldkdflds")
-            
-            let vc = SecondPushView()
-            self.navigationController?.pushViewController(vc, animated: true)
-            
         }
-        
-
+   
     }
 
     override func didReceiveMemoryWarning() {

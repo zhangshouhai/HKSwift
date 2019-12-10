@@ -90,9 +90,8 @@ public let RGBAlpa:((Float,Float,Float,Float) -> UIColor) = { (r: Float, g: Floa
 // MARK: - 自定义颜色 ===================================================
 
 // 颜色
-public let cNavigationBarBgColor: NSString   = "#ffffff"
-public let cStatusBarBgColor: NSString       = "#ffffff"
-public let cTabBarBgColor: NSString          = "#494949"
+public let HKNavBgColor: NSString            = "#22B9C8" //导航颜色
+public let HKNavTitleColor: NSString          = "#FFFFFF" //导航颜色
 public let cBackgroundColor: NSString        = "#F5F5F5"
 public let cGapLineColor: NSString           = "#E1E3E6"
 public let cDarkGrayColor: NSString          = "#989898"
