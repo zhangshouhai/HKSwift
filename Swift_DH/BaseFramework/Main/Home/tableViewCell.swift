@@ -19,6 +19,7 @@ class TempTableViewCell: HKBaseTableViewCell {
     }
     
     override func layoutView() {
+        
         self.titleLab?.snp.makeConstraints({ (make) in
             make.left.equalToSuperview().offset(HKFixWidthFlaot(20))
             make.centerY.equalToSuperview()

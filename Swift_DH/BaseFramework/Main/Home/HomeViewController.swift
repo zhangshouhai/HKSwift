@@ -11,9 +11,13 @@ import SnapKit
 
 class HomeViewController: HKBaseViewController {
 
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        navView?.backgroundColor = UIColor.red
+
+        self.setHideLeftBtn()
+        
         self.titleLabel.text = "导航栏"
         self.navRightBtn.setTitle("done", for: .normal)
         
