@@ -24,7 +24,6 @@ class AppStyleConfiguration {
         let strAtt = NSMutableAttributedString.init(string: tempStr!)
         
          strAtt.addAttributes([NSAttributedString.Key.foregroundColor : allColor], range: NSRange(location: 0, length: strAtt.length))
-//        let markRange = tempStr?.range(of: changeString)
         
         let markRange = tempStr!.toNSRange((tempStr?.range(of: changeString))!)
         strAtt.addAttributes([NSAttributedString.Key.foregroundColor :markColor], range: markRange)

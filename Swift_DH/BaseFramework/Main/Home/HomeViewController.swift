@@ -30,7 +30,7 @@ class HomeViewController: HKBaseViewController {
             make.height.equalTo(30)
             make.width.equalTo(100)
         }
-        AppStyleConfiguration.messageAction(label: label, changeString: "zhang", allColor:UIColor.red, markColor:UIColor.green, fontSize: 14)
+        AppStyleConfiguration.messageAction(label: label, changeString: "zhang", allColor:UIColor.red, markColor:UIColor.green, fontSize: 30)
         
         
 

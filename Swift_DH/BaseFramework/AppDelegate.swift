@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor.white
         
         // 设置启动页面时间
-        Thread.sleep(forTimeInterval: 2.0)
+        Thread.sleep(forTimeInterval: 1.0)
         
         // 设置状态栏的样式
         application.statusBarStyle = UIStatusBarStyle.default
