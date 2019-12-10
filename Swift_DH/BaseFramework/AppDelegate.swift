@@ -30,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         HKAppManager.sharedInstance.chooseRootVC(window: window!)
         
         self.window?.makeKeyAndVisible()
-        
         // 初始化第三方应用
         HKAppManager.sharedInstance.initAppWithApplication(application: application, launchOptions: launchOptions)
         
