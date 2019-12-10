@@ -12,6 +12,44 @@ import Foundation
 
 class AppStyleConfiguration {
     
+    
+    
+    
+    /**
+    *改变字符串中具体某字符串的颜色
+    */
+    class func messageAction(label:UILabel,changeString:String,allColor:UIColor,markColor:UIColor,fontSize:CGFloat) {
+        let tempStr = label.text
+        
+        let strAtt = NSMutableAttributedString.init(string: tempStr!)
+        
+         strAtt.addAttributes([NSAttributedString.Key.foregroundColor : allColor], range: NSRange(location: 0, length: strAtt.length))
+//        let markRange = tempStr?.range(of: changeString)
+        
+        let markRange = tempStr!.toNSRange((tempStr?.range(of: changeString))!)
+        strAtt.addAttributes([NSAttributedString.Key.foregroundColor :markColor], range: markRange)
+        strAtt.addAttributes([NSAttributedString.Key.font:UIFont.systemFont(ofSize: fontSize)], range: markRange)
+        
+        label.attributedText = strAtt
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      *  计算文字的宽度
      */

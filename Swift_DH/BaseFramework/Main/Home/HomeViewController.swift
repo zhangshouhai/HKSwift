@@ -22,15 +22,15 @@ class HomeViewController: HKBaseViewController {
         self.navRightBtn.setTitle("done", for: .normal)
         
         
-//        let label = HKLabel(font: 13, color: UIColor.green, text: "zhangshouahi")
-//        self.view.addSubview(label)
-//        label.snp.makeConstraints { (make) in
-//            make.top.equalTo(100)
-//            make.left.equalTo(20)
-//            make.height.equalTo(30)
-//            make.width.equalTo(100)
-//        }
-//
+        let label = HKLabel(font: 13, color: UIColor.green, text: "zhangshouahi")
+        self.view.addSubview(label)
+        label.snp.makeConstraints { (make) in
+            make.top.equalTo(100)
+            make.left.equalTo(20)
+            make.height.equalTo(30)
+            make.width.equalTo(100)
+        }
+        AppStyleConfiguration.messageAction(label: label, changeString: "zhang", allColor:UIColor.red, markColor:UIColor.green, fontSize: 14)
         
         
 
