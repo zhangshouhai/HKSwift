@@ -45,7 +45,7 @@
 		04A80AC8239F2BFA00541C7D /* AppStyleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AC7239F2BFA00541C7D /* AppStyleConfiguration.swift */; };
 		04A80ACB239F33F700541C7D /* UITextField+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ACA239F33F700541C7D /* UITextField+Blocks.m */; };
 		04A80ACE239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ACD239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m */; };
-		04A80AD9239F8B2200541C7D /* HKStringRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AD8239F8B2200541C7D /* HKStringRange.swift */; };
+		04A80AD9239F8B2200541C7D /* HKNSRange+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AD8239F8B2200541C7D /* HKNSRange+String.swift */; };
 		2FA7695E2109C56E0014BE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7695D2109C56E0014BE5A /* AppDelegate.swift */; };
 		2FA769632109C56E0014BE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769612109C56E0014BE5A /* Main.storyboard */; };
 		2FA769652109C56F0014BE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769642109C56F0014BE5A /* Assets.xcassets */; };
@@ -120,7 +120,7 @@
 		04A80ACA239F33F700541C7D /* UITextField+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Blocks.m"; sourceTree = "<group>"; };
 		04A80ACC239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ChangeLineSpaceAndWordSpace.h"; sourceTree = "<group>"; };
 		04A80ACD239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ChangeLineSpaceAndWordSpace.m"; sourceTree = "<group>"; };
-		04A80AD8239F8B2200541C7D /* HKStringRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKStringRange.swift; sourceTree = "<group>"; };
+		04A80AD8239F8B2200541C7D /* HKNSRange+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKNSRange+String.swift"; sourceTree = "<group>"; };
 		2FA7695A2109C56E0014BE5A /* ARTIST·拙物.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARTIST·拙物.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA7695D2109C56E0014BE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FA769622109C56E0014BE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -346,7 +346,7 @@
 				04A80AC1239F209700541C7D /* HKLabel */,
 				04A80AC4239F209700541C7D /* HKTextField */,
 				04A80ABB239E437300541C7D /* HKAddTapBlock */,
-				04A80AD8239F8B2200541C7D /* HKStringRange.swift */,
+				04A80AD8239F8B2200541C7D /* HKNSRange+String.swift */,
 			);
 			path = HKUIkit;
 			sourceTree = "<group>";
@@ -732,7 +732,7 @@
 				0447649D2399379E005A4DFE /* Ext+UIDevice.swift in Sources */,
 				044764A523993994005A4DFE /* HKProgressHUD.swift in Sources */,
 				0447648B239935DB005A4DFE /* FourViewControlller.swift in Sources */,
-				04A80AD9239F8B2200541C7D /* HKStringRange.swift in Sources */,
+				04A80AD9239F8B2200541C7D /* HKNSRange+String.swift in Sources */,
 				04A80AC0239E462400541C7D /* SecondPushView.swift in Sources */,
 				6830606F239E243F00362C59 /* tableViewCell.swift in Sources */,
 				68914874239F683800B5AA99 /* HKTextView.swift in Sources */,
