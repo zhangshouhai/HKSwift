@@ -14,6 +14,6 @@ func HKImageView(radius:CGFloat,isRadius:Bool) -> UIImageView{
     let imageview = UIImageView()
     imageview.layer.cornerRadius = radius
     imageview.layer.masksToBounds = isRadius
-    imageview.contentMode = .scaleAspectFill
+    imageview.contentMode = .scaleAspectFit
     return imageview;
 }
