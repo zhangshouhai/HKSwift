@@ -43,6 +43,8 @@
 		04A80AC0239E462400541C7D /* SecondPushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ABF239E462400541C7D /* SecondPushView.swift */; };
 		04A80AC6239F20D400541C7D /* HKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AC5239F20D400541C7D /* HKImageView.swift */; };
 		04A80AC8239F2BFA00541C7D /* AppStyleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AC7239F2BFA00541C7D /* AppStyleConfiguration.swift */; };
+		04A80ACB239F33F700541C7D /* UITextField+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ACA239F33F700541C7D /* UITextField+Blocks.m */; };
+		04A80ACE239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ACD239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m */; };
 		2FA7695E2109C56E0014BE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7695D2109C56E0014BE5A /* AppDelegate.swift */; };
 		2FA769632109C56E0014BE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769612109C56E0014BE5A /* Main.storyboard */; };
 		2FA769652109C56F0014BE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769642109C56F0014BE5A /* Assets.xcassets */; };
@@ -111,6 +113,10 @@
 		04A80ABF239E462400541C7D /* SecondPushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPushView.swift; sourceTree = "<group>"; };
 		04A80AC5239F20D400541C7D /* HKImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKImageView.swift; sourceTree = "<group>"; };
 		04A80AC7239F2BFA00541C7D /* AppStyleConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyleConfiguration.swift; sourceTree = "<group>"; };
+		04A80AC9239F33F700541C7D /* UITextField+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Blocks.h"; sourceTree = "<group>"; };
+		04A80ACA239F33F700541C7D /* UITextField+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Blocks.m"; sourceTree = "<group>"; };
+		04A80ACC239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ChangeLineSpaceAndWordSpace.h"; sourceTree = "<group>"; };
+		04A80ACD239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ChangeLineSpaceAndWordSpace.m"; sourceTree = "<group>"; };
 		2FA7695A2109C56E0014BE5A /* ARTIST·拙物.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARTIST·拙物.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA7695D2109C56E0014BE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FA769622109C56E0014BE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -383,6 +389,8 @@
 		04A80AC1239F209700541C7D /* HKLabel */ = {
 			isa = PBXGroup;
 			children = (
+				04A80ACC239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.h */,
+				04A80ACD239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m */,
 				044764A723993A2B005A4DFE /* HKLabel.swift */,
 			);
 			path = HKLabel;
@@ -407,6 +415,8 @@
 		04A80AC4239F209700541C7D /* HKTextFiled */ = {
 			isa = PBXGroup;
 			children = (
+				04A80AC9239F33F700541C7D /* UITextField+Blocks.h */,
+				04A80ACA239F33F700541C7D /* UITextField+Blocks.m */,
 			);
 			path = HKTextFiled;
 			sourceTree = "<group>";
@@ -689,12 +699,14 @@
 				682067A6239E221100A4B0D4 /* HKBaseTableViewCell.swift in Sources */,
 				044764AD23993AFF005A4DFE /* BaseRequestURL.swift in Sources */,
 				04477F43239A46950044B7C4 /* ExampleBasicContentView.swift in Sources */,
+				04A80ACE239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */,
 				04477F33239A3A9D0044B7C4 /* ESTabBarItemContentView.swift in Sources */,
 				0447649C2399379E005A4DFE /* Ext+UITextField.swift in Sources */,
 				0447647C23993308005A4DFE /* HKConfigPCH.swift in Sources */,
 				0447649E2399379E005A4DFE /* Ext+UIColor.swift in Sources */,
 				04477F35239A3A9D0044B7C4 /* ESTabBarItemBadgeView.swift in Sources */,
 				04477F36239A3A9D0044B7C4 /* ESTabBar.swift in Sources */,
+				04A80ACB239F33F700541C7D /* UITextField+Blocks.m in Sources */,
 				0447648723993599005A4DFE /* SecondViewController.swift in Sources */,
 				6890E9CA239A6AF000C71B92 /* HKAutoFitConfig.swift in Sources */,
 				0447648523993572005A4DFE /* HomeViewController.swift in Sources */,

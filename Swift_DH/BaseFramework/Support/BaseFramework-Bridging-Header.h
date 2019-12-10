@@ -12,6 +12,8 @@
 #import "MJRefresh.h"
 #import "SVProgressHUD.h"
 #import "UIView+BlockGesture.h"
+#import "UILabel+ChangeLineSpaceAndWordSpace.h"
+#import "UITextField+Blocks.h"
 
 #endif /* BaseFramework_Bridging_Header_h */
 
