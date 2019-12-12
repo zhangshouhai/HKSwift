@@ -39,6 +39,8 @@
 		04477F37239A3A9D0044B7C4 /* ESTabBarItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F2F239A3A9D0044B7C4 /* ESTabBarItemContainer.swift */; };
 		04477F41239A46950044B7C4 /* ExampleBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F3A239A46940044B7C4 /* ExampleBouncesContentView.swift */; };
 		04477F43239A46950044B7C4 /* ExampleBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F3C239A46940044B7C4 /* ExampleBasicContentView.swift */; };
+		04507C1423A22A730086FE85 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C1323A22A730086FE85 /* BaseModel.swift */; };
+		04507C1723A22B560086FE85 /* HKUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C1623A22B560086FE85 /* HKUserModel.swift */; };
 		04A80ABE239E437300541C7D /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ABC239E437300541C7D /* UIView+BlockGesture.m */; };
 		04A80AC0239E462400541C7D /* SecondPushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ABF239E462400541C7D /* SecondPushView.swift */; };
 		04A80AC6239F20D400541C7D /* HKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AC5239F20D400541C7D /* HKImageView.swift */; };
@@ -112,6 +114,8 @@
 		04477F2F239A3A9D0044B7C4 /* ESTabBarItemContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemContainer.swift; sourceTree = "<group>"; };
 		04477F3A239A46940044B7C4 /* ExampleBouncesContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBouncesContentView.swift; sourceTree = "<group>"; };
 		04477F3C239A46940044B7C4 /* ExampleBasicContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBasicContentView.swift; sourceTree = "<group>"; };
+		04507C1323A22A730086FE85 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		04507C1623A22B560086FE85 /* HKUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKUserModel.swift; sourceTree = "<group>"; };
 		04A80ABC239E437300541C7D /* UIView+BlockGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlockGesture.m"; sourceTree = "<group>"; };
 		04A80ABD239E437300541C7D /* UIView+BlockGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlockGesture.h"; sourceTree = "<group>"; };
 		04A80ABF239E462400541C7D /* SecondPushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPushView.swift; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 		04476469239930BC005A4DFE /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				04507C1523A22B3F0086FE85 /* HKUserTool */,
 				68306070239E26C200362C59 /* BaseView */,
 				0447647D23993443005A4DFE /* BaseNavController */,
 				04476471239931CB005A4DFE /* BaseModel */,
@@ -266,6 +271,7 @@
 		04476471239931CB005A4DFE /* BaseModel */ = {
 			isa = PBXGroup;
 			children = (
+				04507C1323A22A730086FE85 /* BaseModel.swift */,
 			);
 			path = BaseModel;
 			sourceTree = "<group>";
@@ -386,6 +392,14 @@
 				04477F3C239A46940044B7C4 /* ExampleBasicContentView.swift */,
 			);
 			path = Content;
+			sourceTree = "<group>";
+		};
+		04507C1523A22B3F0086FE85 /* HKUserTool */ = {
+			isa = PBXGroup;
+			children = (
+				04507C1623A22B560086FE85 /* HKUserModel.swift */,
+			);
+			path = HKUserTool;
 			sourceTree = "<group>";
 		};
 		04A80ABB239E437300541C7D /* HKAddTapBlock */ = {
@@ -720,6 +734,7 @@
 				682067A6239E221100A4B0D4 /* HKBaseTableViewCell.swift in Sources */,
 				044764AD23993AFF005A4DFE /* BaseRequestURL.swift in Sources */,
 				04477F43239A46950044B7C4 /* ExampleBasicContentView.swift in Sources */,
+				04507C1423A22A730086FE85 /* BaseModel.swift in Sources */,
 				04A80ACE239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */,
 				04477F33239A3A9D0044B7C4 /* ESTabBarItemContentView.swift in Sources */,
 				0447649C2399379E005A4DFE /* Ext+UITextField.swift in Sources */,
@@ -749,6 +764,7 @@
 				04476489239935BA005A4DFE /* ThreeViewController.swift in Sources */,
 				04477F41239A46950044B7C4 /* ExampleBouncesContentView.swift in Sources */,
 				044764AF23993B9A005A4DFE /* HKHttpManager.swift in Sources */,
+				04507C1723A22B560086FE85 /* HKUserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
