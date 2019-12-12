@@ -8,7 +8,7 @@ target 'BaseFramework' do
 #    pod 'Moya/RxSwift'      # 为RxSwift专用提供，对Alamofire进行封装的一个网络请求库
     pod 'Kingfisher'        # 加载网络图片，类似SDWebImage
     pod 'SwiftyJSON'        # json解析
-    pod 'HandyJSON'
+    pod 'HandyJSON',:git => 'https://github.com/alibaba/HandyJSON.git', :branch => 'dev_for_swift5.0'
     pod 'SnapKit'           # UI布局（类似Masonry）
     pod 'Moya'              # 网络请求封装
     pod 'CryptoSwift'       # 加密库（MD5、SHA、AES...）

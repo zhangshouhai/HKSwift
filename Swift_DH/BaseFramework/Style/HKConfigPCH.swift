@@ -87,6 +87,15 @@ public let RGBAlpa:((Float,Float,Float,Float) -> UIColor) = { (r: Float, g: Floa
 }
 
 
+
+// MARK: - 本地存储 Key ===================================================
+
+public let HKUserKey: NSString            = "user" //登录用户信息
+
+
+
+
+
 // MARK: - 自定义颜色 ===================================================
 
 // 颜色

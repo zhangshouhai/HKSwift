@@ -26,10 +26,13 @@ class SecondViewController: HKBaseViewController {
         label.isUserInteractionEnabled = true
 
         label.addTapAction { (tap) in
-            print("zhangksdjkjfksdjflsldkdflds")
+//            print("zhangksdjkjfksdjflsldkdflds")
+//
+//            let vc = SecondPushView()
+//            self.navigationController?.pushViewController(vc, animated: true)
             
-            let vc = SecondPushView()
-            self.navigationController?.pushViewController(vc, animated: true)
+            
+            print(HKTool.shardTool.userModel().userName!)
             
         }
         

@@ -32,6 +32,30 @@ class HomeViewController: HKBaseViewController {
         }
         AppStyleConfiguration.messageAction(label: label, changeString: "zhang", allColor:UIColor.red, markColor:UIColor.green, fontSize: 30)
         
+
+        
+        
+        let dic1 :NSMutableDictionary = NSMutableDictionary.init()
+        dic1["userid"] = "11000001"
+        dic1["token"] = "token1"
+        dic1["userName"] = "userName"
+        dic1["userHeader"] = "userHeader"
+        dic1["phone"] = "phone"
+        dic1["passWord"] = "passWord"
+        dic1["sex"] = 1
+        dic1["age"] = 25
+        
+        MyControl.setObject(dic1, key: HKUserKey as String)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
 
     }

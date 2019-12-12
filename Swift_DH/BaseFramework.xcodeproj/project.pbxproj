@@ -41,6 +41,7 @@
 		04477F43239A46950044B7C4 /* ExampleBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F3C239A46940044B7C4 /* ExampleBasicContentView.swift */; };
 		04507C1423A22A730086FE85 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C1323A22A730086FE85 /* BaseModel.swift */; };
 		04507C1723A22B560086FE85 /* HKUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C1623A22B560086FE85 /* HKUserModel.swift */; };
+		04507C1923A22C770086FE85 /* HKTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C1823A22C770086FE85 /* HKTool.swift */; };
 		04A80ABE239E437300541C7D /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ABC239E437300541C7D /* UIView+BlockGesture.m */; };
 		04A80AC0239E462400541C7D /* SecondPushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ABF239E462400541C7D /* SecondPushView.swift */; };
 		04A80AC6239F20D400541C7D /* HKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AC5239F20D400541C7D /* HKImageView.swift */; };
@@ -116,6 +117,7 @@
 		04477F3C239A46940044B7C4 /* ExampleBasicContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBasicContentView.swift; sourceTree = "<group>"; };
 		04507C1323A22A730086FE85 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		04507C1623A22B560086FE85 /* HKUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKUserModel.swift; sourceTree = "<group>"; };
+		04507C1823A22C770086FE85 /* HKTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTool.swift; sourceTree = "<group>"; };
 		04A80ABC239E437300541C7D /* UIView+BlockGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlockGesture.m"; sourceTree = "<group>"; };
 		04A80ABD239E437300541C7D /* UIView+BlockGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlockGesture.h"; sourceTree = "<group>"; };
 		04A80ABF239E462400541C7D /* SecondPushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPushView.swift; sourceTree = "<group>"; };
@@ -398,6 +400,7 @@
 			isa = PBXGroup;
 			children = (
 				04507C1623A22B560086FE85 /* HKUserModel.swift */,
+				04507C1823A22C770086FE85 /* HKTool.swift */,
 			);
 			path = HKUserTool;
 			sourceTree = "<group>";
@@ -725,6 +728,7 @@
 				04A80AC6239F20D400541C7D /* HKImageView.swift in Sources */,
 				04476481239934EF005A4DFE /* LoginViewController.swift in Sources */,
 				68306072239E26D800362C59 /* HKBaseView.swift in Sources */,
+				04507C1923A22C770086FE85 /* HKTool.swift in Sources */,
 				0447648323993543005A4DFE /* HKBaseViewController.swift in Sources */,
 				04A80ABE239E437300541C7D /* UIView+BlockGesture.m in Sources */,
 				044764A12399379E005A4DFE /* Ext+CGFloat.swift in Sources */,

@@ -11,7 +11,7 @@ import Moya
 import Alamofire
 import Result
 import SwiftyJSON
-import ObjectMapper
+
 
 /// Moya网络请求
 public class HKHttpManager {
@@ -92,101 +92,101 @@ public class HKHttpManager {
         }
     }
     
-    /// 请求JSON数组对象数据
-    func requestJSONArrayData<T:TargetType, M:Mappable>(target:T, model:M, successClosure:@escaping (_ result: [Mappable]?) -> Void, failClosure: @escaping (_ errorMsg: String?) -> Void) {
-        let requestProvider = MoyaProvider<T>(requestClosure:requestTimeoutClosure(target: target))
-        let _ = requestProvider.request(target) { (result) -> () in
-            switch result {
-            case let .success(response):
-                do {
-                    let json = try response.mapJSON()
-                    let arr = Mapper<M>().mapArray(JSONObject:JSON(json).object)
-                    successClosure(arr)
-                } catch {
-                    failClosure(self.failInfo)
-                }
-            case let .failure(error):
-                failClosure(error.errorDescription)
-            }
-        }
-    }
-    
-    /// 请求JSON对象数据
-    func requestJSONObjectData<T:TargetType, M:Mappable>(target:T, model:M, successClosure:@escaping (_ result: Mappable?) -> Void, failClosure: @escaping (_ errorMsg: String?) -> Void) {
-        let requestProvider = MoyaProvider<T>(requestClosure:requestTimeoutClosure(target: target))
-        let _ = requestProvider.request(target) { (result) -> () in
-            switch result {
-            case let .success(response):
-                do {
-                    let json = try response.mapJSON()
-                    let model = Mapper<M>().map(JSONObject:JSON(json).object)
-                    successClosure(model)
-                } catch {
-                    failClosure(self.failInfo)
-                }
-            case let .failure(error):
-                failClosure(error.errorDescription)
-            }
-        }
-    }
-    
-    /// 请求String数据
-    func requestStringData<T:TargetType>(target:T, successClosure:@escaping (_ result: String) -> Void, failClosure: @escaping (_ errorMsg: String?) -> Void) {
-        let requestProvider = MoyaProvider<T>(requestClosure:requestTimeoutClosure(target: target))
-        let _ = requestProvider.request(target) { (result) -> () in
-            switch result {
-            case let .success(response):
-                do {
-                    let str = try response.mapString()
-                    successClosure(str)
-                } catch {
-                    failClosure(self.failInfo)
-                }
-            case let .failure(error):
-                failClosure(error.errorDescription)
-            }
-            
-        }
-    }
-    
-    /// 下载文件 (Alamofire方式）
-    func downloadFile(urlString:String!, saveName:String?, downloadProgress:@escaping Request.ProgressHandler, destinationURL: (_ destination: URL?) -> Void, completionHandler:@escaping (DownloadResponse<Data>) -> Void) {
-        var destination: DownloadRequest.DownloadFileDestination
-        
-        let a = NSString(string:urlString)
-        let s:CharacterSet = NSCharacterSet(charactersIn:"/") as CharacterSet
-        let range = a.rangeOfCharacter(from: s, options: String.CompareOptions.backwards)
-        let fileName = a.substring(with: NSMakeRange(range.location + 1, a.length - range.location - 1))
-//        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-//        let fileURL = documentsURL.appendingPathComponent(fileName)
-//        if FileManager.default.fileExists(atPath: fileURL.absoluteString) {
-//            print("yes")
-//            destinationURL(fileURL)
-//            return
+//    /// 请求JSON数组对象数据
+//    func requestJSONArrayData<T:TargetType, M:Mappable>(target:T, model:M, successClosure:@escaping (_ result: [Mappable]?) -> Void, failClosure: @escaping (_ errorMsg: String?) -> Void) {
+//        let requestProvider = MoyaProvider<T>(requestClosure:requestTimeoutClosure(target: target))
+//        let _ = requestProvider.request(target) { (result) -> () in
+//            switch result {
+//            case let .success(response):
+//                do {
+//                    let json = try response.mapJSON()
+//                    let arr = Mapper<M>().mapArray(JSONObject:JSON(json).object)
+//                    successClosure(arr)
+//                } catch {
+//                    failClosure(self.failInfo)
+//                }
+//            case let .failure(error):
+//                failClosure(error.errorDescription)
+//            }
 //        }
-        
-        if saveName == nil {
-//            destination = DownloadRequest.suggestedDownloadDestination(for: .documentDirectory)
-            destination = { _, _ in
-                let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-                let fileURL = documentsURL.appendingPathComponent(fileName)
-                return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
-            }
-        }
-        else {
-            destination = { _, _ in
-                let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-                let fileURL = documentsURL.appendingPathComponent(saveName!)
-                return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
-            }
-        }
-        
-        Alamofire.download(urlString, to: destination)
-            .downloadProgress { (progress) in
-                downloadProgress(progress)
-            }
-            .responseData { (response) in
-                completionHandler(response)
-        }
-    }
+//    }
+//
+//    /// 请求JSON对象数据
+//    func requestJSONObjectData<T:TargetType, M:Mappable>(target:T, model:M, successClosure:@escaping (_ result: Mappable?) -> Void, failClosure: @escaping (_ errorMsg: String?) -> Void) {
+//        let requestProvider = MoyaProvider<T>(requestClosure:requestTimeoutClosure(target: target))
+//        let _ = requestProvider.request(target) { (result) -> () in
+//            switch result {
+//            case let .success(response):
+//                do {
+//                    let json = try response.mapJSON()
+//                    let model = Mapper<M>().map(JSONObject:JSON(json).object)
+//                    successClosure(model)
+//                } catch {
+//                    failClosure(self.failInfo)
+//                }
+//            case let .failure(error):
+//                failClosure(error.errorDescription)
+//            }
+//        }
+//    }
+//
+//    /// 请求String数据
+//    func requestStringData<T:TargetType>(target:T, successClosure:@escaping (_ result: String) -> Void, failClosure: @escaping (_ errorMsg: String?) -> Void) {
+//        let requestProvider = MoyaProvider<T>(requestClosure:requestTimeoutClosure(target: target))
+//        let _ = requestProvider.request(target) { (result) -> () in
+//            switch result {
+//            case let .success(response):
+//                do {
+//                    let str = try response.mapString()
+//                    successClosure(str)
+//                } catch {
+//                    failClosure(self.failInfo)
+//                }
+//            case let .failure(error):
+//                failClosure(error.errorDescription)
+//            }
+//
+//        }
+//    }
+//
+//    /// 下载文件 (Alamofire方式）
+//    func downloadFile(urlString:String!, saveName:String?, downloadProgress:@escaping Request.ProgressHandler, destinationURL: (_ destination: URL?) -> Void, completionHandler:@escaping (DownloadResponse<Data>) -> Void) {
+//        var destination: DownloadRequest.DownloadFileDestination
+//
+//        let a = NSString(string:urlString)
+//        let s:CharacterSet = NSCharacterSet(charactersIn:"/") as CharacterSet
+//        let range = a.rangeOfCharacter(from: s, options: String.CompareOptions.backwards)
+//        let fileName = a.substring(with: NSMakeRange(range.location + 1, a.length - range.location - 1))
+////        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+////        let fileURL = documentsURL.appendingPathComponent(fileName)
+////        if FileManager.default.fileExists(atPath: fileURL.absoluteString) {
+////            print("yes")
+////            destinationURL(fileURL)
+////            return
+////        }
+//
+//        if saveName == nil {
+////            destination = DownloadRequest.suggestedDownloadDestination(for: .documentDirectory)
+//            destination = { _, _ in
+//                let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+//                let fileURL = documentsURL.appendingPathComponent(fileName)
+//                return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
+//            }
+//        }
+//        else {
+//            destination = { _, _ in
+//                let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+//                let fileURL = documentsURL.appendingPathComponent(saveName!)
+//                return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
+//            }
+//        }
+//
+//        Alamofire.download(urlString, to: destination)
+//            .downloadProgress { (progress) in
+//                downloadProgress(progress)
+//            }
+//            .responseData { (response) in
+//                completionHandler(response)
+//        }
+//    }
 }
