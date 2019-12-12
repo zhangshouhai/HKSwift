@@ -12,9 +12,6 @@ import Foundation
 
 class AppStyleConfiguration {
     
-    
-    
-    
     /**
     *改变字符串中具体某字符串的颜色
     */
@@ -37,15 +34,7 @@ class AppStyleConfiguration {
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     
     
@@ -258,6 +247,9 @@ class AppStyleConfiguration {
           return true;
       }
       
+    
+    
+    
 
 }
 

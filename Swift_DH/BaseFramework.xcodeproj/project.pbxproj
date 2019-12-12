@@ -55,6 +55,7 @@
 		682067A6239E221100A4B0D4 /* HKBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682067A5239E221100A4B0D4 /* HKBaseTableViewCell.swift */; };
 		6830606F239E243F00362C59 /* tableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6830606E239E243F00362C59 /* tableViewCell.swift */; };
 		68306072239E26D800362C59 /* HKBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68306071239E26D800362C59 /* HKBaseView.swift */; };
+		685E00C023A223AD007C34D1 /* MyControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685E00BF23A223AD007C34D1 /* MyControl.swift */; };
 		6890E9CA239A6AF000C71B92 /* HKAutoFitConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6890E9C9239A6AF000C71B92 /* HKAutoFitConfig.swift */; };
 		68914871239F3EAA00B5AA99 /* HKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68914870239F3EAA00B5AA99 /* HKTextField.swift */; };
 		68914874239F683800B5AA99 /* HKTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68914873239F683800B5AA99 /* HKTextView.swift */; };
@@ -138,6 +139,7 @@
 		682067A5239E221100A4B0D4 /* HKBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HKBaseTableViewCell.swift; path = BaseFramework/Style/HKBaseTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		6830606E239E243F00362C59 /* tableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewCell.swift; sourceTree = "<group>"; };
 		68306071239E26D800362C59 /* HKBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKBaseView.swift; sourceTree = "<group>"; };
+		685E00BF23A223AD007C34D1 /* MyControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyControl.swift; sourceTree = "<group>"; };
 		6890E9C9239A6AF000C71B92 /* HKAutoFitConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKAutoFitConfig.swift; sourceTree = "<group>"; };
 		68914870239F3EAA00B5AA99 /* HKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTextField.swift; sourceTree = "<group>"; };
 		68914873239F683800B5AA99 /* HKTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTextView.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				6890E9C9239A6AF000C71B92 /* HKAutoFitConfig.swift */,
 				0447647B23993308005A4DFE /* HKConfigPCH.swift */,
 				04A80AC7239F2BFA00541C7D /* AppStyleConfiguration.swift */,
+				685E00BF23A223AD007C34D1 /* MyControl.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -701,6 +704,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A80AC8239F2BFA00541C7D /* AppStyleConfiguration.swift in Sources */,
+				685E00C023A223AD007C34D1 /* MyControl.swift in Sources */,
 				04477F34239A3A9D0044B7C4 /* ESTabBarItem.swift in Sources */,
 				044764A02399379E005A4DFE /* Ext+UIView.swift in Sources */,
 				044764B123993BC9005A4DFE /* HKAPIManager.swift in Sources */,
