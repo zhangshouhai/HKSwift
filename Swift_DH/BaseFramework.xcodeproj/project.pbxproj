@@ -43,6 +43,12 @@
 		04507C1423A22A730086FE85 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C1323A22A730086FE85 /* BaseModel.swift */; };
 		04507C1723A22B560086FE85 /* HKUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C1623A22B560086FE85 /* HKUserModel.swift */; };
 		04507C1923A22C770086FE85 /* HKTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C1823A22C770086FE85 /* HKTool.swift */; };
+		04507C2623A357BC0086FE85 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04507C1C23A357BC0086FE85 /* area.plist */; };
+		04507C2723A357BC0086FE85 /* EWAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C1D23A357BC0086FE85 /* EWAddressModel.swift */; };
+		04507C2823A357BC0086FE85 /* EWAddressPickViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C1E23A357BC0086FE85 /* EWAddressPickViewTableViewCell.swift */; };
+		04507C2923A357BC0086FE85 /* EWAddressPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C1F23A357BC0086FE85 /* EWAddressPickView.swift */; };
+		04507C2A23A357BC0086FE85 /* EWAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C2023A357BC0086FE85 /* EWAddressViewController.swift */; };
+		04507C2B23A357BC0086FE85 /* EWAddressPresentAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C2123A357BC0086FE85 /* EWAddressPresentAnimated.swift */; };
 		04A80ABE239E437300541C7D /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ABC239E437300541C7D /* UIView+BlockGesture.m */; };
 		04A80AC0239E462400541C7D /* SecondPushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ABF239E462400541C7D /* SecondPushView.swift */; };
 		04A80AC6239F20D400541C7D /* HKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AC5239F20D400541C7D /* HKImageView.swift */; };
@@ -118,6 +124,12 @@
 		04507C1323A22A730086FE85 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		04507C1623A22B560086FE85 /* HKUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKUserModel.swift; sourceTree = "<group>"; };
 		04507C1823A22C770086FE85 /* HKTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTool.swift; sourceTree = "<group>"; };
+		04507C1C23A357BC0086FE85 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
+		04507C1D23A357BC0086FE85 /* EWAddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EWAddressModel.swift; sourceTree = "<group>"; };
+		04507C1E23A357BC0086FE85 /* EWAddressPickViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EWAddressPickViewTableViewCell.swift; sourceTree = "<group>"; };
+		04507C1F23A357BC0086FE85 /* EWAddressPickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EWAddressPickView.swift; sourceTree = "<group>"; };
+		04507C2023A357BC0086FE85 /* EWAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EWAddressViewController.swift; sourceTree = "<group>"; };
+		04507C2123A357BC0086FE85 /* EWAddressPresentAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EWAddressPresentAnimated.swift; sourceTree = "<group>"; };
 		04A80ABC239E437300541C7D /* UIView+BlockGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlockGesture.m"; sourceTree = "<group>"; };
 		04A80ABD239E437300541C7D /* UIView+BlockGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlockGesture.h"; sourceTree = "<group>"; };
 		04A80ABF239E462400541C7D /* SecondPushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPushView.swift; sourceTree = "<group>"; };
@@ -210,6 +222,7 @@
 		0447646A239930BC005A4DFE /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				04507C1A23A357B40086FE85 /* Lib */,
 				044764A623993A2B005A4DFE /* HKUIkit */,
 				044764A323993975005A4DFE /* ProgressHUD */,
 				044764942399379E005A4DFE /* Category */,
@@ -403,6 +416,27 @@
 				04507C1823A22C770086FE85 /* HKTool.swift */,
 			);
 			path = HKUserTool;
+			sourceTree = "<group>";
+		};
+		04507C1A23A357B40086FE85 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				04507C1B23A357BC0086FE85 /* 地址选择器 */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		04507C1B23A357BC0086FE85 /* 地址选择器 */ = {
+			isa = PBXGroup;
+			children = (
+				04507C1C23A357BC0086FE85 /* area.plist */,
+				04507C1D23A357BC0086FE85 /* EWAddressModel.swift */,
+				04507C1E23A357BC0086FE85 /* EWAddressPickViewTableViewCell.swift */,
+				04507C1F23A357BC0086FE85 /* EWAddressPickView.swift */,
+				04507C2023A357BC0086FE85 /* EWAddressViewController.swift */,
+				04507C2123A357BC0086FE85 /* EWAddressPresentAnimated.swift */,
+			);
+			path = "地址选择器";
 			sourceTree = "<group>";
 		};
 		04A80ABB239E437300541C7D /* HKAddTapBlock */ = {
@@ -655,6 +689,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FA769682109C56F0014BE5A /* LaunchScreen.storyboard in Resources */,
+				04507C2623A357BC0086FE85 /* area.plist in Resources */,
 				04477F30239A3A9D0044B7C4 /* Localizable.strings in Resources */,
 				2FA769652109C56F0014BE5A /* Assets.xcassets in Resources */,
 				2FA769632109C56E0014BE5A /* Main.storyboard in Resources */,
@@ -743,16 +778,20 @@
 				04477F33239A3A9D0044B7C4 /* ESTabBarItemContentView.swift in Sources */,
 				0447649C2399379E005A4DFE /* Ext+UITextField.swift in Sources */,
 				0447647C23993308005A4DFE /* HKConfigPCH.swift in Sources */,
+				04507C2B23A357BC0086FE85 /* EWAddressPresentAnimated.swift in Sources */,
 				0447649E2399379E005A4DFE /* Ext+UIColor.swift in Sources */,
 				04477F35239A3A9D0044B7C4 /* ESTabBarItemBadgeView.swift in Sources */,
 				04477F36239A3A9D0044B7C4 /* ESTabBar.swift in Sources */,
 				04A80ACB239F33F700541C7D /* UITextField+Blocks.m in Sources */,
 				0447648723993599005A4DFE /* SecondViewController.swift in Sources */,
 				6890E9CA239A6AF000C71B92 /* HKAutoFitConfig.swift in Sources */,
+				04507C2A23A357BC0086FE85 /* EWAddressViewController.swift in Sources */,
 				0447648523993572005A4DFE /* HomeViewController.swift in Sources */,
+				04507C2723A357BC0086FE85 /* EWAddressModel.swift in Sources */,
 				04477F31239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift in Sources */,
 				0447647F23993457005A4DFE /* HKNavigationController.swift in Sources */,
 				0447649D2399379E005A4DFE /* Ext+UIDevice.swift in Sources */,
+				04507C2923A357BC0086FE85 /* EWAddressPickView.swift in Sources */,
 				044764A523993994005A4DFE /* HKProgressHUD.swift in Sources */,
 				0447648B239935DB005A4DFE /* FourViewControlller.swift in Sources */,
 				04A80AD9239F8B2200541C7D /* HKNSRange+String.swift in Sources */,
@@ -767,6 +806,7 @@
 				2FA7695E2109C56E0014BE5A /* AppDelegate.swift in Sources */,
 				04476489239935BA005A4DFE /* ThreeViewController.swift in Sources */,
 				04477F41239A46950044B7C4 /* ExampleBouncesContentView.swift in Sources */,
+				04507C2823A357BC0086FE85 /* EWAddressPickViewTableViewCell.swift in Sources */,
 				044764AF23993B9A005A4DFE /* HKHttpManager.swift in Sources */,
 				04507C1723A22B560086FE85 /* HKUserModel.swift in Sources */,
 			);
