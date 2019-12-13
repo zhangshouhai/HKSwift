@@ -12,8 +12,18 @@ class ThreeViewController: HKBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//         navView?.backgroundColor = UIColor.orangex
-        // Do any additional setup after loading the view.
+
+     
+        HKHttpManager.manager.requestJSONData(target: HKAPIManager.logout, successClosure: { (json) in
+            
+            print(json)
+        }) { (error) in
+            
+            print(error as Any)
+        }
+      
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

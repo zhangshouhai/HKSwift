@@ -9,11 +9,11 @@
 import Foundation
 
 
-//let uBaseURL                        = "https://www.iqicha.com.cn/api/"
+//let BaseURL                        = "https://www.iqicha.com.cn/api/"
 /**
  接口域名
  */
-let BaseURL                        = "http://sw.bos.baidu.com"
+let BaseURL                        = "http://v.juhe.cn/toutiao/index?type=top&key=240854347"
 
 /**
  接口方法名

@@ -6,9 +6,7 @@
 //  Copyright © 2019 DH add LK. All rights reserved.
 //
 
-import Foundation
 import Moya
-import Alamofire
 import Result
 import SwiftyJSON
 
@@ -25,7 +23,7 @@ public class HKHttpManager {
         let requestTimeoutClosure = { (endpoint:Endpoint, done: @escaping MoyaProvider<T>.RequestResultClosure) in
             do {
                 var request = try endpoint.urlRequest()
-                request.timeoutInterval = 20 //设置请求超时时间
+                request.timeoutInterval = 60 //设置请求超时时间
                 done(.success(request))
             } catch {
                 return
