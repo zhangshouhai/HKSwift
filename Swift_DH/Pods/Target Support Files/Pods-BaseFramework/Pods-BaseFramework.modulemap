@@ -1,4 +1,4 @@
-module Pods_BaseFramework {
+framework module Pods_BaseFramework {
   umbrella header "Pods-BaseFramework-umbrella.h"
 
   export *

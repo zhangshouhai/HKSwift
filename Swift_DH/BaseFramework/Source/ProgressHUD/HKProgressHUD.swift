@@ -22,7 +22,7 @@ class HKProgressHUD: NSObject {
     class func initHKProgressHUD() {
         SVProgressHUD.setFont(UIFont.systemFont(ofSize: 14.0))
         SVProgressHUD.setDefaultMaskType(.none)
-        SVProgressHUD.setMinimumDismissTimeInterval(1.5)
+        SVProgressHUD.setMinimumDismissTimeInterval(1.0)
     }
     
     class func showSuccess(_ status: String) {

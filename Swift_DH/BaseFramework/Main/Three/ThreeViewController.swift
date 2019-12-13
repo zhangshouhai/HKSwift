@@ -14,12 +14,17 @@ class ThreeViewController: HKBaseViewController {
         super.viewDidLoad()
 
      
+        HKProgressHUD.showLoading("")
         HKHttpManager.manager.requestJSONData(target: HKAPIManager.logout, successClosure: { (json) in
             
-            print(json)
-        }) { (error) in
+//             HKProgressHUD.dismissHUD()
+//            print("success" ,json)
+            HKProgressHUD.showSuccess("请求成功")
             
-            print(error as Any)
+            
+        }) { (error) in
+//            HKProgressHUD.dismissHUD()
+            print("er" , error as Any)
         }
       
         

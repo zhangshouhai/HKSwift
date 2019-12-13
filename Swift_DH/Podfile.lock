@@ -1,6 +1,8 @@
 PODS:
   - Alamofire (4.9.1)
   - CryptoSwift (1.2.0)
+  - FWCycleScrollView (2.1.2):
+    - Kingfisher
   - HandyJSON (5.0.0-beta.1)
   - Kingfisher (4.8.1)
   - MJRefresh (3.1.15.3)
@@ -9,6 +11,7 @@ PODS:
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
+  - ObjectMapper (3.5.1)
   - Result (4.1.0)
   - SnapKit (4.0.0)
   - SVProgressHUD (2.2.5)
@@ -16,10 +19,12 @@ PODS:
 
 DEPENDENCIES:
   - CryptoSwift
+  - FWCycleScrollView
   - HandyJSON (from `https://github.com/alibaba/HandyJSON.git`, branch `dev_for_swift5.0`)
   - Kingfisher
   - MJRefresh
   - Moya
+  - ObjectMapper
   - SnapKit
   - SVProgressHUD
   - SwiftyJSON
@@ -34,7 +39,9 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - CryptoSwift
+    - FWCycleScrollView
     - Moya
+    - ObjectMapper
     - Result
 
 EXTERNAL SOURCES:
@@ -50,15 +57,17 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   CryptoSwift: 40e374e45291d8dceedcb0d6184da94533eaabdf
+  FWCycleScrollView: 193be41b84d5c8400116d4e6c6f6e2deadd28f8d
   HandyJSON: 582477127ab3ab65bd2e471815f1a7b846856978
   Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: f074b60f71db778848b067d5bf8fbe84ae9ae317
+PODFILE CHECKSUM: 287f7bb1b3737b65582f663612de201dc141eaa0
 
 COCOAPODS: 1.8.4
