@@ -100,19 +100,13 @@ public let HKUserKey: NSString            = "user" //登录用户信息
 
 // 颜色
 public let HKNavBgColor: NSString            = "#22B9C8" //导航颜色
-public let HKNavTitleColor: NSString          = "#FFFFFF" //导航颜色
-public let cBackgroundColor: NSString        = "#F5F5F5"
-public let cGapLineColor: NSString           = "#E1E3E6"
-public let cDarkGrayColor: NSString          = "#989898"
-public let cLightGrayColor: NSString         = "#d8d8d8"
-public let cCoffeeColor: NSString            = "#895327"  // "#5F3916"  // "#59371C"   // "#8b572a"
-public let cDarkCoffee: NSString             = "#5e3b1e"
-public let cLightCoffee: NSString            = "#baa796"
-public let cThemeYellow: NSString            = "#fdd649"
-public let cLineColor: NSString              = "#eeeeee"
-public let cTextColor: NSString              = "#333333"
-public let cOrangeColor: NSString            = "#fb9648"
-public let cLightPink: NSString              = "#fae4d7"
+public let HKNavTitleColor: NSString          = "#FFFFFF" //导航Title颜色
+
+public let HKTabbarTextColor: NSString        = "#000000" //tabbarTextColor
+public let HKTabbarImageColor: NSString        = "#000000"//tabbarImageColor
+public let HKTabbarTextSeledColor: NSString        = "#CB011D"//tabbarTextSeledColor
+public let HKTabbarImageSeledColor: NSString        = "#CB011D"//tabbarImageSeledColor
+
 
 
 

@@ -99,14 +99,14 @@ open class ESTabBarItemContentView: UIView {
     }
     
     /// Icon imageView renderingMode, default is .alwaysTemplate like UITabBarItem
-    open var renderingMode: UIImage.RenderingMode = .alwaysTemplate {
+    open var renderingMode: UIImage.RenderingMode = .alwaysOriginal {
         didSet {
             self.updateDisplay()
         }
     }
     
     /// Item content mode, default is .alwaysTemplate like UITabBarItem
-    open var itemContentMode: ESTabBarItemContentMode = .alwaysTemplate {
+    open var itemContentMode: ESTabBarItemContentMode = .alwaysOriginal {
         didSet {
             self.updateDisplay()
         }
@@ -200,6 +200,9 @@ open class ESTabBarItemContentView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    /**
+        tabbar 图片渲染 染色设置
+     */
     open func updateDisplay() {
         imageView.image = (selected ? (selectedImage ?? image) : image)?.withRenderingMode(renderingMode)
         imageView.tintColor = selected ? highlightIconColor : iconColor
@@ -214,7 +217,10 @@ open class ESTabBarItemContentView: UIView {
         imageView.isHidden = (imageView.image == nil)
         titleLabel.isHidden = (titleLabel.text == nil)
 
-        if self.itemContentMode == .alwaysTemplate {
+        /**
+            tabbar 图片渲染 染色设置
+        */
+        if self.itemContentMode == .alwaysOriginal {
             var s: CGFloat = 0.0 // image size
             var f: CGFloat = 0.0 // font
             var isLandscape = false

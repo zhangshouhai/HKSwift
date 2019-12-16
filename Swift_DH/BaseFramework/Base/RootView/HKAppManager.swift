@@ -34,8 +34,8 @@ class HKAppManager: NSObject {
             nav2.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "作品", image: UIImage(named: "作品-点击前"), selectedImage: UIImage(named: "作品-点击状态"))
             nav3.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "技艺", image: UIImage(named: "技艺-点击前"), selectedImage: UIImage(named: "技艺-点击状态"))
             nav4.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "我的", image: UIImage(named: "我的-点击前"), selectedImage: UIImage(named: "我的-点击状态"))
-        
-        
+            
+
         
             tabBarController.viewControllers = [navi, nav2, nav3, nav4]
             tabBarController.shouldHijackHandler = {

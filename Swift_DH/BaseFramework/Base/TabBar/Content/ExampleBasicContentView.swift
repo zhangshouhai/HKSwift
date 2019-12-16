@@ -13,10 +13,10 @@ class ExampleBasicContentView: ESTabBarItemContentView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        textColor = UIColor.gray
-        highlightTextColor = UIColor.black
-        iconColor = UIColor.black
-        highlightIconColor = UIColor.black
+        textColor = UIColor.colorWithHexString(colorString: HKTabbarTextColor)
+        highlightTextColor = UIColor.colorWithHexString(colorString: HKTabbarTextSeledColor)
+        iconColor = UIColor.colorWithHexString(colorString: HKTabbarImageColor)
+        highlightIconColor = UIColor.colorWithHexString(colorString: HKTabbarImageSeledColor)
     }
     
     public required init?(coder aDecoder: NSCoder) {
