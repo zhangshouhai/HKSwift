@@ -48,7 +48,6 @@ class HKAppManager: NSObject {
 //                }
                 return false
             }
-        
 
             return tabBarController
        }
@@ -56,8 +55,12 @@ class HKAppManager: NSObject {
 
     // 选择根控制器
     func chooseRootVC(window: UIWindow) {
-        
         window.rootViewController = myTabBar
+        
+    }
+    
+    func setWelcomeView(window:UIWindow){
+//        window.rootViewController?.view.addSubview(UIView())
     }
     
     

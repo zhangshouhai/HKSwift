@@ -30,13 +30,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         HKAppManager.sharedInstance.chooseRootVC(window: window!)
         
         self.window?.makeKeyAndVisible()
+        
+        
         // 初始化第三方应用
         HKAppManager.sharedInstance.initAppWithApplication(application: application, launchOptions: launchOptions)
         
         return true
     }
     
-    
+
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

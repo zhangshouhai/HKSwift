@@ -221,7 +221,6 @@
 				0447647D23993443005A4DFE /* BaseNavController */,
 				04476471239931CB005A4DFE /* BaseModel */,
 				04476474239931CB005A4DFE /* BaseTableViewCell */,
-				04476476239931CB005A4DFE /* BaseView */,
 				04476473239931CB005A4DFE /* BaseViewController */,
 				04476472239931CB005A4DFE /* RootView */,
 				04476475239931CB005A4DFE /* TabBar */,
@@ -332,13 +331,6 @@
 				04477F26239A3A9D0044B7C4 /* TabBar_Swift */,
 			);
 			path = TabBar;
-			sourceTree = "<group>";
-		};
-		04476476239931CB005A4DFE /* BaseView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BaseView;
 			sourceTree = "<group>";
 		};
 		0447647D23993443005A4DFE /* BaseNavController */ = {
