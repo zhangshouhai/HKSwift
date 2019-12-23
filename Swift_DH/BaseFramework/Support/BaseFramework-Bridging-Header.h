@@ -14,6 +14,7 @@
 #import "UIView+BlockGesture.h"
 #import "UILabel+ChangeLineSpaceAndWordSpace.h"
 #import "UITextField+Blocks.h"
+#import "WelcomeView.h"
 
 #endif /* BaseFramework_Bridging_Header_h */
 
