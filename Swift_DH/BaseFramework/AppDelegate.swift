@@ -27,13 +27,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 程序启动完后显示状态栏
         application.isStatusBarHidden = false
         
-        HKAppManager.sharedInstance.chooseRootVC(window: window!)
+        if !UserDefaults.standard.bool(forKey: "FIRSTSTART") {
+            HKAppManager.sharedInstance.jumpToWelcomeVC(window: window!)
+        } else {
+            HKAppManager.sharedInstance.chooseRootVC(window: window!)
+        }
+        
+        
         
         self.window?.makeKeyAndVisible()
         
         
         // 初始化第三方应用
         HKAppManager.sharedInstance.initAppWithApplication(application: application, launchOptions: launchOptions)
+        
+    
         
         return true
     }

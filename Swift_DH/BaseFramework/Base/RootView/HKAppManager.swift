@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import GuidePageView
 
 class HKAppManager: NSObject {
     
@@ -51,6 +51,31 @@ class HKAppManager: NSObject {
 
             return tabBarController
        }
+    
+    
+    private var myWelcomeVC : UIViewController! {
+        let viewController = UIViewController()
+        viewController.view.backgroundColor = UIColor.white
+        
+        viewController.view.frame = CGRect(x: 0, y: 0, width: kMainScreen_width, height:kMainScreen_height)
+
+        //满足条件,说明是第一次运行,然后用字典在沙盒中写入文件,并将值改为YES,项目以后再运行,读取到的值均为YES
+        UserDefaults.standard.set(true, forKey: "FIRSTSTART")
+
+        let imageGifArray = ["guideImage1.jpg","guideImage6.gif","guideImage7.gif","guideImage3.jpg", "guideImage5.jpg"]
+        let guideView = GuidePageView.init(images: imageGifArray, loginRegistCompletion: {
+                    print("登录/注册")
+                }) {
+                    print("开始使用app")
+                    let window = UIApplication.shared.keyWindow
+                    window?.rootViewController = self.myTabBar!
+
+                }
+        //        guideView.isSlipIntoHomeView = true
+        viewController.view.addSubview(guideView)
+    
+        return viewController
+    }
 
 
     // 选择根控制器
@@ -63,12 +88,17 @@ class HKAppManager: NSObject {
 //        window.rootViewController?.view.addSubview(UIView())
     }
     
+    func jumpToWelcomeVC(window: UIWindow) {
+        window.rootViewController = myWelcomeVC
+    }
+    
     
     
     // APP初始化
     func initAppWithApplication(application: UIApplication, launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
         
     }
+    
     
     // 跳转到主页
     func jumpToMainVC(window: UIWindow) {

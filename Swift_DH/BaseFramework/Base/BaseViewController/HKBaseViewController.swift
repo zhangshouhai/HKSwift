@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GuidePageView
 
 @objc protocol HKBaseViewControllerDelegate : NSObjectProtocol {
     @objc optional func left_button_event()
@@ -85,7 +86,8 @@ class HKBaseViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
         self.setnavViewUI()
         navView?.addSubview(self.navLeftBtn)
-       
+        
+//        self.setWelcomeView()
     }
     
     func setnavViewUI() {
@@ -159,10 +161,21 @@ class HKBaseViewController: UIViewController {
          return true;
      }
     
+    
+    func setWelcomeView() {
+        let imageGifArray = ["guideImage1.jpg","guideImage6.gif","guideImage7.gif","guideImage3.jpg", "guideImage5.jpg"]
+        let guideView = GuidePageView.init(images: imageGifArray, loginRegistCompletion: {
+            print("登录/注册")
+        }) {
+            print("开始使用app")
+        }
+//        guideView.isSlipIntoHomeView = true
+        self.view.addSubview(guideView)
+    }
+    
    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
