@@ -18,7 +18,6 @@ target 'BaseFramework' do
     pod 'Moya'              # 网络请求封装
     pod 'CryptoSwift'       # 加密库（MD5、SHA、AES...）
     pod 'HandyJSON',:git => 'https://github.com/alibaba/HandyJSON.git', :branch => 'dev_for_swift5.0'
-    pod 'SnapKit'           # UI布局（类似Masonry）
     pod 'FWCycleScrollView' #轮播组件
 
     pod 'MJRefresh'
