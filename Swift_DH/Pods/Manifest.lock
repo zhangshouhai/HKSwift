@@ -17,6 +17,7 @@ PODS:
   - SnapKit (4.0.0)
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (4.1.0)
+  - YCShadowView (1.2.0)
 
 DEPENDENCIES:
   - CryptoSwift
@@ -30,6 +31,7 @@ DEPENDENCIES:
   - SnapKit
   - SVProgressHUD
   - SwiftyJSON
+  - YCShadowView
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -39,6 +41,7 @@ SPEC REPOS:
     - SnapKit
     - SVProgressHUD
     - SwiftyJSON
+    - YCShadowView
   trunk:
     - Alamofire
     - CryptoSwift
@@ -71,7 +74,8 @@ SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  YCShadowView: cbd3215cefcd2a985ce3827e9f32152609968480
 
-PODFILE CHECKSUM: 89ef8b197b57a0ff5f581d0c3ea58a5c758926df
+PODFILE CHECKSUM: 4f521510a03370546f9b3f47b3cf6f2b92886c92
 
 COCOAPODS: 1.8.4

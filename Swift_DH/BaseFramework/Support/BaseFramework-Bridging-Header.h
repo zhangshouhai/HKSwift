@@ -15,6 +15,7 @@
 #import "UILabel+ChangeLineSpaceAndWordSpace.h"
 #import "UITextField+Blocks.h"
 #import "WelcomeView.h"
+#import <YCShadowView/YCShadowView.h>
 
 #endif /* BaseFramework_Bridging_Header_h */
 

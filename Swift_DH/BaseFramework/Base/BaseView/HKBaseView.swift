@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import YCShadowView
 
-class HKBaseView: UIView {
+class HKBaseView: YCShadowView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
