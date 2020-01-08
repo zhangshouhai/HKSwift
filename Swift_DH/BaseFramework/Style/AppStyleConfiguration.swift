@@ -49,6 +49,23 @@ class AppStyleConfiguration {
         let labelSize = NSString(string: text).boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
         return labelSize.width
     }
+    
+    /**
+    *  计算文字的宽度
+    */
+    class func getTextHeight(textStr :  String, font : UIFont, width : CGFloat)  -> CGFloat {
+        
+        let normalText : NSString = textStr as NSString
+        
+        let size = CGSize(width: width, height:1000) //CGSizeMake(width,1000)
+        
+        let dic = NSDictionary(object: font, forKey : kCTFontAttributeName as! NSCopying)
+        
+        let stringSize = normalText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: dic as? [NSAttributedString.Key:Any], context:nil).size
+        
+        return stringSize.height
+        
+    }
 
 
 
