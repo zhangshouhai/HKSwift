@@ -25,19 +25,6 @@ class HKBaseTableViewCell: UITableViewCell {
     public func layoutView() {
         
     }
-    
-    override func updateConstraints() {
-        layoutView()
-        self.updateConstraints()
-    }
-    
-       // layoutSubviews 和OC一样 addSubView 方法自动调用
-       override func layoutSubviews() {
-           
-           
-    
-       }
-    
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

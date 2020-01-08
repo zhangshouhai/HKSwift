@@ -42,6 +42,7 @@ class FourViewController: HKBaseViewController {
         cycleScrollView.itemDidScrollBlock = { (index) in
             // print("当前轮播到了第\(index + 1)个广告位")
         }
+        
         return cycleScrollView
     }()
     
