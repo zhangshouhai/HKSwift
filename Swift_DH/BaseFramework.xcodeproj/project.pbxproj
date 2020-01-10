@@ -76,6 +76,7 @@
 		6890E9CA239A6AF000C71B92 /* HKAutoFitConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6890E9C9239A6AF000C71B92 /* HKAutoFitConfig.swift */; };
 		68914871239F3EAA00B5AA99 /* HKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68914870239F3EAA00B5AA99 /* HKTextField.swift */; };
 		68914874239F683800B5AA99 /* HKTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68914873239F683800B5AA99 /* HKTextView.swift */; };
+		68AB5C8123C86E450036FB80 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AB5C8023C86E450036FB80 /* BaseTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +176,7 @@
 		6890E9C9239A6AF000C71B92 /* HKAutoFitConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKAutoFitConfig.swift; sourceTree = "<group>"; };
 		68914870239F3EAA00B5AA99 /* HKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTextField.swift; sourceTree = "<group>"; };
 		68914873239F683800B5AA99 /* HKTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTextView.swift; sourceTree = "<group>"; };
+		68AB5C8023C86E450036FB80 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		86B459FC6505AB857502F297 /* Pods-BaseFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.release.xcconfig"; sourceTree = "<group>"; };
 		95794D4CEE91DA976377A15F /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		B321C059C7DF8E283DE11269 /* Pods_BaseFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -318,6 +320,7 @@
 		04476473239931CB005A4DFE /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
+				68AB5C8023C86E450036FB80 /* BaseTableViewController.swift */,
 				0447648223993543005A4DFE /* HKBaseViewController.swift */,
 			);
 			path = BaseViewController;
@@ -796,6 +799,7 @@
 				04476481239934EF005A4DFE /* LoginViewController.swift in Sources */,
 				68306072239E26D800362C59 /* HKBaseView.swift in Sources */,
 				04507C1923A22C770086FE85 /* HKTool.swift in Sources */,
+				68AB5C8123C86E450036FB80 /* BaseTableViewController.swift in Sources */,
 				0447648323993543005A4DFE /* HKBaseViewController.swift in Sources */,
 				04A80ABE239E437300541C7D /* UIView+BlockGesture.m in Sources */,
 				044764A12399379E005A4DFE /* Ext+CGFloat.swift in Sources */,

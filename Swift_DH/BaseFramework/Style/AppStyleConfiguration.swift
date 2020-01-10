@@ -264,7 +264,9 @@ class AppStyleConfiguration {
           return true;
       }
       
-    
+    class func colorWithLineColor() -> UIColor? {
+        return UIColor.colorWithHexString(colorString: "#EFEFEF")
+    }
     
     
 
