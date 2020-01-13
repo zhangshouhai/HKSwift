@@ -17,10 +17,12 @@ class ThreeViewController: BaseTableViewController {
     }
     
     func setupUI() {
-        tableView.backgroundColor = UIColor.white
-        tableView.separatorStyle = .none
-        tableView.estimatedRowHeight = 0
-        tableView.rowHeight = 0
+        tableView.snp.makeConstraints { (make) in
+            make.left.right.equalTo(0);
+            make.top.equalTo(kMainTopHeight)
+            make.bottom.equalTo(0);
+        }
+      
         Cell<HKAccontCell>.registerClass(tableView)
     }
 
@@ -60,10 +62,9 @@ extension ThreeViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = Cell<HKAccontCell>.tableView(tableView)
-    
-//        let cell = HKAccontCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "HKAccontCell")
-        cell.
-    
+
+        cell.setAccontCellToTitle(titleString: "titelabel1",subtitle: "subtitle1",leftimageStr: "")
+
         return cell
     }
     

@@ -20,8 +20,7 @@ class HKAccontCell: HKBaseTableViewCell {
         self.leftHeaderView = UIImageView.init()
         self.rightImageView = UIImageView.init()
      
-        
-        
+   
         self.titLabel = HKLabel(font: HKFixHeightFlaot(14), color: UIColor.black, text: "This is a Lab")
         self.titLabel?.textAlignment = NSTextAlignment.left
       
@@ -82,17 +81,11 @@ class HKAccontCell: HKBaseTableViewCell {
     }
     
     
-    func setAccontCellToTitle(titleString: String,subtitle:String,leftimageStr:String) {
+    func setAccontCellToTitle(titleString: String,subtitle:String,leftimageStr:String) -> Void {
         self.titLabel?.text = titleString
         self.leftHeaderView?.image = UIImage(named: leftimageStr)
         self.rightLabel?.text = subtitle
     }
-    
-    
-    
-    
-    
-    
     
     
 

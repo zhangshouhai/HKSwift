@@ -25,11 +25,17 @@ class BaseTableViewController: HKBaseViewController {
         tableView.estimatedRowHeight = 0
         tableView.estimatedSectionHeaderHeight = 0
         tableView.estimatedSectionFooterHeight = 0
+        
+        tableView.separatorStyle = .none
+        tableView.rowHeight = 0
+
         tableView.delegate = self
         tableView.dataSource = self
         view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view)
+            make.left.right.equalTo(0);
+            make.top.equalTo(kMainTopHeight)
+            make.bottom.equalTo(0);
         }
     }
 }
