@@ -33,11 +33,7 @@ class AppStyleConfiguration {
         
     }
     
-    
 
-    
-    
-    
     /**
      *  计算文字的宽度
      */

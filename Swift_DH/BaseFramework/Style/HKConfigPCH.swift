@@ -108,6 +108,9 @@ public let HKTabbarTextSeledColor: NSString        = "#CB011D"//tabbarTextSeledC
 public let HKTabbarImageSeledColor: NSString        = "#CB011D"//tabbarImageSeledColor
 
 
+public let HKLineViewColor: NSString        = "#EFEFEF" //cell 分割线 Color
+
+
 
 
 // MARK: - 过滤 null ===================================================
