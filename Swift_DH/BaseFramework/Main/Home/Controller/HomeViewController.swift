@@ -2,7 +2,7 @@
 //  HomeViewController.swift
 //  BaseFramework
 //
-//  Created by mac on 2019/12/5.
+//  Created by 张寿海 on 2019/12/5.
 //  Copyright © 2019 DH add LK. All rights reserved.
 //
 import UIKit
@@ -43,7 +43,7 @@ class HomeViewController: HKBaseViewController {
                    make.width.equalTo(300)
                }
                
-               HKFontBoldSystem(label: label, font: fontSize24)
+            HKFontBoldSystem(label: label, font: fontSize24)
         
         
 //        AppStyleConfiguration.messageAction(label: label, changeString: "zhang", allColor:UIColor.red, markColor:UIColor.green, fontSize: 30)
@@ -63,16 +63,7 @@ class HomeViewController: HKBaseViewController {
         
         MyControl.setObject(dic1, key: HKUserKey as String)
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+  
 
     }
     

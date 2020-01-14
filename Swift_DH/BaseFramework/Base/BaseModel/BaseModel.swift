@@ -2,8 +2,8 @@
 //  BaseModel.swift
 //  BaseFramework
 //
-//  Created by mac on 2019/12/12.
-//  Copyright © 2019 贾则栋. All rights reserved.
+//  Created by 张寿海 on 2019/12/12.
+//  Copyright © 2019 HK. All rights reserved.
 //
 
 import UIKit
