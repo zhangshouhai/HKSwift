@@ -20,3 +20,20 @@ func HKLabel(font:CGFloat,color:UIColor,text:String) -> UILabel{
     return label;
     
 }
+/***
+ 字体加粗
+ */
+func HKFontBoldSystem(label:UILabel,font:CGFloat) -> Void{
+   
+    label.font = UIFont.boldSystemFont(ofSize: font)
+   
+}
+
+/***
+ 字体 不加粗
+ */
+func HKFontSystem(label:UILabel,font:CGFloat) -> Void{
+   
+    label.font = UIFont.systemFont(ofSize: font)
+   
+}
