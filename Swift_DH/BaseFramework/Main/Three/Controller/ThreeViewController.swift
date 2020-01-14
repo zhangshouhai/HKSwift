@@ -63,7 +63,8 @@ extension ThreeViewController {
 
         let cell = Cell<HKAccontCell>.tableView(tableView)
 
-        cell.setAccontCellToTitle(titleString: "titelabel1",subtitle: "subtitle1",leftimageStr: "")
+        cell.setAccontCellToTitle(titleString: "titelabel1",subtitle: "subtitle1",leftimageStr: "Accont_Iocn")
+        cell.hidenRightImageView()
 
         return cell
     }

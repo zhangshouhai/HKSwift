@@ -19,6 +19,8 @@ class HKAccontCell: HKBaseTableViewCell {
         
         self.leftHeaderView = UIImageView.init()
         self.rightImageView = UIImageView.init()
+        self.rightImageView?.image = UIImage(named: "HK_right_Icon")
+        self.rightImageView?.contentMode = .scaleAspectFill
      
    
         self.titLabel = HKLabel(font: HKFixHeightFlaot(14), color: UIColor.black, text: "This is a Lab")
@@ -62,7 +64,7 @@ class HKAccontCell: HKBaseTableViewCell {
         self.rightImageView?.snp.makeConstraints({ (make) in
             make.right.equalTo(HKFixWidthFlaot(-10))
             make.centerY.equalTo(self.snp_centerY)
-            make.height.width.equalTo(HKFixHeightFlaot(25))
+            make.height.width.equalTo(HKFixHeightFlaot(20))
         })
   
         self.rightLabel?.snp.makeConstraints({ (make) in
@@ -86,6 +88,34 @@ class HKAccontCell: HKBaseTableViewCell {
         self.leftHeaderView?.image = UIImage(named: leftimageStr)
         self.rightLabel?.text = subtitle
     }
+    
+    /**
+       隐藏 右侧 subTitle
+    */
+    func hidenRightTitle() -> Void{
+        self.rightLabel?.isHidden = true
+        
+    }
+    /**
+    隐藏 右侧 图标
+    */
+    func hidenRightImageView() -> Void{
+        self.rightImageView?.isHidden = true
+        self.rightLabel?.snp.makeConstraints({ (make) in
+            make.right.equalTo(HKFixWidthFlaot(-15))
+        })
+        
+    }
+    /**
+     隐藏 左侧 图标
+     */
+    func hidenLeftImageView() -> Void{
+           self.leftHeaderView?.isHidden = true
+           self.titLabel?.snp.makeConstraints({ (make) in
+               make.left.equalTo(HKFixWidthFlaot(20))
+           })
+           
+       }
     
     
 
