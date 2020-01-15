@@ -83,10 +83,7 @@ class HKAppManager: NSObject {
         window.rootViewController = myTabBar
         
     }
-    
-    func setWelcomeView(window:UIWindow){
-//        window.rootViewController?.view.addSubview(UIView())
-    }
+
     
     func jumpToWelcomeVC(window: UIWindow) {
         window.rootViewController = myWelcomeVC
@@ -111,4 +108,44 @@ class HKAppManager: NSObject {
         window.rootViewController = LoginViewController()
     }
     
+    // 跳转到登录
+    func launchExample04(window: UIWindow) {
+        
+        
+        ZLaunchAd.create(showEnterForeground: true, timeForWillEnterForeground: 10, adNetRequest: { adView in
+            let buttonConfig = ZLaunchSkipButtonConfig()
+            buttonConfig.skipBtnType = .timer
+            let imageResource = ZLaunchAdImageResourceConfigure()
+            imageResource.imageNameOrImageURL = "http://chatm-icon.oss-cn-beijing.aliyuncs.com/pic/pic_20171109135437541.png"
+            imageResource.animationType = .crossDissolve
+            imageResource.imageDuration = 3
+            imageResource.imageFrame = CGRect(x: 0, y: 0, width: Z_SCREEN_WIDTH, height: Z_SCREEN_HEIGHT-75)
+            
+            adView.setImageResource(imageResource, buttonConfig: buttonConfig, action: {
+                let vc = HKBaseViewController()
+                window.rootViewController?.navigationController?.pushViewController(vc, animated: true)
+            })
+            
+            
+        }).endOfCountDown {
+            printLog("倒计时结束了-----")
+        }
+        
+        
+    }
+    
+    
+    
+    
+}
+
+
+extension HKAppManager
+{
+    /// 进入前台时显示
+    /// `showEnterForeground`需要设置为`true`，`timeForWillEnterForeground`为app进入后台到再次进入前台的时间
+
+    func launchExample04(_ homeVC: UIViewController) {
+        
+    }
 }

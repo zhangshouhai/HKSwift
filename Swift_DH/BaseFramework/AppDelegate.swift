@@ -32,6 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             HKAppManager.sharedInstance.chooseRootVC(window: window!)
         }
+        //广告页添加
+        HKAppManager.sharedInstance.launchExample04(window: window!)
         
         
         
