@@ -23,11 +23,11 @@ class HKAccontCell: HKBaseTableViewCell {
         self.rightImageView?.contentMode = .scaleAspectFill
      
    
-        self.titLabel = HKLabel(font: HKFixHeightFlaot(14), color: UIColor.black, text: "This is a Lab")
+        self.titLabel = HKLabel(font: fontSize14, color: UIColor.black, text: "This is a Lab")
         self.titLabel?.textAlignment = NSTextAlignment.left
       
 
-        self.rightLabel = HKLabel(font: HKFixHeightFlaot(12), color: UIColor.gray, text: "this is  a subLabel")
+        self.rightLabel = HKLabel(font: fontSize12, color: UIColor.gray, text: "this is  a subLabel")
         self.rightLabel?.textAlignment = NSTextAlignment.right
        
         

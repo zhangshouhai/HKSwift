@@ -37,7 +37,7 @@ class HKTextField: HKBaseView,UITextFieldDelegate {
         }
         
         if leftLabStr.count > 0  {
-            let label = HKLabel(font: HKFixWidthFlaot(14), color: UIColor.gray, text: leftLabStr)
+            let label = HKLabel(font: fontSize14, color: UIColor.gray, text: leftLabStr)
             self.addSubview(label)
             let labWidth = AppStyleConfiguration.labelWidth(leftLabStr, CGFloat.greatestFiniteMagnitude)
             label.snp.makeConstraints { (make) in

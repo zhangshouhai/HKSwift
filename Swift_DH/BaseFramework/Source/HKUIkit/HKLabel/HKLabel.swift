@@ -10,11 +10,11 @@ import Foundation
 
 
 
-func HKLabel(font:CGFloat,color:UIColor,text:String) -> UILabel{
+func HKLabel(font:UIFont,color:UIColor,text:String) -> UILabel{
     let label = UILabel()
     label.text = text
     label.textColor = color
-    label.font = UIFont.systemFont(ofSize: font)
+    label.font = font
     label.textAlignment = .left
     label.lineBreakMode = .byTruncatingTail
     return label;
@@ -23,17 +23,18 @@ func HKLabel(font:CGFloat,color:UIColor,text:String) -> UILabel{
 /***
  字体加粗
  */
-func HKFontBoldSystem(label:UILabel,font:CGFloat) -> Void{
+func HKFontBoldSystem(label:UILabel,font:UIFont) -> Void{
    
-    label.font = UIFont.boldSystemFont(ofSize: font)
+    let fontSize : CGFloat = font.pointSize
+    label.font = UIFont.boldSystemFont(ofSize: fontSize)
    
 }
 
 /***
  字体 不加粗
  */
-func HKFontSystem(label:UILabel,font:CGFloat) -> Void{
+func HKFontSystem(label:UILabel,font:UIFont) -> Void{
    
-    label.font = UIFont.systemFont(ofSize: font)
+    label.font = font
    
 }

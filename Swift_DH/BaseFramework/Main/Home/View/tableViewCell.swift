@@ -12,7 +12,7 @@ class TempTableViewCell: HKBaseTableViewCell {
     var titleLab : UILabel?
     
     override func loadView() {
-        self.titleLab = HKLabel(font: HKFixHeightFlaot(14), color: UIColor.black, text: "This is a Lab")
+        self.titleLab = HKLabel(font: fontSize14, color: UIColor.black, text: "This is a Lab")
         self.titleLab?.textAlignment = NSTextAlignment.center
         
         self.contentView.addSubview(self.titleLab!)

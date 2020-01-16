@@ -18,7 +18,7 @@ class SecondViewController: HKBaseViewController {
         
 
         
-                let label = HKLabel(font: 13, color: UIColor.green, text: "zhangshouahi")
+                let label = HKLabel(font: fontSize13, color: UIColor.green, text: "zhangshouahi")
                 self.view.addSubview(label)
                 label.snp.makeConstraints { (make) in
                     make.top.equalTo(100)
