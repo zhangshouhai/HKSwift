@@ -34,9 +34,7 @@ class HKAppManager: NSObject {
             nav2.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "作品", image: UIImage(named: "作品-点击前"), selectedImage: UIImage(named: "作品-点击状态"))
             nav3.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "技艺", image: UIImage(named: "技艺-点击前"), selectedImage: UIImage(named: "技艺-点击状态"))
             nav4.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "我的", image: UIImage(named: "我的-点击前"), selectedImage: UIImage(named: "我的-点击状态"))
-            
 
-        
             tabBarController.viewControllers = [navi, nav2, nav3, nav4]
             tabBarController.shouldHijackHandler = {
                 tabbarController, viewController, index in
@@ -48,7 +46,6 @@ class HKAppManager: NSObject {
 //                }
                 return false
             }
-
             return tabBarController
        }
     
@@ -91,7 +88,7 @@ class HKAppManager: NSObject {
     
     
     
-    // APP初始化
+    // APP初始化 第三方应用
     func initAppWithApplication(application: UIApplication, launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
         
     }
@@ -123,6 +120,7 @@ class HKAppManager: NSObject {
             
             adView.setImageResource(imageResource, buttonConfig: buttonConfig, action: {
                 let vc = HKBaseViewController()
+                vc.view.backgroundColor = UIColor.red
                 window.rootViewController?.navigationController?.pushViewController(vc, animated: true)
             })
             
@@ -140,12 +138,3 @@ class HKAppManager: NSObject {
 }
 
 
-extension HKAppManager
-{
-    /// 进入前台时显示
-    /// `showEnterForeground`需要设置为`true`，`timeForWillEnterForeground`为app进入后台到再次进入前台的时间
-
-    func launchExample04(_ homeVC: UIViewController) {
-        
-    }
-}

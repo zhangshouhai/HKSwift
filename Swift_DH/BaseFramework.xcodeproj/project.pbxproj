@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		036507B6D29BDC32B5FE56BE /* Pods_BaseFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B321C059C7DF8E283DE11269 /* Pods_BaseFramework.framework */; };
+		0401A3DA23CFF95A00D57346 /* HKStartAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401A3D923CFF95A00D57346 /* HKStartAnimationView.swift */; };
+		0401A3DC23CFFF1D00D57346 /* launch_image1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0401A3DB23CFFF1D00D57346 /* launch_image1.gif */; };
 		0410BCBF23CC5B0C00875FDE /* HKAccontCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410BCBE23CC5B0C00875FDE /* HKAccontCell.swift */; };
 		0410BCC123CC665700875FDE /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410BCC023CC665700875FDE /* Cell.swift */; };
 		043BA54223CEB9CD0049C666 /* ZLaunchAdImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BA53723CEB9CD0049C666 /* ZLaunchAdImageView.swift */; };
@@ -110,6 +112,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0401A3D923CFF95A00D57346 /* HKStartAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKStartAnimationView.swift; sourceTree = "<group>"; };
+		0401A3DB23CFFF1D00D57346 /* launch_image1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = launch_image1.gif; sourceTree = "<group>"; };
 		0410BCBE23CC5B0C00875FDE /* HKAccontCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKAccontCell.swift; sourceTree = "<group>"; };
 		0410BCC023CC665700875FDE /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		043BA53723CEB9CD0049C666 /* ZLaunchAdImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchAdImageView.swift; sourceTree = "<group>"; };
@@ -477,8 +481,10 @@
 		04476472239931CB005A4DFE /* RootView */ = {
 			isa = PBXGroup;
 			children = (
+				0401A3DB23CFFF1D00D57346 /* launch_image1.gif */,
 				04476477239931F1005A4DFE /* HKAppManager.swift */,
 				685FFF8523B0650B009DDC25 /* HKRootViewController.swift */,
+				0401A3D923CFF95A00D57346 /* HKStartAnimationView.swift */,
 			);
 			path = RootView;
 			sourceTree = "<group>";
@@ -894,6 +900,7 @@
 				04477F30239A3A9D0044B7C4 /* Localizable.strings in Resources */,
 				2FA769652109C56F0014BE5A /* Assets.xcassets in Resources */,
 				2FA769632109C56E0014BE5A /* Main.storyboard in Resources */,
+				0401A3DC23CFFF1D00D57346 /* launch_image1.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -969,6 +976,7 @@
 				043BA54C23CEB9CD0049C666 /* ZLaunchAdAnimation.swift in Sources */,
 				68306072239E26D800362C59 /* HKBaseView.swift in Sources */,
 				04507C1923A22C770086FE85 /* HKTool.swift in Sources */,
+				0401A3DA23CFF95A00D57346 /* HKStartAnimationView.swift in Sources */,
 				68AB5C8123C86E450036FB80 /* BaseTableViewController.swift in Sources */,
 				043BA54423CEB9CD0049C666 /* ZLaunchImageView.swift in Sources */,
 				0447648323993543005A4DFE /* HKBaseViewController.swift in Sources */,

@@ -26,28 +26,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.statusBarStyle = UIStatusBarStyle.default
         // 程序启动完后显示状态栏
         application.isStatusBarHidden = false
+
+        
+//        self.window?.makeKeyAndVisible()
+       
         
         if !UserDefaults.standard.bool(forKey: "FIRSTSTART") {
             HKAppManager.sharedInstance.jumpToWelcomeVC(window: window!)
         } else {
             HKAppManager.sharedInstance.chooseRootVC(window: window!)
         }
-        //广告页添加
-        HKAppManager.sharedInstance.launchExample04(window: window!)
-        
-        
-        
-        self.window?.makeKeyAndVisible()
-        
-        
+
+        addLaunchImageView(window: window!)
+
         // 初始化第三方应用
         HKAppManager.sharedInstance.initAppWithApplication(application: application, launchOptions: launchOptions)
-        
-    
         
         return true
     }
     
+    func addLaunchImageView(window: UIWindow) {
+           self.window?.makeKeyAndVisible()
+           let launchImageView = LaunchImageView.init(frame: CGRect.init(x: 0, y: 0, width: kMainScreen_width, height: kMainScreen_height))
+           launchImageView.backgroundColor = UIColor.white
+           self.window?.addSubview(launchImageView)
+           self.window?.bringSubview(toFront: launchImageView)
+        
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            UIView.animate(withDuration: 0.0, animations: {
+                launchImageView.alpha = 0
+                launchImageView.removeFromSuperview()
+                //广告页
+                HKAppManager.sharedInstance.launchExample04(window: window)
+         }, completion: {[weak self] (finished:Bool) in
+
+           })
+
+        }
+       }
+   
 
 
     func applicationWillResignActive(_ application: UIApplication) {
