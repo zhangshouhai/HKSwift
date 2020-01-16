@@ -60,7 +60,7 @@
         }
 
         //设置引导页上的页面控制器
-        self.imagePageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(SCREEN_WIDTH*0.1, SCREEN_HEIGHT*0.9, SCREEN_WIDTH*0.9, 50)];
+        ]initWithFrame:CGRectMake(SCREEN_WIDTH*0.1, SCREEN_HEIGHT*0.9, SCREEN_WIDTH*0.9, 50)];
         self.imagePageControl.currentPage = 0;
         self.imagePageControl.numberOfPages = images.count;
         self.imagePageControl.pageIndicatorTintColor = [UIColor grayColor];
