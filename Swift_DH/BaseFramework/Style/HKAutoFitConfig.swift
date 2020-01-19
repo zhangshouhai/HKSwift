@@ -29,7 +29,7 @@ public func HKFixHeightFlaot(_ height: CGFloat) -> CGFloat {
 
 public func FontWithStr(_ font:CGFloat) -> CGFloat {
     
-    if (kMainScreen_width == 320)
+    if (kMainScreen_width==320)
     {
         return font - 1;
     }

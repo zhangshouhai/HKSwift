@@ -17,6 +17,7 @@ func HKLabel(font:UIFont,color:UIColor,text:String) -> UILabel{
     label.font = font
     label.textAlignment = .left
     label.lineBreakMode = .byTruncatingTail
+    label.isUserInteractionEnabled = true
     return label;
     
 }
