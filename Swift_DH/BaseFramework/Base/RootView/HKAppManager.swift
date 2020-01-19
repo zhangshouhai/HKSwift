@@ -19,19 +19,19 @@ class HKAppManager: NSObject {
           let tabBarController = ESTabBarController()
         
             let v1 = LKTestViewController()
-            let navi = UINavigationController(rootViewController:v1)
+            let navi = HKNavigationController(rootViewController:v1)
         
             let v2 = SecondViewController()
-            let nav2 = UINavigationController(rootViewController:v2)
+            let nav2 = HKNavigationController(rootViewController:v2)
         
             let v3 = ThreeViewController()
-            let nav3 = UINavigationController(rootViewController:v3)
+            let nav3 = HKNavigationController(rootViewController:v3)
         
             let v4 = FourViewController()
-            let nav4 = UINavigationController(rootViewController:v4)
+            let nav4 = HKNavigationController(rootViewController:v4)
         
             let v5 = FiveController()
-            let nav5 = UINavigationController(rootViewController: v5)
+            let nav5 = HKNavigationController(rootViewController: v5)
         
             navi.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "首页", image: UIImage(named: "首页-点击前"), selectedImage: UIImage(named: "首页-点击状态"))
             nav2.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "作品", image: UIImage(named: "作品-点击前"), selectedImage: UIImage(named: "作品-点击状态"))

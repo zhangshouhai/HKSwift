@@ -35,7 +35,7 @@ class TempTableViewCell: HKBaseTableViewCell {
 class LKTestTableViewCell: HKBaseTableViewCell {
     private lazy var backView : UIView = {
         let temp = UIView()
-        temp.backgroundColor = .white
+        temp.backgroundColor = .clear
         
         return temp
     }()
