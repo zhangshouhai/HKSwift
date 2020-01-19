@@ -11,26 +11,24 @@ import SnapKit
 
 class HomeViewController: HKBaseViewController {
 
+    
+    //导航栏标题
+    lazy var navSeacheView:DHNavSeachView = {
+        let navView = DHNavSeachView()
+        return navView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.titleLabel.text = "导航栏"
+//        self.titleLabel.text = "导航栏"
+        self.navView?.isHidden = true
+        
+        self.view.addSubview(navSeacheView)
+        navSeacheView.frame = CGRect(x: 0, y: 0, width: kMainScreen_width, height: kMainTopHeight)
  
         
-        
-        
 
-   
-        
-        
-        
-
-        
-        
-     
-        
-  
 
     }
     

@@ -15,6 +15,7 @@ class DHNavSeachView: HKBaseTableViewCell {
     
     override func loadView() {
         
+        self.backgroundColor = UIColor.colorWithHexString(colorString: HKNavBgColor)
      
         self.rightButton = HKButton(backColor: UIColor.black, text: "消息", image: "", isRadius: true)
         self.rightButton?.setTitleColor(UIColor.white, for: .normal)
@@ -24,7 +25,7 @@ class DHNavSeachView: HKBaseTableViewCell {
         
         
         self.navTextFiled = HKTextField()
-        self.navTextFiled?.createHKTextField(font: 14, text: "", placeholder: "搜索疾病、医生+城市、医院等", keyboardType: .default, leftLabStr: "", leftImgStr: "", rightImgStr: "", showLine: false)
+        self.navTextFiled?.createHKTextField(font: 14, text: "", placeholder: "搜索疾病、医生+城市、医院等", keyboardType: .webSearch, leftLabStr: "", leftImgStr: "", rightImgStr: "", showLine: false)
         
         
         self.contentView.addSubview(self.rightButton!)

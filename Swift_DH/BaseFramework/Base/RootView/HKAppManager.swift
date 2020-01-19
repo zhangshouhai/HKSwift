@@ -18,7 +18,7 @@ class HKAppManager: NSObject {
     private var myTabBar: ESTabBarController! {
           let tabBarController = ESTabBarController()
         
-            let v1 = LKTestViewController()
+            let v1 = HomeViewController()
             let navi = HKNavigationController(rootViewController:v1)
         
             let v2 = SecondViewController()
