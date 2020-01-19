@@ -11,27 +11,32 @@ import UIKit
 
 class BaseTableViewController: HKBaseViewController {
 
-    var tableView: UITableView!
+    lazy var tableView : HKBaseTableView = {
+        let tableView = HKBaseTableView(frame: .zero, style: style)
+        tableView.showsVerticalScrollIndicator = false
+        tableView.separatorColor = AppStyleConfiguration.colorWithLineColor()
+        tableView.estimatedRowHeight = 0
+        tableView.estimatedSectionHeaderHeight = 0
+        tableView.estimatedSectionFooterHeight = 0
+        tableView.separatorStyle = .none
+        tableView.rowHeight = 0
+        tableView.delegate = self
+        tableView.dataSource = self
+        return tableView
+    }()
     
     var style: UITableView.Style = .grouped
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView = UITableView(frame: .zero, style: style)
+        let temp : String = tableView.backgroundImgStr
+        if temp.count > 0 {
+            tableView.backgroundColor = UIColor.init(patternImage: UIImage(named: tableView.backgroundImgStr)!)
+        } else {
+            tableView.backgroundColor = .white
+        }
         
-        tableView.backgroundColor = .white
-        tableView.showsVerticalScrollIndicator = false
-        tableView.separatorColor = AppStyleConfiguration.colorWithLineColor()
-        tableView.estimatedRowHeight = 0
-        tableView.estimatedSectionHeaderHeight = 0
-        tableView.estimatedSectionFooterHeight = 0
-        
-        tableView.separatorStyle = .none
-        tableView.rowHeight = 0
-
-        tableView.delegate = self
-        tableView.dataSource = self
         view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
             make.left.right.equalTo(0);

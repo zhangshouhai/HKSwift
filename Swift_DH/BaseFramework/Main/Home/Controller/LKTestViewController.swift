@@ -17,12 +17,14 @@ class LKTestViewController: BaseTableViewController {
     var type = NSString()
     
     override func viewDidLoad() {
+        //如果要定义背景图片，需要写在super.viewDidLoad()前面
+        tableView.backgroundImgStr = "guideImage4"
         super.viewDidLoad()
         setupUI()
     }
     
     func setupUI() {
-        tableView.backgroundColor = UIColor.init(patternImage: UIImage(named: "guideImage4")!)
+//        tableView.backgroundColor = UIColor.init(patternImage: UIImage(named: "guideImage4")!)
     }
     
     

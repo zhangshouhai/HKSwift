@@ -88,6 +88,7 @@
 		2FA7697E2109C56F0014BE5A /* BaseFrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7697D2109C56F0014BE5A /* BaseFrameworkUITests.swift */; };
 		68128AED23D436EC00C6D585 /* LKTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68128AEC23D436EC00C6D585 /* LKTestViewController.swift */; };
 		68128AF023D4374000C6D585 /* HKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68128AEF23D4374000C6D585 /* HKView.swift */; };
+		68128AF223D43FD400C6D585 /* HKBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68128AF123D43FD400C6D585 /* HKBaseTableView.swift */; };
 		682067A6239E221100A4B0D4 /* HKBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682067A5239E221100A4B0D4 /* HKBaseTableViewCell.swift */; };
 		6826FB2D23AF426700EE44AF /* WelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6826FB2C23AF426700EE44AF /* WelcomeView.m */; };
 		6830606F239E243F00362C59 /* tableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6830606E239E243F00362C59 /* tableViewCell.swift */; };
@@ -208,6 +209,7 @@
 		2FA769982109C9470014BE5A /* BaseFramework-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseFramework-Bridging-Header.h"; sourceTree = "<group>"; };
 		68128AEC23D436EC00C6D585 /* LKTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKTestViewController.swift; sourceTree = "<group>"; };
 		68128AEF23D4374000C6D585 /* HKView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKView.swift; sourceTree = "<group>"; };
+		68128AF123D43FD400C6D585 /* HKBaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKBaseTableView.swift; sourceTree = "<group>"; };
 		682067A5239E221100A4B0D4 /* HKBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HKBaseTableViewCell.swift; path = BaseFramework/Style/HKBaseTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		6826FB2B23AF426700EE44AF /* WelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeView.h; sourceTree = "<group>"; };
 		6826FB2C23AF426700EE44AF /* WelcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeView.m; sourceTree = "<group>"; };
@@ -515,6 +517,7 @@
 		04476474239931CB005A4DFE /* BaseTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				68128AF123D43FD400C6D585 /* HKBaseTableView.swift */,
 				0410BCC023CC665700875FDE /* Cell.swift */,
 				682067A5239E221100A4B0D4 /* HKBaseTableViewCell.swift */,
 			);
@@ -1061,6 +1064,7 @@
 				0447649E2399379E005A4DFE /* Ext+UIColor.swift in Sources */,
 				04477F35239A3A9D0044B7C4 /* ESTabBarItemBadgeView.swift in Sources */,
 				04477F36239A3A9D0044B7C4 /* ESTabBar.swift in Sources */,
+				68128AF223D43FD400C6D585 /* HKBaseTableView.swift in Sources */,
 				04A80ACB239F33F700541C7D /* UITextField+Blocks.m in Sources */,
 				0447648723993599005A4DFE /* SecondViewController.swift in Sources */,
 				04507C3823A35F4E0086FE85 /* LYPopMenuModel.swift in Sources */,
