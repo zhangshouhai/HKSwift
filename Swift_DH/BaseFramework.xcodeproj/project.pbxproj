@@ -86,6 +86,9 @@
 		2FA769682109C56F0014BE5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769662109C56F0014BE5A /* LaunchScreen.storyboard */; };
 		2FA769732109C56F0014BE5A /* BaseFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA769722109C56F0014BE5A /* BaseFrameworkTests.swift */; };
 		2FA7697E2109C56F0014BE5A /* BaseFrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7697D2109C56F0014BE5A /* BaseFrameworkUITests.swift */; };
+		68128AEB23D436D000C6D585 /* HKBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68128AEA23D436D000C6D585 /* HKBaseTableView.swift */; };
+		68128AED23D436EC00C6D585 /* LKTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68128AEC23D436EC00C6D585 /* LKTestViewController.swift */; };
+		68128AF023D4374000C6D585 /* HKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68128AEF23D4374000C6D585 /* HKView.swift */; };
 		682067A6239E221100A4B0D4 /* HKBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682067A5239E221100A4B0D4 /* HKBaseTableViewCell.swift */; };
 		6826FB2D23AF426700EE44AF /* WelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6826FB2C23AF426700EE44AF /* WelcomeView.m */; };
 		6830606F239E243F00362C59 /* tableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6830606E239E243F00362C59 /* tableViewCell.swift */; };
@@ -204,6 +207,9 @@
 		2FA7697D2109C56F0014BE5A /* BaseFrameworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFrameworkUITests.swift; sourceTree = "<group>"; };
 		2FA7697F2109C56F0014BE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA769982109C9470014BE5A /* BaseFramework-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseFramework-Bridging-Header.h"; sourceTree = "<group>"; };
+		68128AEA23D436D000C6D585 /* HKBaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKBaseTableView.swift; sourceTree = "<group>"; };
+		68128AEC23D436EC00C6D585 /* LKTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKTestViewController.swift; sourceTree = "<group>"; };
+		68128AEF23D4374000C6D585 /* HKView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKView.swift; sourceTree = "<group>"; };
 		682067A5239E221100A4B0D4 /* HKBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HKBaseTableViewCell.swift; path = BaseFramework/Style/HKBaseTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		6826FB2B23AF426700EE44AF /* WelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeView.h; sourceTree = "<group>"; };
 		6826FB2C23AF426700EE44AF /* WelcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeView.m; sourceTree = "<group>"; };
@@ -324,6 +330,7 @@
 		0410BCB923CC5A9D00875FDE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				68128AEC23D436EC00C6D585 /* LKTestViewController.swift */,
 				0447648423993572005A4DFE /* HomeViewController.swift */,
 			);
 			path = Controller;
@@ -510,6 +517,7 @@
 		04476474239931CB005A4DFE /* BaseTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				68128AEA23D436D000C6D585 /* HKBaseTableView.swift */,
 				0410BCC023CC665700875FDE /* Cell.swift */,
 				682067A5239E221100A4B0D4 /* HKBaseTableViewCell.swift */,
 			);
@@ -558,6 +566,7 @@
 		044764A623993A2B005A4DFE /* HKUIkit */ = {
 			isa = PBXGroup;
 			children = (
+				68128AEE23D4373300C6D585 /* HKView */,
 				68914872239F682B00B5AA99 /* HKTextView */,
 				04A80AC3239F209700541C7D /* HKButton */,
 				04A80AC2239F209700541C7D /* HKImageView */,
@@ -809,6 +818,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		68128AEE23D4373300C6D585 /* HKView */ = {
+			isa = PBXGroup;
+			children = (
+				68128AEF23D4374000C6D585 /* HKView.swift */,
+			);
+			path = HKView;
+			sourceTree = "<group>";
+		};
 		6826FB2223AF3FB900EE44AF /* 引导页 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1016,6 +1033,7 @@
 				04A80AC6239F20D400541C7D /* HKImageView.swift in Sources */,
 				04476481239934EF005A4DFE /* LoginViewController.swift in Sources */,
 				043BA54823CEB9CD0049C666 /* ZLaunchLog.swift in Sources */,
+				68128AF023D4374000C6D585 /* HKView.swift in Sources */,
 				0410BCBF23CC5B0C00875FDE /* HKAccontCell.swift in Sources */,
 				043BA54C23CEB9CD0049C666 /* ZLaunchAdAnimation.swift in Sources */,
 				68306072239E26D800362C59 /* HKBaseView.swift in Sources */,
@@ -1083,10 +1101,12 @@
 				2FA7695E2109C56E0014BE5A /* AppDelegate.swift in Sources */,
 				04476489239935BA005A4DFE /* ThreeViewController.swift in Sources */,
 				6826FB2D23AF426700EE44AF /* WelcomeView.m in Sources */,
+				68128AEB23D436D000C6D585 /* HKBaseTableView.swift in Sources */,
 				04477F41239A46950044B7C4 /* ExampleBouncesContentView.swift in Sources */,
 				04507C2823A357BC0086FE85 /* EWAddressPickViewTableViewCell.swift in Sources */,
 				044764AF23993B9A005A4DFE /* HKHttpManager.swift in Sources */,
 				04507C1723A22B560086FE85 /* HKUserModel.swift in Sources */,
+				68128AED23D436EC00C6D585 /* LKTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

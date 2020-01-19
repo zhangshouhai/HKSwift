@@ -31,3 +31,38 @@ class TempTableViewCell: HKBaseTableViewCell {
         self.titleLab?.text = titleString
     }
 }
+
+class LKTestTableViewCell: HKBaseTableViewCell {
+    private lazy var backView : UIView = {
+        let temp = UIView()
+        temp.backgroundColor = .white
+        
+        return temp
+    }()
+    
+    private lazy var titlelab : UILabel = {
+        let temp = HKLabel(font: fontSize14,
+                           color: .black,
+                           text: "这里是标题")
+        return temp
+    }()
+    
+    override func loadView() {
+        self.backgroundColor = .clear
+        self.addSubview(backView)
+        backView.addSubview(titlelab)
+    }
+    
+    override func layoutView() {
+        backView.snp.makeConstraints { (make) in
+            make.left.equalTo(HKFixWidthFlaot(15))
+            make.right.equalTo(HKFixWidthFlaot(-15))
+            make.top.equalTo(HKFixHeightFlaot(10))
+            make.bottom.equalTo(HKFixHeightFlaot(-10))
+        }
+        
+        titlelab.snp.makeConstraints { (make) in
+            make.center.equalTo(backView)
+        }
+    }
+}
