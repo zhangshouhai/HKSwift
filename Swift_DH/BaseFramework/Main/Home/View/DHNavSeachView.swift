@@ -22,10 +22,12 @@ class DHNavSeachView: HKBaseTableViewCell {
         self.rightButton?.layer.cornerRadius = 25/2
         self.rightButton?.layer.borderColor = UIColor.white.cgColor
         self.rightButton?.layer.borderWidth = 1;
+        self.rightButton?.setBackgroundColor(UIColor.colorWithHexString(colorString: HKNavBgColor), forState: .normal)
         
         
         self.navTextFiled = HKTextField()
-        self.navTextFiled?.createHKTextField(font: 14, text: "", placeholder: "搜索疾病、医生+城市、医院等", keyboardType: .webSearch, leftLabStr: "", leftImgStr: "", rightImgStr: "", showLine: false)
+        self.navTextFiled?.isUserInteractionEnabled = false
+        self.navTextFiled?.createHKTextField(font: 14, text: "", placeholder: "搜索疾病、医生+城市、医院等", keyboardType: .webSearch, leftLabStr: "", leftImgStr: "seach", rightImgStr: "", showLine: false)
         
         
         self.contentView.addSubview(self.rightButton!)
