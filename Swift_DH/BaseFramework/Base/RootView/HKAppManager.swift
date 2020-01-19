@@ -30,12 +30,18 @@ class HKAppManager: NSObject {
             let v4 = FourViewController()
             let nav4 = UINavigationController(rootViewController:v4)
         
+            let v5 = FiveController()
+            let nav5 = UINavigationController(rootViewController: v5)
+        
             navi.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "首页", image: UIImage(named: "首页-点击前"), selectedImage: UIImage(named: "首页-点击状态"))
             nav2.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "作品", image: UIImage(named: "作品-点击前"), selectedImage: UIImage(named: "作品-点击状态"))
             nav3.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "技艺", image: UIImage(named: "技艺-点击前"), selectedImage: UIImage(named: "技艺-点击状态"))
-            nav4.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "我的", image: UIImage(named: "我的-点击前"), selectedImage: UIImage(named: "我的-点击状态"))
+            nav4.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "消息", image: UIImage(named: "我的-点击前"), selectedImage: UIImage(named: "我的-点击状态"))
+        
+        
+            nav5.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "我的", image: UIImage(named: "我的-点击前"), selectedImage: UIImage(named: "我的-点击状态"))
 
-            tabBarController.viewControllers = [navi, nav2, nav3, nav4]
+            tabBarController.viewControllers = [navi, nav2, nav3, nav4,nav5]
             tabBarController.shouldHijackHandler = {
                 tabbarController, viewController, index in
 //                if index == 3 {

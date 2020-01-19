@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.isStatusBarHidden = false
 
         
-//        self.window?.makeKeyAndVisible()
+        self.window?.makeKeyAndVisible()
        
         
         if !UserDefaults.standard.bool(forKey: "FIRSTSTART") {
@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             HKAppManager.sharedInstance.chooseRootVC(window: window!)
         }
 
-        addLaunchImageView(window: window!)
+//        addLaunchImageView(window: window!)
 
         // 初始化第三方应用
         HKAppManager.sharedInstance.initAppWithApplication(application: application, launchOptions: launchOptions)
@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func addLaunchImageView(window: UIWindow) {
-           self.window?.makeKeyAndVisible()
+//           self.window?.makeKeyAndVisible()
            let launchImageView = LaunchImageView.init(frame: CGRect.init(x: 0, y: 0, width: kMainScreen_width, height: kMainScreen_height))
            launchImageView.backgroundColor = UIColor.white
            self.window?.addSubview(launchImageView)

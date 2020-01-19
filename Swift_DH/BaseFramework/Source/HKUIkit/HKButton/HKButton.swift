@@ -20,8 +20,8 @@ func HKButton(backColor:UIColor,text:String,image:String,isRadius:Bool) -> UIBut
         button.layer.cornerRadius = 5
     }
     if  image.count > 0  {
-        button.setTitle("", for: .normal)
-        button.setBackgroundImage(UIImage(named: image), for: .normal)
+        button.setTitle(text, for: .normal)
+        button.setImage(UIImage(named: image), for: .normal)
     }
     return button;
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class SecondViewController: HKBaseViewController {
 
-        private var currentDateCom: DateComponents = Calendar.current.dateComponents([.year, .month, .day], from: Date())
+    private var currentDateCom: DateComponents = Calendar.current.dateComponents([.year, .month, .day], from: Date())
     
     
     override func viewDidLoad() {
@@ -29,27 +29,7 @@ class SecondViewController: HKBaseViewController {
         label.isUserInteractionEnabled = true
 
         label.addTapAction { (tap) in
-//            print("zhangksdjkjfksdjflsldkdflds")
-//
-//            let vc = SecondPushView()
-//            self.navigationController?.pushViewController(vc, animated: true)
-            
-            
             print(HKTool.shardTool.userModel().userName!)
-            
-            
-            
-            let addressPicker = EWAddressViewController()
-                 /*** 可使用这种init方法自定制选中颜色,不填写selectColor默认颜色为UIColor(red: 79/255, green: 176/255, blue: 255/255, alpha: 1),蓝色
-                 let addressPicker = EWAddressViewController(selectColor: UIColor.yellow)
-                  */
-                 // 返回选择数据,地址,省,市,区
-                 addressPicker.backLocationStringController = { (address,province,city,area) in
-                     label.text = address
-                 }
-                 self.present(addressPicker, animated: true, completion: nil)
-            
-            
         }
         
 

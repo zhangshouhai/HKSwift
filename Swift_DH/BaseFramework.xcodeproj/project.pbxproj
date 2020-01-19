@@ -10,6 +10,7 @@
 		036507B6D29BDC32B5FE56BE /* Pods_BaseFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B321C059C7DF8E283DE11269 /* Pods_BaseFramework.framework */; };
 		0401A3DA23CFF95A00D57346 /* HKStartAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401A3D923CFF95A00D57346 /* HKStartAnimationView.swift */; };
 		0401A3DC23CFFF1D00D57346 /* launch_image1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0401A3DB23CFFF1D00D57346 /* launch_image1.gif */; };
+		0401A3DE23D0579F00D57346 /* HKButton+EdgeInsetsStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401A3DD23D0579F00D57346 /* HKButton+EdgeInsetsStyle.swift */; };
 		0410BCBF23CC5B0C00875FDE /* HKAccontCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410BCBE23CC5B0C00875FDE /* HKAccontCell.swift */; };
 		0410BCC123CC665700875FDE /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410BCC023CC665700875FDE /* Cell.swift */; };
 		043BA54223CEB9CD0049C666 /* ZLaunchAdImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BA53723CEB9CD0049C666 /* ZLaunchAdImageView.swift */; };
@@ -76,6 +77,8 @@
 		04A80ACB239F33F700541C7D /* UITextField+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ACA239F33F700541C7D /* UITextField+Blocks.m */; };
 		04A80ACE239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ACD239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m */; };
 		04A80AD9239F8B2200541C7D /* HKNSRange+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AD8239F8B2200541C7D /* HKNSRange+String.swift */; };
+		04F38F8423D41E8500A9598E /* FiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8323D41E8500A9598E /* FiveController.swift */; };
+		04F38F8623D4206100A9598E /* DHHealthManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8523D4206100A9598E /* DHHealthManagementView.swift */; };
 		2FA7695E2109C56E0014BE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7695D2109C56E0014BE5A /* AppDelegate.swift */; };
 		2FA769632109C56E0014BE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769612109C56E0014BE5A /* Main.storyboard */; };
 		2FA769652109C56F0014BE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769642109C56F0014BE5A /* Assets.xcassets */; };
@@ -114,6 +117,7 @@
 /* Begin PBXFileReference section */
 		0401A3D923CFF95A00D57346 /* HKStartAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKStartAnimationView.swift; sourceTree = "<group>"; };
 		0401A3DB23CFFF1D00D57346 /* launch_image1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = launch_image1.gif; sourceTree = "<group>"; };
+		0401A3DD23D0579F00D57346 /* HKButton+EdgeInsetsStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKButton+EdgeInsetsStyle.swift"; sourceTree = "<group>"; };
 		0410BCBE23CC5B0C00875FDE /* HKAccontCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKAccontCell.swift; sourceTree = "<group>"; };
 		0410BCC023CC665700875FDE /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		043BA53723CEB9CD0049C666 /* ZLaunchAdImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchAdImageView.swift; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 		04A80ACC239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ChangeLineSpaceAndWordSpace.h"; sourceTree = "<group>"; };
 		04A80ACD239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ChangeLineSpaceAndWordSpace.m"; sourceTree = "<group>"; };
 		04A80AD8239F8B2200541C7D /* HKNSRange+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKNSRange+String.swift"; sourceTree = "<group>"; };
+		04F38F8323D41E8500A9598E /* FiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveController.swift; sourceTree = "<group>"; };
+		04F38F8523D4206100A9598E /* DHHealthManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHHealthManagementView.swift; sourceTree = "<group>"; };
 		2FA7695A2109C56E0014BE5A /* HKSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA7695D2109C56E0014BE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FA769622109C56E0014BE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -372,6 +378,7 @@
 		04476468239930BB005A4DFE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				04F38F7F23D41E3800A9598E /* Five */,
 				0447646C2399312B005A4DFE /* Four */,
 				0447646F2399312B005A4DFE /* Home */,
 				0447646E2399312B005A4DFE /* Login */,
@@ -550,7 +557,7 @@
 			isa = PBXGroup;
 			children = (
 				68914872239F682B00B5AA99 /* HKTextView */,
-				04A80AC3239F209700541C7D /* HKBUtton */,
+				04A80AC3239F209700541C7D /* HKButton */,
 				04A80AC2239F209700541C7D /* HKImageView */,
 				04A80AC1239F209700541C7D /* HKLabel */,
 				04A80AC4239F209700541C7D /* HKTextField */,
@@ -664,12 +671,13 @@
 			path = HKImageView;
 			sourceTree = "<group>";
 		};
-		04A80AC3239F209700541C7D /* HKBUtton */ = {
+		04A80AC3239F209700541C7D /* HKButton */ = {
 			isa = PBXGroup;
 			children = (
 				044764A823993A2B005A4DFE /* HKButton.swift */,
+				0401A3DD23D0579F00D57346 /* HKButton+EdgeInsetsStyle.swift */,
 			);
-			path = HKBUtton;
+			path = HKButton;
 			sourceTree = "<group>";
 		};
 		04A80AC4239F209700541C7D /* HKTextField */ = {
@@ -680,6 +688,39 @@
 				68914870239F3EAA00B5AA99 /* HKTextField.swift */,
 			);
 			path = HKTextField;
+			sourceTree = "<group>";
+		};
+		04F38F7F23D41E3800A9598E /* Five */ = {
+			isa = PBXGroup;
+			children = (
+				04F38F8223D41E6200A9598E /* Controller */,
+				04F38F8023D41E6200A9598E /* Model */,
+				04F38F8123D41E6200A9598E /* View */,
+			);
+			path = Five;
+			sourceTree = "<group>";
+		};
+		04F38F8023D41E6200A9598E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04F38F8123D41E6200A9598E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04F38F8523D4206100A9598E /* DHHealthManagementView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04F38F8223D41E6200A9598E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04F38F8323D41E8500A9598E /* FiveController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		2FA769512109C56E0014BE5A = {
@@ -1006,6 +1047,7 @@
 				0447648723993599005A4DFE /* SecondViewController.swift in Sources */,
 				04507C3823A35F4E0086FE85 /* LYPopMenuModel.swift in Sources */,
 				6890E9CA239A6AF000C71B92 /* HKAutoFitConfig.swift in Sources */,
+				04F38F8623D4206100A9598E /* DHHealthManagementView.swift in Sources */,
 				04507C2A23A357BC0086FE85 /* EWAddressViewController.swift in Sources */,
 				0410BCC123CC665700875FDE /* Cell.swift in Sources */,
 				0447648523993572005A4DFE /* HomeViewController.swift in Sources */,
@@ -1020,6 +1062,7 @@
 				04A80AD9239F8B2200541C7D /* HKNSRange+String.swift in Sources */,
 				04507C3523A35F4E0086FE85 /* LYPopMenuCell.swift in Sources */,
 				04A80AC0239E462400541C7D /* SecondPushView.swift in Sources */,
+				04F38F8423D41E8500A9598E /* FiveController.swift in Sources */,
 				685FFF8623B0650B009DDC25 /* HKRootViewController.swift in Sources */,
 				6830606F239E243F00362C59 /* tableViewCell.swift in Sources */,
 				043BA54623CEB9CD0049C666 /* ZLaunchAdConfig.swift in Sources */,
@@ -1028,6 +1071,7 @@
 				68914871239F3EAA00B5AA99 /* HKTextField.swift in Sources */,
 				0447649F2399379E005A4DFE /* Ext+UIButton.swift in Sources */,
 				043BA54523CEB9CD0049C666 /* ZLaunchAdCache.swift in Sources */,
+				0401A3DE23D0579F00D57346 /* HKButton+EdgeInsetsStyle.swift in Sources */,
 				043BA54723CEB9CD0049C666 /* ZLaunchAdMD5.swift in Sources */,
 				04476478239931F1005A4DFE /* HKAppManager.swift in Sources */,
 				044764AA23993A2B005A4DFE /* HKButton.swift in Sources */,
