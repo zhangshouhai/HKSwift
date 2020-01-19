@@ -78,9 +78,15 @@ class HKNavigationController: UINavigationController,UINavigationControllerDeleg
      *  @param viewController 即将push进来的控制器
      */
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+       
+        if childViewControllers.count>0{
+            viewController.hidesBottomBarWhenPushed = true
+        }
         super.pushViewController(viewController, animated: animated)
         
         if self.viewControllers.count > 0 {
+            
+
             if #available(iOS 11, *) {
                 let leftButton: UIButton = UIButton(type: UIButtonType.custom)
                 leftButton.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
@@ -101,6 +107,8 @@ class HKNavigationController: UINavigationController,UINavigationControllerDeleg
                 viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: leftButton)
             }
         }
+        
+         
     }
     
     

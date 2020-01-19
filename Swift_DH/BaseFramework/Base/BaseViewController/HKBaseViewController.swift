@@ -42,7 +42,7 @@ class HKBaseViewController: UIViewController {
     
     //导航栏标题
     lazy var titleLabel:UILabel = {
-        let titleStr = HKLabel(font: fontSize17, color:UIColor.colorWithHexString(colorString: HKNavTitleColor), text: "")
+        let titleStr = HKLabel(font: fontSize15, color:UIColor.colorWithHexString(colorString: HKNavTitleColor), text: "")
         titleStr.textAlignment = NSTextAlignment.center
         return titleStr
     }()

@@ -24,11 +24,11 @@ class DHHealthManagementView: HKBaseTableViewCell {
         
         self.titleButton = HKButton(backColor: UIColor.black, text: "", image: "", isRadius: true)
         
-        self.titleLabel = HKLabel(font: fontSize17, color: UIColor.black, text: "")
+        self.titleLabel = HKLabel(font: fontSize15, color: UIColor.black, text: "")
  
-        self.subTitleLabel = HKLabel(font: fontSize14, color: UIColor.gray, text: "")
+        self.subTitleLabel = HKLabel(font: fontSize13, color: UIColor.gray, text: "")
 
-        self.numLabel = HKLabel(font: fontSize13, color: UIColor.gray, text: "")
+        self.numLabel = HKLabel(font: fontSize12, color: UIColor.gray, text: "")
        
         self.leftHeaderView = UIImageView()
       
@@ -59,7 +59,7 @@ class DHHealthManagementView: HKBaseTableViewCell {
             make.left.equalTo(HKFixWidthFlaot(10))
             make.top.equalTo(HKFixWidthFlaot(10))
             make.height.equalTo(HKFixHeightFlaot(30))
-            make.width.equalTo(HKFixHeightFlaot(75))
+            make.width.equalTo(HKFixHeightFlaot(70))
         })
         
         self.leftHeaderView?.snp.makeConstraints({ (make) in
@@ -71,7 +71,7 @@ class DHHealthManagementView: HKBaseTableViewCell {
         
         self.titleLabel?.snp.makeConstraints({ (make) in
             make.left.equalTo(HKFixWidthFlaot(10))
-            make.top.equalTo(self.titleButton!.snp_bottom).offset(HKFixHeightFlaot(10))
+            make.top.equalTo(self.titleButton!.snp_bottom).offset(HKFixHeightFlaot(15))
             make.height.equalTo(HKFixWidthFlaot(20))
             make.right.equalTo(self.backView!.snp_centerX).offset(HKFixWidthFlaot(-5))
         })
@@ -79,14 +79,14 @@ class DHHealthManagementView: HKBaseTableViewCell {
         
         self.subTitleLabel?.snp.makeConstraints({ (make) in
             make.left.equalTo(HKFixWidthFlaot(10))
-            make.top.equalTo(self.titleLabel!.snp_bottom).offset(HKFixHeightFlaot(5))
+            make.top.equalTo(self.titleLabel!.snp_bottom).offset(HKFixHeightFlaot(10))
             make.height.equalTo(HKFixWidthFlaot(20))
             make.right.equalTo(self.backView!.snp_centerX).offset(HKFixWidthFlaot(-5))
         })
   
         self.numLabel?.snp.makeConstraints({ (make) in
             make.left.equalTo(HKFixWidthFlaot(10))
-            make.top.equalTo(self.subTitleLabel!.snp_bottom).offset(HKFixHeightFlaot(5))
+            make.top.equalTo(self.subTitleLabel!.snp_bottom).offset(HKFixHeightFlaot(10))
             make.height.equalTo(HKFixWidthFlaot(20))
             make.right.equalTo(self.backView!.snp_centerX).offset(HKFixWidthFlaot(-5))
         })

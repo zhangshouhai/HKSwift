@@ -1,5 +1,5 @@
 //
-//  FiveController.swift
+//  DHParentingVC.swift
 //  BaseFramework
 //
 //  Created by mac on 2020/1/19.
@@ -8,38 +8,31 @@
 
 import Foundation
 
-class FiveController: BaseTableViewController {
+class DHParentingVC: BaseTableViewController {
 
 
-     override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.titleLabel.text = "健康管理"
+    
+        self.titleLabel.text = "育儿"
         setupUI()
     }
     
-    
-    
-    func setupUI() {
-        tableView.snp.makeConstraints { (make) in
-            make.left.right.equalTo(0);
-            make.top.equalTo(kMainTopHeight)
-            make.bottom.equalTo(0);
-        }
-        
-        Cell<DHHealthManagementView>.registerClass(tableView)
-    }
+     func setupUI() {
+           tableView.snp.makeConstraints { (make) in
+               make.left.right.equalTo(0);
+               make.top.equalTo(kMainTopHeight)
+               make.bottom.equalTo(0);
+           }
+           
+           Cell<DHHealthManagementView>.registerClass(tableView)
+       }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
 }
 
 
-extension FiveController {
+extension DHParentingVC {
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
@@ -73,21 +66,14 @@ extension FiveController {
 
         cell.loadDataHealthHomeCell(titleString: "")
         cell.titleButton?.addTapAction({ (tap) in
-            self.pustParentingvc()
+            
         })
 
         return cell
     }
-    
-    func pustParentingvc() -> Void {
-        let parentingVC = DHParentingVC()
-        self.navigationController?.pushViewController(parentingVC, animated: true)
-    }
-    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
     
 }
-

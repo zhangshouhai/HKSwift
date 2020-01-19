@@ -79,6 +79,7 @@
 		04A80AD9239F8B2200541C7D /* HKNSRange+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AD8239F8B2200541C7D /* HKNSRange+String.swift */; };
 		04F38F8423D41E8500A9598E /* FiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8323D41E8500A9598E /* FiveController.swift */; };
 		04F38F8623D4206100A9598E /* DHHealthManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8523D4206100A9598E /* DHHealthManagementView.swift */; };
+		04F38F8823D4301200A9598E /* DHParentingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8723D4301200A9598E /* DHParentingVC.swift */; };
 		2FA7695E2109C56E0014BE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7695D2109C56E0014BE5A /* AppDelegate.swift */; };
 		2FA769632109C56E0014BE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769612109C56E0014BE5A /* Main.storyboard */; };
 		2FA769652109C56F0014BE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769642109C56F0014BE5A /* Assets.xcassets */; };
@@ -189,6 +190,7 @@
 		04A80AD8239F8B2200541C7D /* HKNSRange+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKNSRange+String.swift"; sourceTree = "<group>"; };
 		04F38F8323D41E8500A9598E /* FiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveController.swift; sourceTree = "<group>"; };
 		04F38F8523D4206100A9598E /* DHHealthManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHHealthManagementView.swift; sourceTree = "<group>"; };
+		04F38F8723D4301200A9598E /* DHParentingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHParentingVC.swift; sourceTree = "<group>"; };
 		2FA7695A2109C56E0014BE5A /* HKSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA7695D2109C56E0014BE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FA769622109C56E0014BE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -719,6 +721,7 @@
 			isa = PBXGroup;
 			children = (
 				04F38F8323D41E8500A9598E /* FiveController.swift */,
+				04F38F8723D4301200A9598E /* DHParentingVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1047,6 +1050,7 @@
 				0447648723993599005A4DFE /* SecondViewController.swift in Sources */,
 				04507C3823A35F4E0086FE85 /* LYPopMenuModel.swift in Sources */,
 				6890E9CA239A6AF000C71B92 /* HKAutoFitConfig.swift in Sources */,
+				04F38F8823D4301200A9598E /* DHParentingVC.swift in Sources */,
 				04F38F8623D4206100A9598E /* DHHealthManagementView.swift in Sources */,
 				04507C2A23A357BC0086FE85 /* EWAddressViewController.swift in Sources */,
 				0410BCC123CC665700875FDE /* Cell.swift in Sources */,
