@@ -15,6 +15,7 @@ func HKButton(backColor:UIColor,text:String,image:String,isRadius:Bool) -> UIBut
     button.setTitle(text, for: .normal)
     button.setTitleColor(UIColor.black, for: .normal)
     button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+    button.isUserInteractionEnabled = true
     if isRadius {
         button.clipsToBounds = true
         button.layer.cornerRadius = 5
