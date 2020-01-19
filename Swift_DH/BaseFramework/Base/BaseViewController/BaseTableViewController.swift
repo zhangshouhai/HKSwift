@@ -19,6 +19,7 @@ class BaseTableViewController: HKBaseViewController {
         super.viewDidLoad()
         
         tableView = UITableView(frame: .zero, style: style)
+        
         tableView.backgroundColor = .white
         tableView.showsVerticalScrollIndicator = false
         tableView.separatorColor = AppStyleConfiguration.colorWithLineColor()

@@ -52,7 +52,8 @@ extension LKTestViewController {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let temp = HomeViewController()
+        navigationController?.pushViewController(temp, animated: true)
     }
     
 }
