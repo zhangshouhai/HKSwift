@@ -11,8 +11,7 @@ import Foundation
 
 class HKTextField: HKBaseView,UITextFieldDelegate {
     
-    public func createHKTextField(font:CGFloat,text:String,placeholder:String,keyboardType:UIKeyboardType,leftLabStr:String, leftImgStr:String, rightImgStr:String ,showLine:Bool) -> HKBaseView{
-        let textFiledView = HKBaseView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+    public func createHKTextField(font:CGFloat,text:String,placeholder:String,keyboardType:UIKeyboardType,leftLabStr:String, leftImgStr:String, rightImgStr:String ,showLine:Bool) -> (){
         
         let textfield = UITextField(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         textfield.borderStyle = UITextBorderStyle.none
@@ -93,7 +92,6 @@ class HKTextField: HKBaseView,UITextFieldDelegate {
             }
             
         }
-        return textFiledView;
         
     }
     

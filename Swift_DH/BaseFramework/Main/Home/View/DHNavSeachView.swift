@@ -26,7 +26,7 @@ class DHNavSeachView: HKBaseTableViewCell {
         
         
         self.navTextFiled = HKTextField()
-        self.navTextFiled?.isUserInteractionEnabled = false
+//        self.navTextFiled?.isUserInteractionEnabled = false
         self.navTextFiled?.createHKTextField(font: 14, text: "", placeholder: "搜索疾病、医生+城市、医院等", keyboardType: .webSearch, leftLabStr: "", leftImgStr: "seach", rightImgStr: "", showLine: false)
         
         
