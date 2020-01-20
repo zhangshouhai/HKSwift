@@ -16,22 +16,23 @@ class SecondViewController: HKBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        self.titleLabel.text = "我的医生"
+        self.setHideLeftBtn()
         
-                let label = HKLabel(font: fontSize13, color: UIColor.green, text: "zhangshouahi")
-                self.view.addSubview(label)
-                label.snp.makeConstraints { (make) in
-                    make.top.equalTo(100)
-                    make.left.equalTo(20)
-                    make.height.equalTo(30)
-                    make.width.equalTo(100)
-                }
-        label.isUserInteractionEnabled = true
-
-        label.addTapAction { (tap) in
-            print(HKTool.shardTool.userModel().userName!)
-        }
-        
+//                let label = HKLabel(font: fontSize13, color: UIColor.green, text: "zhangshouahi")
+//                self.view.addSubview(label)
+//                label.snp.makeConstraints { (make) in
+//                    make.top.equalTo(100)
+//                    make.left.equalTo(20)
+//                    make.height.equalTo(30)
+//                    make.width.equalTo(100)
+//                }
+//        label.isUserInteractionEnabled = true
+//
+//        label.addTapAction { (tap) in
+//            print(HKTool.shardTool.userModel().userName!)
+//        }
+//
 
     }
 

@@ -28,43 +28,52 @@ class HKTextField: HKBaseView,UITextFieldDelegate {
         self.addSubview(textfield)
         
     
-        textfield.snp.makeConstraints { (make) in
-            make.left.equalToSuperview().offset(HKFixWidthFlaot(10))
-            make.centerY.equalToSuperview()
-            make.right.equalToSuperview().offset(-HKFixWidthFlaot(10))
-            make.top.equalToSuperview().offset(HKFixHeightFlaot(5))
-        }
-        
-        if leftLabStr.count > 0  {
-            let label = HKLabel(font: fontSize14, color: UIColor.gray, text: leftLabStr)
-            self.addSubview(label)
-            let labWidth = AppStyleConfiguration.labelWidth(leftLabStr, CGFloat.greatestFiniteMagnitude)
-            label.snp.makeConstraints { (make) in
-                make.left.equalTo(HKFixWidthFlaot(10))
-                make.centerY.equalToSuperview()
-                make.width.equalTo(labWidth)
-            }
-            textfield.snp.makeConstraints { (make) in
-                make.left.equalTo(label.snp_right).offset(HKFixWidthFlaot(5))
-                make.centerY.equalToSuperview()
-                make.right.equalToSuperview().offset(-HKFixWidthFlaot(10))
-                make.top.equalToSuperview().offset(HKFixHeightFlaot(5))
-            }
-        }
+//        textfield.snp.makeConstraints { (make) in
+//            make.left.equalTo(HKFixWidthFlaot(10))
+//            make.centerY.equalToSuperview()
+//            make.right.equalToSuperview().offset(-HKFixWidthFlaot(10))
+//            make.top.equalToSuperview().offset(HKFixHeightFlaot(5))
+//        }
+//
+//        if leftLabStr.count > 0  {
+//            let label = HKLabel(font: fontSize14, color: UIColor.gray, text: leftLabStr)
+//            self.addSubview(label)
+//            let labWidth = AppStyleConfiguration.labelWidth(leftLabStr, CGFloat.greatestFiniteMagnitude)
+//            label.snp.makeConstraints { (make) in
+//                make.left.equalTo(HKFixWidthFlaot(10))
+//                make.centerY.equalToSuperview()
+//                make.width.equalTo(labWidth)
+//            }
+//           textfield.snp_updateConstraints { (make) in
+//                make.left.equalTo(label.snp_right).offset(HKFixWidthFlaot(5))
+//                make.centerY.equalToSuperview()
+//                make.right.equalToSuperview().offset(-HKFixWidthFlaot(10))
+//                make.top.equalToSuperview().offset(HKFixHeightFlaot(5))
+//            }
+//        }
         
         if leftImgStr.count > 0 {
             let leftImgView = HKImageView(radius: 0.0, isRadius: true)
             leftImgView.image = UIImage.init(named: leftImgStr)
             leftImgView.width = (leftImgView.image?.size.width)!+20
             leftImgView.contentMode = UIViewContentMode.center
-            textfield.leftView = leftImgView
+            self.addSubview(leftImgView)
+            
+            leftImgView.snp.makeConstraints { (make) in
+                make.left.equalTo(HKFixWidthFlaot(10))
+                make.centerY.equalToSuperview()
+                make.width.height.equalTo(30)
+            }
             
             textfield.snp.makeConstraints { (make) in
-                make.left.equalToSuperview().offset(HKFixWidthFlaot(10))
+                make.left.equalTo(leftImgView.snp_right).offset(HKFixWidthFlaot(5))
                 make.centerY.equalToSuperview()
                 make.right.equalToSuperview().offset(-HKFixWidthFlaot(10))
                 make.top.equalToSuperview().offset(HKFixHeightFlaot(5))
             }
+            
+
+            
         }
         
         if rightImgStr.count > 0 {
@@ -74,12 +83,12 @@ class HKTextField: HKBaseView,UITextFieldDelegate {
             rightImgView.contentMode = UIViewContentMode.center
             textfield.rightView = rightImgView
             
-            textfield.snp.makeConstraints { (make) in
-                make.left.equalToSuperview().offset(HKFixWidthFlaot(10))
-                make.centerY.equalToSuperview()
-                make.right.equalToSuperview().offset(-HKFixWidthFlaot(10))
-                make.top.equalToSuperview().offset(HKFixHeightFlaot(5))
-            }
+//           textfield.snp_updateConstraints { (make) in
+//                make.left.equalToSuperview().offset(HKFixWidthFlaot(10))
+//                make.centerY.equalToSuperview()
+//                make.right.equalToSuperview().offset(-HKFixWidthFlaot(10))
+//                make.top.equalToSuperview().offset(HKFixHeightFlaot(5))
+//            }
         }
         
         if showLine {

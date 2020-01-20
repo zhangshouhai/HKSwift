@@ -42,12 +42,12 @@ class HKNavigationController: UINavigationController,UINavigationControllerDeleg
         self .removeBlackLine()
     }
     
+
+    
     private func removeBlackLine() {
         self.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationBar.shadowImage = UIImage()
         
-//        navLineView = getLineViewInNavigationBar(self.navLineView)
-//        navLineView.isHidden = true
     }
     
     private func getLineViewInNavigationBar(_ view: UIView) -> UIImageView? {

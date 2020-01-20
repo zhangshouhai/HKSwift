@@ -10,9 +10,13 @@
 		036507B6D29BDC32B5FE56BE /* Pods_BaseFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B321C059C7DF8E283DE11269 /* Pods_BaseFramework.framework */; };
 		0401A3DA23CFF95A00D57346 /* HKStartAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401A3D923CFF95A00D57346 /* HKStartAnimationView.swift */; };
 		0401A3DC23CFFF1D00D57346 /* launch_image1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0401A3DB23CFFF1D00D57346 /* launch_image1.gif */; };
-		0401A3DE23D0579F00D57346 /* HKButton+EdgeInsetsStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401A3DD23D0579F00D57346 /* HKButton+EdgeInsetsStyle.swift */; };
 		0410BCBF23CC5B0C00875FDE /* HKAccontCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410BCBE23CC5B0C00875FDE /* HKAccontCell.swift */; };
 		0410BCC123CC665700875FDE /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410BCC023CC665700875FDE /* Cell.swift */; };
+		0412E72723D526F900BC542D /* UIButton_EdgeInsetsStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412E72623D526F900BC542D /* UIButton_EdgeInsetsStyle.m */; };
+		0412E72923D5371900BC542D /* DHHomeFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412E72823D5371900BC542D /* DHHomeFootView.swift */; };
+		0412E72D23D563A600BC542D /* HKLookDoctorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412E72C23D563A600BC542D /* HKLookDoctorVC.swift */; };
+		0412E72F23D56B1600BC542D /* DHSeeDoctorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412E72E23D56B1600BC542D /* DHSeeDoctorVC.swift */; };
+		0412E73323D56FAF00BC542D /* DHMaternalHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412E73223D56FAF00BC542D /* DHMaternalHealthViewController.swift */; };
 		043BA54223CEB9CD0049C666 /* ZLaunchAdImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BA53723CEB9CD0049C666 /* ZLaunchAdImageView.swift */; };
 		043BA54323CEB9CD0049C666 /* ZLaunchAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BA53823CEB9CD0049C666 /* ZLaunchAd.swift */; };
 		043BA54423CEB9CD0049C666 /* ZLaunchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043BA53923CEB9CD0049C666 /* ZLaunchImageView.swift */; };
@@ -81,6 +85,8 @@
 		04F38F8623D4206100A9598E /* DHHealthManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8523D4206100A9598E /* DHHealthManagementView.swift */; };
 		04F38F8823D4301200A9598E /* DHParentingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8723D4301200A9598E /* DHParentingVC.swift */; };
 		04F38F8C23D4482200A9598E /* DHNavSeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8B23D4482200A9598E /* DHNavSeachView.swift */; };
+		04F38F8E23D451B500A9598E /* DHHomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8D23D451B500A9598E /* DHHomeTopView.swift */; };
+		04F38F9023D454A300A9598E /* DHHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8F23D454A300A9598E /* DHHomeCell.swift */; };
 		2FA7695E2109C56E0014BE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7695D2109C56E0014BE5A /* AppDelegate.swift */; };
 		2FA769632109C56E0014BE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769612109C56E0014BE5A /* Main.storyboard */; };
 		2FA769652109C56F0014BE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA769642109C56F0014BE5A /* Assets.xcassets */; };
@@ -122,9 +128,14 @@
 /* Begin PBXFileReference section */
 		0401A3D923CFF95A00D57346 /* HKStartAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKStartAnimationView.swift; sourceTree = "<group>"; };
 		0401A3DB23CFFF1D00D57346 /* launch_image1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = launch_image1.gif; sourceTree = "<group>"; };
-		0401A3DD23D0579F00D57346 /* HKButton+EdgeInsetsStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKButton+EdgeInsetsStyle.swift"; sourceTree = "<group>"; };
 		0410BCBE23CC5B0C00875FDE /* HKAccontCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKAccontCell.swift; sourceTree = "<group>"; };
 		0410BCC023CC665700875FDE /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		0412E72523D526F900BC542D /* UIButton_EdgeInsetsStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIButton_EdgeInsetsStyle.h; sourceTree = "<group>"; };
+		0412E72623D526F900BC542D /* UIButton_EdgeInsetsStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIButton_EdgeInsetsStyle.m; sourceTree = "<group>"; };
+		0412E72823D5371900BC542D /* DHHomeFootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHHomeFootView.swift; sourceTree = "<group>"; };
+		0412E72C23D563A600BC542D /* HKLookDoctorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKLookDoctorVC.swift; sourceTree = "<group>"; };
+		0412E72E23D56B1600BC542D /* DHSeeDoctorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHSeeDoctorVC.swift; sourceTree = "<group>"; };
+		0412E73223D56FAF00BC542D /* DHMaternalHealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHMaternalHealthViewController.swift; sourceTree = "<group>"; };
 		043BA53723CEB9CD0049C666 /* ZLaunchAdImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchAdImageView.swift; sourceTree = "<group>"; };
 		043BA53823CEB9CD0049C666 /* ZLaunchAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchAd.swift; sourceTree = "<group>"; };
 		043BA53923CEB9CD0049C666 /* ZLaunchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchImageView.swift; sourceTree = "<group>"; };
@@ -196,7 +207,9 @@
 		04F38F8523D4206100A9598E /* DHHealthManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHHealthManagementView.swift; sourceTree = "<group>"; };
 		04F38F8723D4301200A9598E /* DHParentingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHParentingVC.swift; sourceTree = "<group>"; };
 		04F38F8B23D4482200A9598E /* DHNavSeachView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHNavSeachView.swift; sourceTree = "<group>"; };
-		2FA7695A2109C56E0014BE5A /* HKSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F38F8D23D451B500A9598E /* DHHomeTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHHomeTopView.swift; sourceTree = "<group>"; };
+		04F38F8F23D454A300A9598E /* DHHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHHomeCell.swift; sourceTree = "<group>"; };
+		2FA7695A2109C56E0014BE5A /* 百灵健康.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百灵健康.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA7695D2109C56E0014BE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FA769622109C56E0014BE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FA769642109C56F0014BE5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -332,6 +345,8 @@
 		0410BCB923CC5A9D00875FDE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0412E72B23D5636A00BC542D /* 去就诊 */,
+				0412E72A23D5636A00BC542D /* 找医生 */,
 				68128AEC23D436EC00C6D585 /* LKTestViewController.swift */,
 				0447648423993572005A4DFE /* HomeViewController.swift */,
 			);
@@ -343,6 +358,9 @@
 			children = (
 				04F38F8B23D4482200A9598E /* DHNavSeachView.swift */,
 				6830606E239E243F00362C59 /* tableViewCell.swift */,
+				04F38F8D23D451B500A9598E /* DHHomeTopView.swift */,
+				04F38F8F23D454A300A9598E /* DHHomeCell.swift */,
+				0412E72823D5371900BC542D /* DHHomeFootView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,6 +385,38 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0412E72A23D5636A00BC542D /* 找医生 */ = {
+			isa = PBXGroup;
+			children = (
+				0412E72C23D563A600BC542D /* HKLookDoctorVC.swift */,
+			);
+			path = "找医生";
+			sourceTree = "<group>";
+		};
+		0412E72B23D5636A00BC542D /* 去就诊 */ = {
+			isa = PBXGroup;
+			children = (
+				0412E72E23D56B1600BC542D /* DHSeeDoctorVC.swift */,
+			);
+			path = "去就诊";
+			sourceTree = "<group>";
+		};
+		0412E73023D56F6800BC542D /* 育儿 */ = {
+			isa = PBXGroup;
+			children = (
+				04F38F8723D4301200A9598E /* DHParentingVC.swift */,
+			);
+			path = "育儿";
+			sourceTree = "<group>";
+		};
+		0412E73123D56F6900BC542D /* 孕产妇保健 */ = {
+			isa = PBXGroup;
+			children = (
+				0412E73223D56FAF00BC542D /* DHMaternalHealthViewController.swift */,
+			);
+			path = "孕产妇保健";
 			sourceTree = "<group>";
 		};
 		043BA53623CEB9CD0049C666 /* 广告页 */ = {
@@ -689,7 +739,8 @@
 			isa = PBXGroup;
 			children = (
 				044764A823993A2B005A4DFE /* HKButton.swift */,
-				0401A3DD23D0579F00D57346 /* HKButton+EdgeInsetsStyle.swift */,
+				0412E72523D526F900BC542D /* UIButton_EdgeInsetsStyle.h */,
+				0412E72623D526F900BC542D /* UIButton_EdgeInsetsStyle.m */,
 			);
 			path = HKButton;
 			sourceTree = "<group>";
@@ -732,8 +783,9 @@
 		04F38F8223D41E6200A9598E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0412E73023D56F6800BC542D /* 育儿 */,
+				0412E73123D56F6900BC542D /* 孕产妇保健 */,
 				04F38F8323D41E8500A9598E /* FiveController.swift */,
-				04F38F8723D4301200A9598E /* DHParentingVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -753,7 +805,7 @@
 		2FA7695B2109C56E0014BE5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2FA7695A2109C56E0014BE5A /* HKSwiftDemo.app */,
+				2FA7695A2109C56E0014BE5A /* 百灵健康.app */,
 				2FA7696E2109C56F0014BE5A /* BaseFrameworkTests.xctest */,
 				2FA769792109C56F0014BE5A /* BaseFrameworkUITests.xctest */,
 			);
@@ -873,7 +925,7 @@
 			);
 			name = BaseFramework;
 			productName = BaseFramework;
-			productReference = 2FA7695A2109C56E0014BE5A /* HKSwiftDemo.app */;
+			productReference = 2FA7695A2109C56E0014BE5A /* 百灵健康.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2FA7696D2109C56F0014BE5A /* BaseFrameworkTests */ = {
@@ -1037,6 +1089,7 @@
 				04476481239934EF005A4DFE /* LoginViewController.swift in Sources */,
 				043BA54823CEB9CD0049C666 /* ZLaunchLog.swift in Sources */,
 				68128AF023D4374000C6D585 /* HKView.swift in Sources */,
+				04F38F9023D454A300A9598E /* DHHomeCell.swift in Sources */,
 				0410BCBF23CC5B0C00875FDE /* HKAccontCell.swift in Sources */,
 				043BA54C23CEB9CD0049C666 /* ZLaunchAdAnimation.swift in Sources */,
 				68306072239E26D800362C59 /* HKBaseView.swift in Sources */,
@@ -1052,6 +1105,7 @@
 				043BA54A23CEB9CD0049C666 /* ZLaunchAdView.swift in Sources */,
 				04507C3723A35F4E0086FE85 /* UIView+Rect.swift in Sources */,
 				04477F32239A3A9D0044B7C4 /* ESTabBarController.swift in Sources */,
+				0412E72723D526F900BC542D /* UIButton_EdgeInsetsStyle.m in Sources */,
 				04477F37239A3A9D0044B7C4 /* ESTabBarItemContainer.swift in Sources */,
 				043BA54223CEB9CD0049C666 /* ZLaunchAdImageView.swift in Sources */,
 				682067A6239E221100A4B0D4 /* HKBaseTableViewCell.swift in Sources */,
@@ -1060,8 +1114,10 @@
 				043BA54323CEB9CD0049C666 /* ZLaunchAd.swift in Sources */,
 				04507C1423A22A730086FE85 /* BaseModel.swift in Sources */,
 				04A80ACE239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */,
+				0412E72D23D563A600BC542D /* HKLookDoctorVC.swift in Sources */,
 				04477F33239A3A9D0044B7C4 /* ESTabBarItemContentView.swift in Sources */,
 				0447649C2399379E005A4DFE /* Ext+UITextField.swift in Sources */,
+				0412E73323D56FAF00BC542D /* DHMaternalHealthViewController.swift in Sources */,
 				0447647C23993308005A4DFE /* HKConfigPCH.swift in Sources */,
 				04507C2B23A357BC0086FE85 /* EWAddressPresentAnimated.swift in Sources */,
 				0447649E2399379E005A4DFE /* Ext+UIColor.swift in Sources */,
@@ -1078,6 +1134,7 @@
 				0410BCC123CC665700875FDE /* Cell.swift in Sources */,
 				0447648523993572005A4DFE /* HomeViewController.swift in Sources */,
 				04507C2723A357BC0086FE85 /* EWAddressModel.swift in Sources */,
+				04F38F8E23D451B500A9598E /* DHHomeTopView.swift in Sources */,
 				04477F31239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift in Sources */,
 				0447647F23993457005A4DFE /* HKNavigationController.swift in Sources */,
 				0447649D2399379E005A4DFE /* Ext+UIDevice.swift in Sources */,
@@ -1097,12 +1154,13 @@
 				68914871239F3EAA00B5AA99 /* HKTextField.swift in Sources */,
 				0447649F2399379E005A4DFE /* Ext+UIButton.swift in Sources */,
 				043BA54523CEB9CD0049C666 /* ZLaunchAdCache.swift in Sources */,
-				0401A3DE23D0579F00D57346 /* HKButton+EdgeInsetsStyle.swift in Sources */,
 				04F38F8C23D4482200A9598E /* DHNavSeachView.swift in Sources */,
 				043BA54723CEB9CD0049C666 /* ZLaunchAdMD5.swift in Sources */,
+				0412E72F23D56B1600BC542D /* DHSeeDoctorVC.swift in Sources */,
 				04476478239931F1005A4DFE /* HKAppManager.swift in Sources */,
 				044764AA23993A2B005A4DFE /* HKButton.swift in Sources */,
 				044764A22399379E005A4DFE /* Ext+UIImage.swift in Sources */,
+				0412E72923D5371900BC542D /* DHHomeFootView.swift in Sources */,
 				2FA7695E2109C56E0014BE5A /* AppDelegate.swift in Sources */,
 				04476489239935BA005A4DFE /* ThreeViewController.swift in Sources */,
 				6826FB2D23AF426700EE44AF /* WelcomeView.m in Sources */,
@@ -1293,10 +1351,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0;
-				DEVELOPMENT_TEAM = 9FQ9PQMJH7;
+				DEVELOPMENT_TEAM = GFD2MWDV7L;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = BaseFramework/Info.plist;
@@ -1305,10 +1363,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DH.artist.com;
-				PRODUCT_NAME = HKSwiftDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = DH.msunHealth.com;
+				PRODUCT_NAME = "百灵健康";
 				PROVISIONING_PROFILE = "516528a9-e17a-4091-8c8d-57ce15ddf302";
-				PROVISIONING_PROFILE_SPECIFIER = ArtistAdHoc;
+				PROVISIONING_PROFILE_SPECIFIER = DHMsunHealthDev;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BaseFramework/Support/BaseFramework-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1324,7 +1382,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0;
-				DEVELOPMENT_TEAM = 9FQ9PQMJH7;
+				DEVELOPMENT_TEAM = GFD2MWDV7L;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = BaseFramework/Info.plist;
@@ -1333,10 +1391,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DH.artist.com;
-				PRODUCT_NAME = HKSwiftDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = DH.msunHealth.com;
+				PRODUCT_NAME = "百灵健康";
 				PROVISIONING_PROFILE = "516528a9-e17a-4091-8c8d-57ce15ddf302";
-				PROVISIONING_PROFILE_SPECIFIER = ArtistAdHoc;
+				PROVISIONING_PROFILE_SPECIFIER = DHMsunHealthDis;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BaseFramework/Support/BaseFramework-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

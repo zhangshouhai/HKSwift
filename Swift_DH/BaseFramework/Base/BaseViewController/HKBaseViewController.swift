@@ -101,6 +101,7 @@ class HKBaseViewController: UIViewController {
         navView?.addSubview(self.navRightBtn)
         
         navView?.addSubview(self.lineView)
+        self.lineView.isHidden = true
         
         
         
@@ -120,6 +121,7 @@ class HKBaseViewController: UIViewController {
         }
         
        self.view.addSubview(navView!)
+        self.view.bringSubview(toFront: navView!)
         
 
     }

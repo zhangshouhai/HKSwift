@@ -98,8 +98,11 @@ open class ESTabBarItemContentView: UIView {
         }
     }
     
+    /**
+     是否设置 tabbar 渲染染色 alwaysTemplate-> 开启  alwaysOriginal-> 关闭
+     */
     /// Icon imageView renderingMode, default is .alwaysTemplate like UITabBarItem
-    open var renderingMode: UIImage.RenderingMode = .alwaysOriginal {
+    open var renderingMode: UIImage.RenderingMode = .alwaysTemplate {//alwaysTemplate
         didSet {
             self.updateDisplay()
         }
@@ -204,6 +207,7 @@ open class ESTabBarItemContentView: UIView {
         tabbar 图片渲染 染色设置
      */
     open func updateDisplay() {
+        
         imageView.image = (selected ? (selectedImage ?? image) : image)?.withRenderingMode(renderingMode)
         imageView.tintColor = selected ? highlightIconColor : iconColor
         titleLabel.textColor = selected ? highlightTextColor : textColor

@@ -103,14 +103,16 @@ public let HKNavBgColor: NSString                    = "#22B9C8" //导航颜色
 public let HKNavTitleColor: NSString                 = "#FFFFFF" //导航Title颜色
 public let HKTabbarTextColor: NSString               = "#000000" //tabbarTextColor
 public let HKTabbarImageColor: NSString              = "#000000"//tabbarImageColor
-public let HKTabbarTextSeledColor: NSString          = "#CB011D"//tabbarTextSeledColor
-public let HKTabbarImageSeledColor: NSString         = "#CB011D"//tabbarImageSeledColor
+public let HKTabbarTextSeledColor: NSString          = "#22B9C8"//tabbarTextSeledColor
+public let HKTabbarImageSeledColor: NSString         = "#22B9C8"//tabbarImageSeledColor
+
 public let HKLineViewColor: NSString                 = "#EFEFEF" //cell 分割线 Color
 
 
 
 // MARK: - 全局自定义字号大小===================================================
 public let fontSize8: UIFont        = UIFont.systemFont(ofSize: HKFixHeightFlaot(8.0)) //8.0号字
+public let fontSize9: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(9.0)) //9.0号字
 public let fontSize10: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(10.0)) //10.0号字
 public let fontSize11: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(11.0)) //11.0号字
 public let fontSize12: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(12.0)) //12.0号字

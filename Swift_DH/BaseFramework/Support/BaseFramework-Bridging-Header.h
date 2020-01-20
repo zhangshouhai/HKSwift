@@ -16,6 +16,7 @@
 #import "UITextField+Blocks.h"
 #import "WelcomeView.h"
 #import <YCShadowView/YCShadowView.h>
+#import "UIButton_EdgeInsetsStyle.h"
 
 #endif /* BaseFramework_Bridging_Header_h */
 

@@ -31,16 +31,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
        
         
-        if !UserDefaults.standard.bool(forKey: "FIRSTSTART") {
-            HKAppManager.sharedInstance.jumpToWelcomeVC(window: window!)
-        } else {
+//        if !UserDefaults.standard.bool(forKey: "FIRSTSTART") {
+//            HKAppManager.sharedInstance.jumpToWelcomeVC(window: window!)
+//        } else {
             HKAppManager.sharedInstance.chooseRootVC(window: window!)
-        }
+//        }
 
 //        addLaunchImageView(window: window!)
 
         // 初始化第三方应用
-        HKAppManager.sharedInstance.initAppWithApplication(application: application, launchOptions: launchOptions)
+//        HKAppManager.sharedInstance.initAppWithApplication(application: application, launchOptions: launchOptions)
         
         return true
     }

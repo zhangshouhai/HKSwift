@@ -15,6 +15,7 @@ class FiveController: BaseTableViewController {
         super.viewDidLoad()
         
         self.titleLabel.text = "健康管理"
+        self.setHideLeftBtn()
         setupUI()
     }
     
@@ -49,18 +50,18 @@ extension FiveController {
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
-            return 10
+            return 0.01
         } else {
             return 5
         }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 4
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -71,22 +72,48 @@ extension FiveController {
 
         let cell = Cell<DHHealthManagementView>.tableView(tableView)
 
-        cell.loadDataHealthHomeCell(titleString: "")
+        
+        if indexPath.row == 0 {
+            cell.loadDataHealthHomeCell(titleString: "")
+        }
+        if indexPath.row == 1 {
+            cell.loadDataHealthHomeCell1(titleString: "")
+        }
+        if indexPath.row == 2 {
+            cell.loadDataHealthHomeCell2(titleString: "")
+        }
+        if indexPath.row == 3 {
+            cell.loadDataHealthHomeCell3(titleString: "")
+        }
+        
+        
         cell.titleButton?.addTapAction({ (tap) in
-            self.pustParentingvc()
+
+            self.pustParentingvc(indexpath: indexPath)
         })
 
         return cell
     }
     
-    func pustParentingvc() -> Void {
-        let parentingVC = DHParentingVC()
-        self.navigationController?.pushViewController(parentingVC, animated: true)
+    func pustParentingvc(indexpath:IndexPath) -> Void {
+        
+        if indexpath.row == 0 {
+            let parentingVC = DHParentingVC()
+            self.navigationController?.pushViewController(parentingVC, animated: true)
+        }
+        
+                
+        if indexpath.row == 1 {
+            let vc = DHMaternalHealthViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        
     }
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+         self.pustParentingvc(indexpath: indexPath)
     }
     
 }
