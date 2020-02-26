@@ -16,7 +16,7 @@ class SecondViewController: HKBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.titleLabel.text = "我的医生"
+        self.titleLabel.text = ""
         self.setHideLeftBtn()
         
 //                let label = HKLabel(font: fontSize13, color: UIColor.green, text: "zhangshouahi")

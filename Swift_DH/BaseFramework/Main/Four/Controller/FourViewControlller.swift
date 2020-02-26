@@ -53,13 +53,12 @@ class FourViewController: HKBaseViewController {
         self.titleLabel.text = "我"
         self.setHideLeftBtn()
         
-//        self.view.addSubview(self.cycleScrollView2)
-        // Do any additional setup after loading the view.
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
 

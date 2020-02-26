@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2FA769592109C56E0014BE5A"
-               BuildableName = "HKSwiftDemo.app"
+               BuildableName = "&#x767e;&#x7075;&#x5065;&#x5eb7;.app"
                BlueprintName = "BaseFramework"
                ReferencedContainer = "container:BaseFramework.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2FA769592109C56E0014BE5A"
-            BuildableName = "HKSwiftDemo.app"
+            BuildableName = "&#x767e;&#x7075;&#x5065;&#x5eb7;.app"
             BlueprintName = "BaseFramework"
             ReferencedContainer = "container:BaseFramework.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2FA769592109C56E0014BE5A"
-            BuildableName = "HKSwiftDemo.app"
+            BuildableName = "&#x767e;&#x7075;&#x5065;&#x5eb7;.app"
             BlueprintName = "BaseFramework"
             ReferencedContainer = "container:BaseFramework.xcodeproj">
          </BuildableReference>

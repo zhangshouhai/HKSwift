@@ -111,19 +111,19 @@ public let HKLineViewColor: NSString                 = "#EFEFEF" //cell 分割�
 
 
 // MARK: - 全局自定义字号大小===================================================
-public let fontSize8: UIFont        = UIFont.systemFont(ofSize: HKFixHeightFlaot(8.0)) //8.0号字
-public let fontSize9: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(9.0)) //9.0号字
-public let fontSize10: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(10.0)) //10.0号字
-public let fontSize11: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(11.0)) //11.0号字
-public let fontSize12: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(12.0)) //12.0号字
-public let fontSize13: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(13.0)) //13.0号字
-public let fontSize14: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(14.0)) //14.0号字
-public let fontSize15: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(15.0)) //15.0号字
-public let fontSize16: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(16.0)) //16.0号字
-public let fontSize17: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(17.0)) //17号字
+public let fontSize8: UIFont        = UIFont.systemFont(ofSize: FontWithStr(8.0)) //8.0号字
+public let fontSize9: UIFont       = UIFont.systemFont(ofSize: FontWithStr(9.0)) //9.0号字
+public let fontSize10: UIFont       = UIFont.systemFont(ofSize: FontWithStr(10.0)) //10.0号字
+public let fontSize11: UIFont       = UIFont.systemFont(ofSize: FontWithStr(11.0)) //11.0号字
+public let fontSize12: UIFont       = UIFont.systemFont(ofSize: FontWithStr(12.0)) //12.0号字
+public let fontSize13: UIFont       = UIFont.systemFont(ofSize: FontWithStr(13.0)) //13.0号字
+public let fontSize14: UIFont       = UIFont.systemFont(ofSize: FontWithStr(14.0)) //14.0号字
+public let fontSize15: UIFont       = UIFont.systemFont(ofSize: FontWithStr(15.0)) //15.0号字
+public let fontSize16: UIFont       = UIFont.systemFont(ofSize: FontWithStr(16.0)) //16.0号字
+public let fontSize17: UIFont       = UIFont.systemFont(ofSize: FontWithStr(17.0)) //17号字
 
-public let fontSize24: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(24.0)) //24号字
-public let fontSize36: UIFont       = UIFont.systemFont(ofSize: HKFixHeightFlaot(36.0)) //36号字
+public let fontSize24: UIFont       = UIFont.systemFont(ofSize: FontWithStr(24.0)) //24号字
+public let fontSize36: UIFont       = UIFont.systemFont(ofSize: FontWithStr(36.0)) //36号字
 
 
 
