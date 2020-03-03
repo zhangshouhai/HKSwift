@@ -412,8 +412,8 @@ internal extension ESTabBar /* Actions */ {
             container.accessibilityTraits = item.accessibilityTraits
             
             if item == selectedItem {
-//                container.accessibilityTraits = container.accessibilityTraits.union(.selected)
-                container.accessibilityTraits = accessibilityTraits.signum()
+                container.accessibilityTraits = container.accessibilityTraits.union(.selected)
+//                container.accessibilityTraits = accessibilityTraits.signum()
             }
             
             if let explicitLabel = item.accessibilityLabel {

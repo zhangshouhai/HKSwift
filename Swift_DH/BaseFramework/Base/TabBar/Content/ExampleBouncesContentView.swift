@@ -35,7 +35,7 @@ class ExampleBouncesContentView: ExampleBasicContentView {
         impliesAnimation.values = [1.0 ,1.4, 0.9, 1.15, 0.95, 1.02, 1.0]
         impliesAnimation.duration = duration * 2
 //      impliesAnimation.calculationMode = CAAnimationCalculationMode.cubic
-        impliesAnimation.calculationMode = CAAnimationCalculationMode.init(string: "cubic") as String
+        impliesAnimation.calculationMode = CAAnimationCalculationMode.init(rawValue: "cubic")
         imageView.layer.add(impliesAnimation, forKey: nil)
     }
 }

@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
            let launchImageView = LaunchImageView.init(frame: CGRect.init(x: 0, y: 0, width: kMainScreen_width, height: kMainScreen_height))
            launchImageView.backgroundColor = UIColor.white
            self.window?.addSubview(launchImageView)
-           self.window?.bringSubview(toFront: launchImageView)
+        self.window?.bringSubviewToFront(launchImageView)
         
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {

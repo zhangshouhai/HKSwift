@@ -80,7 +80,7 @@ class HKNavigationController: UINavigationController,UINavigationControllerDeleg
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
        
 
-        if self.childViewControllers.count > 0 {
+        if self.children.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
         }
         super.pushViewController(viewController, animated: animated)
@@ -89,12 +89,12 @@ class HKNavigationController: UINavigationController,UINavigationControllerDeleg
             
 
             if #available(iOS 11, *) {
-                let leftButton: UIButton = UIButton(type: UIButtonType.custom)
+                let leftButton: UIButton = UIButton(type: UIButton.ButtonType.custom)
                 leftButton.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
-                leftButton.setImage(UIImage(named: "icon_back"), for: UIControlState.normal)
-                leftButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
-                leftButton .addTarget(self, action: #selector(leftBarButtonAction), for: UIControlEvents.touchUpInside)
-                leftButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
+                leftButton.setImage(UIImage(named: "icon_back"), for: UIControl.State.normal)
+                leftButton.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
+                leftButton .addTarget(self, action: #selector(leftBarButtonAction), for: UIControl.Event.touchUpInside)
+                leftButton.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.left
                 leftButton.imageEdgeInsets = UIEdgeInsets(top: 12, left: 0, bottom: 12, right: 20)
                 
                 let leftBarButtonItem: UIBarButtonItem = UIBarButtonItem.init(customView: leftButton)
@@ -102,9 +102,9 @@ class HKNavigationController: UINavigationController,UINavigationControllerDeleg
             }
             else {
                 let leftButton = UIButton.init(frame: CGRect(x: 0, y: 0, width: 18, height: 18))
-                leftButton.setImage(UIImage(named: "icon_back"), for: UIControlState.normal)
-                leftButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
-                leftButton .addTarget(self, action: #selector(leftBarButtonAction), for: UIControlEvents.touchUpInside)
+                leftButton.setImage(UIImage(named: "icon_back"), for: UIControl.State.normal)
+                leftButton.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
+                leftButton .addTarget(self, action: #selector(leftBarButtonAction), for: UIControl.Event.touchUpInside)
                 viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: leftButton)
             }
         }
@@ -134,7 +134,7 @@ class HKNavigationController: UINavigationController,UINavigationControllerDeleg
             return false
         }
         
-        return self.childViewControllers.count == 1 ? false: true
+        return self.children.count == 1 ? false: true
     }
     
     

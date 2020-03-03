@@ -94,7 +94,7 @@ class HKAppManager: NSObject {
     
     
     // APP初始化 第三方应用
-    func initAppWithApplication(application: UIApplication, launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
+    func initAppWithApplication(application: UIApplication, launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
         
     }
     

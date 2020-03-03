@@ -14,7 +14,7 @@ class HKTextField: HKBaseView,UITextFieldDelegate {
     public func createHKTextField(font:CGFloat,text:String,placeholder:String,keyboardType:UIKeyboardType,leftLabStr:String, leftImgStr:String, rightImgStr:String ,showLine:Bool) -> (){
         
         let textfield = UITextField(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        textfield.borderStyle = UITextBorderStyle.none
+        textfield.borderStyle = UITextField.BorderStyle.none
         textfield.placeholder = placeholder
         textfield.adjustsFontSizeToFitWidth = true
         textfield.textAlignment = .left
@@ -56,7 +56,7 @@ class HKTextField: HKBaseView,UITextFieldDelegate {
             let leftImgView = HKImageView(radius: 0.0, isRadius: true)
             leftImgView.image = UIImage.init(named: leftImgStr)
             leftImgView.width = (leftImgView.image?.size.width)!+20
-            leftImgView.contentMode = UIViewContentMode.center
+            leftImgView.contentMode = UIView.ContentMode.center
             self.addSubview(leftImgView)
             
             leftImgView.snp.makeConstraints { (make) in
@@ -80,7 +80,7 @@ class HKTextField: HKBaseView,UITextFieldDelegate {
             let rightImgView = HKImageView(radius: 0.0, isRadius: true)
             rightImgView.image = UIImage.init(named: rightImgStr)
             rightImgView.width = (rightImgView.image?.size.width)!+20
-            rightImgView.contentMode = UIViewContentMode.center
+            rightImgView.contentMode = UIView.ContentMode.center
             textfield.rightView = rightImgView
             
 //           textfield.snp_updateConstraints { (make) in

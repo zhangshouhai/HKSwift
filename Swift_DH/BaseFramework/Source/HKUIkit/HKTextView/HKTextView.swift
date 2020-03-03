@@ -110,7 +110,7 @@ extension PlaceholderTextView{
         plaleLabel.sizeToFit()
         addSubview(plaleLabel)
         plaleLabel.frame.origin = CGPoint(x: PlaceholderLabelOrigin().x, y: PlaceholderLabelOrigin().y)
-        palceholdertextView.textContainerInset = UIEdgeInsetsMake(TextContainerInset().top, TextContainerInset().left, TextContainerInset().bottom, TextContainerInset().right)
+        palceholdertextView.textContainerInset = UIEdgeInsets(top: TextContainerInset().top, left: TextContainerInset().left, bottom: TextContainerInset().bottom, right: TextContainerInset().right)
         print(plaleLabel)
         countLabel.font = palceholdertextView.font
         addSubview(countLabel)

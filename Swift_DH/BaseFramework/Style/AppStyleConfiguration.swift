@@ -41,7 +41,7 @@ class AppStyleConfiguration {
     class func labelWidth(_ text: String, _ height: CGFloat) -> CGFloat {
         let size = CGSize(width: 2000, height: height)
         let font = UIFont(name: "PingFang-SC-Regular", size: height)!
-        let attributes = [NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.font: font]
         let labelSize = NSString(string: text).boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
         return labelSize.width
     }

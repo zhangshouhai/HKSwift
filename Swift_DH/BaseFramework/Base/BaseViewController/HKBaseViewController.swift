@@ -58,13 +58,13 @@ class HKBaseViewController: UIViewController {
     lazy var navRightBtn:UIButton = {
         let btn = HKButton(backColor: UIColor.clear, text: "", image: "", isRadius: true)
         btn.frame=CGRect(x: kMainScreen_width-50, y: kMainTopHeight-40, width: 40, height: 30)
-        btn.addTarget(self, action: #selector(right_click), for: UIControlEvents.touchUpInside)
+        btn.addTarget(self, action: #selector(right_click), for: UIControl.Event.touchUpInside)
         return btn
     }()
     //导航栏左侧按钮
     lazy var navLeftBtn:UIButton = {
         let btn = HKButton(backColor: UIColor.clear, text: "", image: "", isRadius: true)
-        btn.addTarget(self, action: #selector(right_click), for: UIControlEvents.touchUpInside)
+        btn.addTarget(self, action: #selector(right_click), for: UIControl.Event.touchUpInside)
         btn.frame = CGRect(x: 10, y: kMainTopHeight - 40, width: 30, height: 30)
         btn.setImage(UIImage(named: "icon_fanhui_xiangqing"), for: .normal)
         btn.setImage(UIImage(named: "icon_fanhui_xiangqing"), for: .highlighted)
@@ -121,7 +121,7 @@ class HKBaseViewController: UIViewController {
         }
         
        self.view.addSubview(navView!)
-        self.view.bringSubview(toFront: navView!)
+        self.view.bringSubviewToFront(navView!)
         
 
     }
