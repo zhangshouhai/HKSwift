@@ -4,6 +4,7 @@ platform :ios, '8.0'
 
 target 'BaseFramework' do
     use_frameworks!
+    inhibit_all_warnings!
 #    pod 'RxSwift'           # RxSwift的必备库
 #    pod 'RxCocoa'           # 对UIKit Foundation进行Rx化
 #    pod 'RxDataSources'     # 帮助我们优雅的使用tableView的数据源方法
@@ -14,6 +15,7 @@ target 'BaseFramework' do
     pod 'Kingfisher'        # 加载网络图片，类似SDWebImage
     pod 'SwiftyJSON'        # json解析
     pod 'ObjectMapper'      # json解析
+    pod 'KakaJSON'          # json转model
     pod 'SnapKit'           # UI布局（类似Masonry）
     pod 'Moya'              # 网络请求封装
     pod 'CryptoSwift'       # 加密库（MD5、SHA、AES...）
@@ -24,4 +26,6 @@ target 'BaseFramework' do
 
     pod 'MJRefresh'
     pod 'SVProgressHUD'
+    
+    pod 'IQKeyboardManagerSwift'  #键盘自适应
 end
