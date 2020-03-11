@@ -15,7 +15,7 @@ class AppStyleConfiguration {
     /**
     *改变字符串中具体某字符串的颜色
     */
-    class func messageAction(label:UILabel,changeString:String,allColor:UIColor,markColor:UIColor,fontSize:CGFloat) {
+   public class func messageAction(label:UILabel,changeString:String,allColor:UIColor,markColor:UIColor,fontSize:CGFloat) {
         let tempStr = label.text
         
         let strAtt = NSMutableAttributedString.init(string: tempStr!)
@@ -38,7 +38,7 @@ class AppStyleConfiguration {
      *  计算文字的宽度
      */
 
-    class func labelWidth(_ text: String, _ height: CGFloat) -> CGFloat {
+   public class func labelWidth(_ text: String, _ height: CGFloat) -> CGFloat {
         let size = CGSize(width: 2000, height: height)
         let font = UIFont(name: "PingFang-SC-Regular", size: height)!
         let attributes = [NSAttributedString.Key.font: font]
@@ -49,7 +49,7 @@ class AppStyleConfiguration {
     /**
     *  计算文字的宽度
     */
-    class func getTextHeight(textStr :  String, font : UIFont, width : CGFloat)  -> CGFloat {
+   public class func getTextHeight(textStr :  String, font : UIFont, width : CGFloat)  -> CGFloat {
         
         let normalText : NSString = textStr as NSString
         
@@ -70,7 +70,7 @@ class AppStyleConfiguration {
      邮箱验证
      
      */
-   class func validateEmail(email: String) -> Bool {
+  public class func validateEmail(email: String) -> Bool {
        if email.count == 0 {
            return false
        }
@@ -84,7 +84,7 @@ class AppStyleConfiguration {
      验证手机号
      
      */
-    class func isPhoneNumber(phoneNumber:String) -> Bool {
+   public class func isPhoneNumber(phoneNumber:String) -> Bool {
         if phoneNumber.count == 0 {
             return false
         }
@@ -104,7 +104,7 @@ class AppStyleConfiguration {
      密码正则  6-8位字母和数字组合
      
      */
-    class func isPasswordRuler(password:String) -> Bool {
+  public  class func isPasswordRuler(password:String) -> Bool {
         let passwordRule = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,8}$"
         let regexPassword = NSPredicate(format: "SELF MATCHES %@",passwordRule)
     if regexPassword.evaluate(with: password) == true {
@@ -120,7 +120,7 @@ class AppStyleConfiguration {
      验证身份证号
      
      */
-   class func isCardId(_ number: String) -> Bool {
+  public class func isCardId(_ number: String) -> Bool {
         //判断位数
         if number.count != 15 && number.count != 18 {
             return false
@@ -217,7 +217,7 @@ class AppStyleConfiguration {
     }
   
     
-    class  func areaCodeAt(_ code: String) -> Bool {
+  public  class  func areaCodeAt(_ code: String) -> Bool {
           var dic: [String: String] = [:]
           dic["11"] = "北京"
           dic["12"] = "天津"
@@ -260,9 +260,23 @@ class AppStyleConfiguration {
           return true;
       }
       
-    class func colorWithLineColor() -> UIColor? {
+   public class func colorWithLineColor() -> UIColor? {
         return UIColor.colorWithHexString(colorString: "#EFEFEF")
     }
+    
+    
+    
+    
+    // 字典或者数组 转 JSON
+  public  class func DataAnyToJson(element:Any) -> String {
+        
+        let jsonData = try! JSONSerialization.data(withJSONObject: element, options: JSONSerialization.WritingOptions.prettyPrinted)
+        let str = String(data: jsonData, encoding: String.Encoding.utf8)!
+      
+        return str
+    }
+    
+    
     
     
 

@@ -42,6 +42,21 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>IQKeyboardManagerSwift-IQKeyboardManagerSwift.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>IQKeyboardManagerSwift.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>KakaJSON.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -108,7 +123,7 @@
 		<key>YCShadowView.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>19</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

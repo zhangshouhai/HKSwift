@@ -11,6 +11,15 @@ import HandyJSON
 
 class BaseModel:HandyJSON {
     
+    
+    func mapping(mapper: HelpingMapper) {
+
+     
+    
+    }
+      
+    
+    
     required init(){
         
     }

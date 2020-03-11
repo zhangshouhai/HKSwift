@@ -21,7 +21,7 @@ target 'BaseFramework' do
     pod 'CryptoSwift'       # 加密库（MD5、SHA、AES...）
     pod 'HandyJSON',:git => 'https://github.com/alibaba/HandyJSON.git', :branch => 'dev_for_swift5.0'
     pod 'FWCycleScrollView' #轮播组件
-    
+  
     pod 'YCShadowView'    #UIView阴影
 
     pod 'MJRefresh'
