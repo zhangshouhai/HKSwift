@@ -39,7 +39,6 @@
 		044764A923993A2B005A4DFE /* HKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044764A723993A2B005A4DFE /* HKLabel.swift */; };
 		044764AA23993A2B005A4DFE /* HKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044764A823993A2B005A4DFE /* HKButton.swift */; };
 		044764AD23993AFF005A4DFE /* BaseRequestURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044764AC23993AFF005A4DFE /* BaseRequestURL.swift */; };
-		044764AF23993B9A005A4DFE /* HKHttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044764AE23993B9A005A4DFE /* HKHttpManager.swift */; };
 		044764B123993BC9005A4DFE /* HKAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044764B023993BC9005A4DFE /* HKAPIManager.swift */; };
 		04477F30239A3A9D0044B7C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04477F27239A3A9D0044B7C4 /* Localizable.strings */; };
 		04477F31239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04477F29239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift */; };
@@ -104,6 +103,7 @@
 		6890E9CA239A6AF000C71B92 /* HKAutoFitConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6890E9C9239A6AF000C71B92 /* HKAutoFitConfig.swift */; };
 		68914871239F3EAA00B5AA99 /* HKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68914870239F3EAA00B5AA99 /* HKTextField.swift */; };
 		68914874239F683800B5AA99 /* HKTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68914873239F683800B5AA99 /* HKTextView.swift */; };
+		6892EF65241A2A89006323F5 /* HKHttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6892EF64241A2A89006323F5 /* HKHttpManager.swift */; };
 		68AB5C8123C86E450036FB80 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AB5C8023C86E450036FB80 /* BaseTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -157,7 +157,6 @@
 		044764A723993A2B005A4DFE /* HKLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKLabel.swift; sourceTree = "<group>"; };
 		044764A823993A2B005A4DFE /* HKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKButton.swift; sourceTree = "<group>"; };
 		044764AC23993AFF005A4DFE /* BaseRequestURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestURL.swift; sourceTree = "<group>"; };
-		044764AE23993B9A005A4DFE /* HKHttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKHttpManager.swift; sourceTree = "<group>"; };
 		044764B023993BC9005A4DFE /* HKAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKAPIManager.swift; sourceTree = "<group>"; };
 		04477F28239A3A9D0044B7C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		04477F29239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESTabBarItemMoreContentView.swift; sourceTree = "<group>"; };
@@ -233,6 +232,7 @@
 		6890E9C9239A6AF000C71B92 /* HKAutoFitConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKAutoFitConfig.swift; sourceTree = "<group>"; };
 		68914870239F3EAA00B5AA99 /* HKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTextField.swift; sourceTree = "<group>"; };
 		68914873239F683800B5AA99 /* HKTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTextView.swift; sourceTree = "<group>"; };
+		6892EF64241A2A89006323F5 /* HKHttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKHttpManager.swift; sourceTree = "<group>"; };
 		68AB5C8023C86E450036FB80 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		86B459FC6505AB857502F297 /* Pods-BaseFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.release.xcconfig"; sourceTree = "<group>"; };
 		95794D4CEE91DA976377A15F /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
@@ -592,8 +592,8 @@
 			isa = PBXGroup;
 			children = (
 				044764AC23993AFF005A4DFE /* BaseRequestURL.swift */,
-				044764AE23993B9A005A4DFE /* HKHttpManager.swift */,
 				044764B023993BC9005A4DFE /* HKAPIManager.swift */,
+				6892EF64241A2A89006323F5 /* HKHttpManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1054,6 +1054,7 @@
 			files = (
 				04A80AC8239F2BFA00541C7D /* AppStyleConfiguration.swift in Sources */,
 				685E00C023A223AD007C34D1 /* MyControl.swift in Sources */,
+				6892EF65241A2A89006323F5 /* HKHttpManager.swift in Sources */,
 				680960D9240E232E005DF93E /* ZLaunchImageView.swift in Sources */,
 				04507C3623A35F4E0086FE85 /* LYPopMenuView.swift in Sources */,
 				04477F34239A3A9D0044B7C4 /* ESTabBarItem.swift in Sources */,
@@ -1138,7 +1139,6 @@
 				04476489239935BA005A4DFE /* ThreeViewController.swift in Sources */,
 				04477F41239A46950044B7C4 /* ExampleBouncesContentView.swift in Sources */,
 				04507C2823A357BC0086FE85 /* EWAddressPickViewTableViewCell.swift in Sources */,
-				044764AF23993B9A005A4DFE /* HKHttpManager.swift in Sources */,
 				680960DD240E232E005DF93E /* ZLaunchLog.swift in Sources */,
 				04507C1723A22B560086FE85 /* HKUserModel.swift in Sources */,
 			);

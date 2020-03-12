@@ -2,8 +2,8 @@
 //  HKHttpManager.swift
 //  BaseFramework
 //
-//  Created by 张寿海 on 2019/12/5.
-//  Copyright © 2019 DH add LK. All rights reserved.
+//  Created by LukeCao on 2019/12/5.
+//  Copyright © 2019 DH and LK. All rights reserved.
 //
 
 import Moya
@@ -55,8 +55,12 @@ public class HKHttpManager {
                 do {
                     // let statusCode = response.statusCode // 响应状态码：200, 401, 500...
                     // let data = response.data // 响应数据
-                    let mapjson = try response.mapJSON()
-                    let json = JSON(mapjson)
+//                    let mapjson = try response.mapJSON()
+//                    let json = JSON(mapjson)
+                    
+                    
+                    let JSONString = String(data: response.data, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))
+                    let json = JSON(JSONString as Any)
                     successClosure(json)
                     
                 print("\nPath:",target.path,"\n\nmethod:",target.method,"\n\nheaders:",target.headers as Any,"\n\nSUCCES Json:",json)
@@ -139,12 +143,54 @@ public class HKHttpManager {
         }
     }
 
-    /// 请求String数据
+    /// 请求String数据返回
+    func requestStringJSONData<T:TargetType>(target:T, successClosure:@escaping (_ result: JSON) -> Void, failClosure: @escaping (_ errorMsg: String?) -> Void) {
+        let requestProvider = MoyaProvider<T>(requestClosure:requestTimeoutClosure(target: target))
+        let _ = requestProvider.request(target) { (result) -> () in
+            switch result {
+            case let .success(response):
+                let jsonData = try? JSON(data: response.data)
+                if jsonData!["code"].intValue != 200 {
+                    failClosure(String(response.statusCode))
+                    return
+                }
+                successClosure(jsonData!)
+            case let .failure(error):
+                failClosure(error.errorDescription)
+            }
+
+        }
+    }
+    
+    /// 请求String数据返回
+    func requestStringModelData<T:TargetType>(target:T, successClosure:@escaping (_ result: Data) -> Void, failClosure: @escaping (_ errorMsg: String?) -> Void) {
+        let requestProvider = MoyaProvider<T>(requestClosure:requestTimeoutClosure(target: target))
+        let _ = requestProvider.request(target) { (result) -> () in
+            switch result {
+            case let .success(response):
+                let jsonData = try? JSON(data: response.data)
+                if jsonData!["code"].intValue != 200 {
+                    failClosure(String(response.statusCode))
+                    return
+                }
+                successClosure(response.data)
+            case let .failure(error):
+                failClosure(error.errorDescription)
+            }
+
+        }
+    }
+    
     func requestStringData<T:TargetType>(target:T, successClosure:@escaping (_ result: String) -> Void, failClosure: @escaping (_ errorMsg: String?) -> Void) {
         let requestProvider = MoyaProvider<T>(requestClosure:requestTimeoutClosure(target: target))
         let _ = requestProvider.request(target) { (result) -> () in
             switch result {
             case let .success(response):
+                let jsonData = try? JSON(data: response.data)
+                if jsonData!["code"].intValue != 200 {
+                    failClosure(jsonData!["error"].stringValue)
+                    return
+                }
                 do {
                     let str = try response.mapString()
                     successClosure(str)
@@ -198,4 +244,29 @@ public class HKHttpManager {
                 completionHandler(response)
         }
     }
+    
+    static func getDictionaryFromJSONString(jsonString:String) ->NSDictionary{
+     
+        let jsonData:Data = jsonString.data(using: .utf8)!
+     
+        let dict = try? JSONSerialization.jsonObject(with: jsonData, options: .mutableContainers)
+        if dict != nil {
+            return dict as! NSDictionary
+        }
+        return NSDictionary()
+    }
+    
+    static func getArrayFromJSONString(jsonString:String) ->NSArray{
+         
+        let jsonData:Data = jsonString.data(using: .utf8)!
+         
+        let array = try? JSONSerialization.jsonObject(with: jsonData, options: .mutableContainers)
+        if array != nil {
+            return array as! NSArray
+        }
+        return array as! NSArray
+         
+    }
 }
+
+
