@@ -175,6 +175,25 @@ class HKBaseViewController: UIViewController {
         self.view.addSubview(guideView)
     }
     
+    
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        
+        if #available(iOS 13.0, *) {
+            if UITraitCollection.current.userInterfaceStyle == .dark {
+                 HKThemes.switchNight(isToNight: true)
+            }
+            else
+            {
+                 HKThemes.switchNight(isToNight: false)
+            }
+        } else {
+             HKThemes.switchNight(isToNight: false)
+        }
+
+    }
+    
+    
    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

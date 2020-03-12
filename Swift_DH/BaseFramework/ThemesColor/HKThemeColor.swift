@@ -11,7 +11,7 @@ import SwiftTheme
 enum HKThemeColor {
     
     static let NavColor: ThemeColorPicker = ["#22B9C8", "#D0684F"] //导航颜色
-    static let backgroundColor: ThemeColorPicker = ["#fff", "#292b38"] // 背景颜色
+    static let backgroundColor: ThemeColorPicker = ["#fff", "#292b38"] // View 背景颜色
     static let tabBarBackColor: ThemeColorPicker = ["#F0EFF6", "#010106"] //TabBar 背景颜色
     static let tabBarTitleSeletColor: ThemeColorPicker = ["#22B9C8", "#D0684F"] //tabbar 选中字体颜色
     static let tabBarTitleNoSeletColor: ThemeColorPicker = ["#010106", "#F7FBFD"] //tabbar 未选中字体颜色
