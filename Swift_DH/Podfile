@@ -24,8 +24,12 @@ target 'BaseFramework' do
   
     pod 'YCShadowView'    #UIView阴影
 
-    pod 'MJRefresh'
-    pod 'SVProgressHUD'
-    
+    pod 'MJRefresh'      #上拉加载，下拉刷新
+    pod 'SVProgressHUD'  #加载提示框
     pod 'IQKeyboardManagerSwift'  #键盘自适应
+    pod 'SwiftTheme'     #主题颜色
+
+    
+    
+    
 end

@@ -209,9 +209,13 @@ open class ESTabBarItemContentView: UIView {
     open func updateDisplay() {
         
         imageView.image = (selected ? (selectedImage ?? image) : image)?.withRenderingMode(renderingMode)
-        imageView.tintColor = selected ? highlightIconColor : iconColor
-        titleLabel.textColor = selected ? highlightTextColor : textColor
-        backgroundColor = selected ? highlightBackdropColor : backdropColor
+        
+        //icon 渲染染色
+        imageView.theme_tintColor = selected ? HKThemeColor.tabBarTitleSeletColor : HKThemeColor.tabBarTitleNoSeletColor
+        //字体 渲染染色
+        titleLabel.theme_textColor = selected ? HKThemeColor.tabBarTitleSeletColor : HKThemeColor.tabBarTitleNoSeletColor
+        
+//        self.theme_backgroundColor = selected ? HKThemeColor.tabBarBackColor: HKThemeColor.tabBarBackColor
     }
     
     open func updateLayout() {

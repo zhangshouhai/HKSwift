@@ -83,7 +83,7 @@ class HKBaseViewController: UIViewController {
         
         
         
-        self.view.backgroundColor = UIColor.white
+        self.view.theme_backgroundColor = HKThemeColor.backgroundColor
         self.setnavViewUI()
         navView?.addSubview(self.navLeftBtn)
         
@@ -95,7 +95,7 @@ class HKBaseViewController: UIViewController {
         navView = UIView(frame:CGRect(x: 0, y: 0, width:kMainScreen_width, height: kMainTopHeight))
 
         //当行颜色
-        navView?.backgroundColor = UIColor.colorWithHexString(colorString: HKNavBgColor)
+        navView?.theme_backgroundColor = HKThemeColor.NavColor
         navView?.addSubview(self.titleLabel)
         navView?.addSubview(self.navLeftBtn)
         navView?.addSubview(self.navRightBtn)

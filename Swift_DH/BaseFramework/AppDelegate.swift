@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        initDarkTheme()
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
         
@@ -31,11 +33,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
        
         
-//        if !UserDefaults.standard.bool(forKey: "FIRSTSTART") {
-//            HKAppManager.sharedInstance.jumpToWelcomeVC(window: window!)
-//        } else {
+        if !UserDefaults.standard.bool(forKey: "FIRSTSTART") {
+            HKAppManager.sharedInstance.jumpToWelcomeVC(window: window!)
+        } else {
             HKAppManager.sharedInstance.chooseRootVC(window: window!)
-//        }
+        }
 
 //        addLaunchImageView(window: window!)
 
@@ -47,9 +49,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func addLaunchImageView(window: UIWindow) {
 //           self.window?.makeKeyAndVisible()
-           let launchImageView = LaunchImageView.init(frame: CGRect.init(x: 0, y: 0, width: kMainScreen_width, height: kMainScreen_height))
-           launchImageView.backgroundColor = UIColor.white
-           self.window?.addSubview(launchImageView)
+        let launchImageView = LaunchImageView.init(frame: CGRect.init(x: 0, y: 0, width: kMainScreen_width, height: kMainScreen_height))
+        launchImageView.backgroundColor = UIColor.white
+        self.window?.addSubview(launchImageView)
         self.window?.bringSubviewToFront(launchImageView)
         
 
@@ -87,9 +89,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+         HKThemes.saveLastTheme()
     }
 
+    /**
+     *     Theme初始化
+     */
+    
+    func initDarkTheme() {
+        
+        HKThemes.restoreLastTheme()
+    }
+   
 
 }
 

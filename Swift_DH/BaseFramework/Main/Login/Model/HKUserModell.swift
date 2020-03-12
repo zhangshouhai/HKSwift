@@ -23,6 +23,10 @@ class HKUserModell: BaseModel {
    override func mapping(mapper: HelpingMapper) {
          mapper <<<
              sipCallerName <-- "sip-caller-name"
+        mapper <<<
+            sipName <-- "sip-caller-name"
+        mapper <<<
+            authToken <-- "sip-caller-name"
 
      }
       

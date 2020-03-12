@@ -14,6 +14,9 @@
 		0410BCC123CC665700875FDE /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410BCC023CC665700875FDE /* Cell.swift */; };
 		0412E72723D526F900BC542D /* UIButton_EdgeInsetsStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412E72623D526F900BC542D /* UIButton_EdgeInsetsStyle.m */; };
 		0412E72923D5371900BC542D /* DHHomeFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412E72823D5371900BC542D /* DHHomeFootView.swift */; };
+		042511832418AAF800A4734F /* HKDarkModeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042511822418AAF800A4734F /* HKDarkModeConfig.swift */; };
+		042511892418DB1700A4734F /* HKThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042511882418DB1700A4734F /* HKThemeColor.swift */; };
+		0425118B2418DBD800A4734F /* HKThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425118A2418DBD800A4734F /* HKThemes.swift */; };
 		043E6FBF24186976000033BF /* DHUserBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E6FBE24186976000033BF /* DHUserBaseClass.swift */; };
 		043E6FC424186DC9000033BF /* HKUserModell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E6FC324186DC9000033BF /* HKUserModell.swift */; };
 		04476478239931F1005A4DFE /* HKAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04476477239931F1005A4DFE /* HKAppManager.swift */; };
@@ -129,6 +132,9 @@
 		0412E72523D526F900BC542D /* UIButton_EdgeInsetsStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIButton_EdgeInsetsStyle.h; sourceTree = "<group>"; };
 		0412E72623D526F900BC542D /* UIButton_EdgeInsetsStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIButton_EdgeInsetsStyle.m; sourceTree = "<group>"; };
 		0412E72823D5371900BC542D /* DHHomeFootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHHomeFootView.swift; sourceTree = "<group>"; };
+		042511822418AAF800A4734F /* HKDarkModeConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKDarkModeConfig.swift; sourceTree = "<group>"; };
+		042511882418DB1700A4734F /* HKThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKThemeColor.swift; sourceTree = "<group>"; };
+		0425118A2418DBD800A4734F /* HKThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKThemes.swift; sourceTree = "<group>"; };
 		043E6FBE24186976000033BF /* DHUserBaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHUserBaseClass.swift; sourceTree = "<group>"; };
 		043E6FC324186DC9000033BF /* HKUserModell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKUserModell.swift; sourceTree = "<group>"; };
 		04476477239931F1005A4DFE /* HKAppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKAppManager.swift; sourceTree = "<group>"; };
@@ -376,6 +382,16 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		042511872418DA8900A4734F /* ThemesColor */ = {
+			isa = PBXGroup;
+			children = (
+				042511822418AAF800A4734F /* HKDarkModeConfig.swift */,
+				042511882418DB1700A4734F /* HKThemeColor.swift */,
+				0425118A2418DBD800A4734F /* HKThemes.swift */,
+			);
+			path = ThemesColor;
 			sourceTree = "<group>";
 		};
 		04476468239930BB005A4DFE /* Main */ = {
@@ -753,6 +769,7 @@
 		2FA7695C2109C56E0014BE5A /* BaseFramework */ = {
 			isa = PBXGroup;
 			children = (
+				042511872418DA8900A4734F /* ThemesColor */,
 				044764AB23993AD9005A4DFE /* Utils */,
 				04476469239930BC005A4DFE /* Base */,
 				04476468239930BB005A4DFE /* Main */,
@@ -1090,9 +1107,11 @@
 				04507C2723A357BC0086FE85 /* EWAddressModel.swift in Sources */,
 				04F38F8E23D451B500A9598E /* DHHomeTopView.swift in Sources */,
 				04477F31239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift in Sources */,
+				0425118B2418DBD800A4734F /* HKThemes.swift in Sources */,
 				0447647F23993457005A4DFE /* HKNavigationController.swift in Sources */,
 				0447649D2399379E005A4DFE /* Ext+UIDevice.swift in Sources */,
 				04507C2923A357BC0086FE85 /* EWAddressPickView.swift in Sources */,
+				042511892418DB1700A4734F /* HKThemeColor.swift in Sources */,
 				044764A523993994005A4DFE /* HKProgressHUD.swift in Sources */,
 				0447648B239935DB005A4DFE /* FourViewControlller.swift in Sources */,
 				04A80AD9239F8B2200541C7D /* HKNSRange+String.swift in Sources */,
@@ -1105,6 +1124,7 @@
 				68914874239F683800B5AA99 /* HKTextView.swift in Sources */,
 				680960E2240E232E005DF93E /* WelcomeView.m in Sources */,
 				68914871239F3EAA00B5AA99 /* HKTextField.swift in Sources */,
+				042511832418AAF800A4734F /* HKDarkModeConfig.swift in Sources */,
 				0447649F2399379E005A4DFE /* Ext+UIButton.swift in Sources */,
 				04F38F8C23D4482200A9598E /* DHNavSeachView.swift in Sources */,
 				04476478239931F1005A4DFE /* HKAppManager.swift in Sources */,

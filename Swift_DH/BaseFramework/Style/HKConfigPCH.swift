@@ -105,14 +105,13 @@ public let HKTabbarTextColor: NSString               = "#000000" //tabbarTextCol
 public let HKTabbarImageColor: NSString              = "#000000"//tabbarImageColor
 public let HKTabbarTextSeledColor: NSString          = "#22B9C8"//tabbarTextSeledColor
 public let HKTabbarImageSeledColor: NSString         = "#22B9C8"//tabbarImageSeledColor
-
 public let HKLineViewColor: NSString                 = "#EFEFEF" //cell 分割线 Color
 
 
 
 // MARK: - 全局自定义字号大小===================================================
 public let fontSize8: UIFont        = UIFont.systemFont(ofSize: FontWithStr(8.0)) //8.0号字
-public let fontSize9: UIFont       = UIFont.systemFont(ofSize: FontWithStr(9.0)) //9.0号字
+public let fontSize9: UIFont        = UIFont.systemFont(ofSize: FontWithStr(9.0)) //9.0号字
 public let fontSize10: UIFont       = UIFont.systemFont(ofSize: FontWithStr(10.0)) //10.0号字
 public let fontSize11: UIFont       = UIFont.systemFont(ofSize: FontWithStr(11.0)) //11.0号字
 public let fontSize12: UIFont       = UIFont.systemFont(ofSize: FontWithStr(12.0)) //12.0号字

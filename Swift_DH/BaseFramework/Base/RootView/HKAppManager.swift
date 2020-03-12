@@ -51,6 +51,9 @@ class HKAppManager: NSObject {
 //                }
                 return false
             }
+
+            tabBarController.tabBar.theme_barTintColor = HKThemeColor.tabBarBackColor
+        
             return tabBarController
        }
     
