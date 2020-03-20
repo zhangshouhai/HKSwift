@@ -72,6 +72,11 @@
 		04A80ACE239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ACD239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m */; };
 		04A80AD9239F8B2200541C7D /* HKNSRange+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AD8239F8B2200541C7D /* HKNSRange+String.swift */; };
 		04EFB8B02424678D0084B1D5 /* UIScrollView+HKEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB8AF2424678D0084B1D5 /* UIScrollView+HKEmptyDataSet.swift */; };
+		04EFB8C2242494090084B1D5 /* HKBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB8BD242494090084B1D5 /* HKBaseCollectionViewCell.swift */; };
+		04EFB8C3242494090084B1D5 /* HKBaseConllectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB8BE242494090084B1D5 /* HKBaseConllectionFooter.swift */; };
+		04EFB8C4242494090084B1D5 /* HKCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB8BF242494090084B1D5 /* HKCollectionCell.swift */; };
+		04EFB8C5242494090084B1D5 /* HKBaseConllectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB8C0242494090084B1D5 /* HKBaseConllectionHeader.swift */; };
+		04EFB8C6242494090084B1D5 /* HKCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB8C1242494090084B1D5 /* HKCollectionViewController.swift */; };
 		04F38F8423D41E8500A9598E /* FiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8323D41E8500A9598E /* FiveController.swift */; };
 		04F38F8C23D4482200A9598E /* DHNavSeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8B23D4482200A9598E /* DHNavSeachView.swift */; };
 		04F38F8E23D451B500A9598E /* DHHomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8D23D451B500A9598E /* DHHomeTopView.swift */; };
@@ -194,6 +199,11 @@
 		04A80ACD239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ChangeLineSpaceAndWordSpace.m"; sourceTree = "<group>"; };
 		04A80AD8239F8B2200541C7D /* HKNSRange+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKNSRange+String.swift"; sourceTree = "<group>"; };
 		04EFB8AF2424678D0084B1D5 /* UIScrollView+HKEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+HKEmptyDataSet.swift"; sourceTree = "<group>"; };
+		04EFB8BD242494090084B1D5 /* HKBaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKBaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		04EFB8BE242494090084B1D5 /* HKBaseConllectionFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKBaseConllectionFooter.swift; sourceTree = "<group>"; };
+		04EFB8BF242494090084B1D5 /* HKCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCollectionCell.swift; sourceTree = "<group>"; };
+		04EFB8C0242494090084B1D5 /* HKBaseConllectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKBaseConllectionHeader.swift; sourceTree = "<group>"; };
+		04EFB8C1242494090084B1D5 /* HKCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCollectionViewController.swift; sourceTree = "<group>"; };
 		04F38F8323D41E8500A9598E /* FiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveController.swift; sourceTree = "<group>"; };
 		04F38F8B23D4482200A9598E /* DHNavSeachView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHNavSeachView.swift; sourceTree = "<group>"; };
 		04F38F8D23D451B500A9598E /* DHHomeTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHHomeTopView.swift; sourceTree = "<group>"; };
@@ -412,6 +422,7 @@
 		04476469239930BC005A4DFE /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				04EFB8BC242494090084B1D5 /* BaseCollectionView */,
 				04507C1523A22B3F0086FE85 /* HKUserTool */,
 				68306070239E26C200362C59 /* BaseView */,
 				0447647D23993443005A4DFE /* BaseNavController */,
@@ -721,6 +732,18 @@
 				04EFB8AF2424678D0084B1D5 /* UIScrollView+HKEmptyDataSet.swift */,
 			);
 			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		04EFB8BC242494090084B1D5 /* BaseCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				04EFB8BD242494090084B1D5 /* HKBaseCollectionViewCell.swift */,
+				04EFB8BE242494090084B1D5 /* HKBaseConllectionFooter.swift */,
+				04EFB8BF242494090084B1D5 /* HKCollectionCell.swift */,
+				04EFB8C0242494090084B1D5 /* HKBaseConllectionHeader.swift */,
+				04EFB8C1242494090084B1D5 /* HKCollectionViewController.swift */,
+			);
+			path = BaseCollectionView;
 			sourceTree = "<group>";
 		};
 		04F38F7F23D41E3800A9598E /* Five */ = {
@@ -1073,6 +1096,7 @@
 				044764A02399379E005A4DFE /* Ext+UIView.swift in Sources */,
 				044764B123993BC9005A4DFE /* HKAPIManager.swift in Sources */,
 				04A80AC6239F20D400541C7D /* HKImageView.swift in Sources */,
+				04EFB8C4242494090084B1D5 /* HKCollectionCell.swift in Sources */,
 				04476481239934EF005A4DFE /* LoginViewController.swift in Sources */,
 				68128AF023D4374000C6D585 /* HKView.swift in Sources */,
 				04F38F9023D454A300A9598E /* DHHomeCell.swift in Sources */,
@@ -1094,12 +1118,14 @@
 				04477F32239A3A9D0044B7C4 /* ESTabBarController.swift in Sources */,
 				0412E72723D526F900BC542D /* UIButton_EdgeInsetsStyle.m in Sources */,
 				04477F37239A3A9D0044B7C4 /* ESTabBarItemContainer.swift in Sources */,
+				04EFB8C3242494090084B1D5 /* HKBaseConllectionFooter.swift in Sources */,
 				682067A6239E221100A4B0D4 /* HKBaseTableViewCell.swift in Sources */,
 				044764AD23993AFF005A4DFE /* BaseRequestURL.swift in Sources */,
 				04477F43239A46950044B7C4 /* ExampleBasicContentView.swift in Sources */,
 				04507C1423A22A730086FE85 /* BaseModel.swift in Sources */,
 				04A80ACE239F33FE00541C7D /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */,
 				04477F33239A3A9D0044B7C4 /* ESTabBarItemContentView.swift in Sources */,
+				04EFB8C2242494090084B1D5 /* HKBaseCollectionViewCell.swift in Sources */,
 				0447649C2399379E005A4DFE /* Ext+UITextField.swift in Sources */,
 				0447647C23993308005A4DFE /* HKConfigPCH.swift in Sources */,
 				04507C2B23A357BC0086FE85 /* EWAddressPresentAnimated.swift in Sources */,
@@ -1109,6 +1135,7 @@
 				680960D8240E232E005DF93E /* ZLaunchAd.swift in Sources */,
 				043E6FBF24186976000033BF /* DHUserBaseClass.swift in Sources */,
 				04477F36239A3A9D0044B7C4 /* ESTabBar.swift in Sources */,
+				04EFB8C6242494090084B1D5 /* HKCollectionViewController.swift in Sources */,
 				68128AF223D43FD400C6D585 /* HKBaseTableView.swift in Sources */,
 				04A80ACB239F33F700541C7D /* UITextField+Blocks.m in Sources */,
 				0447648723993599005A4DFE /* SecondViewController.swift in Sources */,
@@ -1119,6 +1146,7 @@
 				0447648523993572005A4DFE /* HomeViewController.swift in Sources */,
 				04507C2723A357BC0086FE85 /* EWAddressModel.swift in Sources */,
 				04F38F8E23D451B500A9598E /* DHHomeTopView.swift in Sources */,
+				04EFB8C5242494090084B1D5 /* HKBaseConllectionHeader.swift in Sources */,
 				04477F31239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift in Sources */,
 				0425118B2418DBD800A4734F /* HKThemes.swift in Sources */,
 				0447647F23993457005A4DFE /* HKNavigationController.swift in Sources */,
