@@ -94,6 +94,7 @@
 		680960E0240E232E005DF93E /* ZLaunchAdButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680960D2240E232E005DF93E /* ZLaunchAdButton.swift */; };
 		680960E1240E232E005DF93E /* ZLaunchAdAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680960D3240E232E005DF93E /* ZLaunchAdAnimation.swift */; };
 		680960E2240E232E005DF93E /* WelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 680960D6240E232E005DF93E /* WelcomeView.m */; };
+		680BD6C224246A2F00EE298E /* SpectrumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 680BD6C124246A2F00EE298E /* SpectrumView.m */; };
 		68128AF023D4374000C6D585 /* HKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68128AEF23D4374000C6D585 /* HKView.swift */; };
 		68128AF223D43FD400C6D585 /* HKBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68128AF123D43FD400C6D585 /* HKBaseTableView.swift */; };
 		682067A6239E221100A4B0D4 /* HKBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682067A5239E221100A4B0D4 /* HKBaseTableViewCell.swift */; };
@@ -224,6 +225,8 @@
 		680960D3240E232E005DF93E /* ZLaunchAdAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchAdAnimation.swift; sourceTree = "<group>"; };
 		680960D5240E232E005DF93E /* WelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeView.h; sourceTree = "<group>"; };
 		680960D6240E232E005DF93E /* WelcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeView.m; sourceTree = "<group>"; };
+		680BD6C024246A2F00EE298E /* SpectrumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpectrumView.h; sourceTree = "<group>"; };
+		680BD6C124246A2F00EE298E /* SpectrumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpectrumView.m; sourceTree = "<group>"; };
 		68128AEF23D4374000C6D585 /* HKView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKView.swift; sourceTree = "<group>"; };
 		68128AF123D43FD400C6D585 /* HKBaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKBaseTableView.swift; sourceTree = "<group>"; };
 		682067A5239E221100A4B0D4 /* HKBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HKBaseTableViewCell.swift; path = BaseFramework/Style/HKBaseTableViewCell.swift; sourceTree = SOURCE_ROOT; };
@@ -355,6 +358,8 @@
 		0410BCBA23CC5A9E00875FDE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				680BD6C024246A2F00EE298E /* SpectrumView.h */,
+				680BD6C124246A2F00EE298E /* SpectrumView.m */,
 				04F38F8B23D4482200A9598E /* DHNavSeachView.swift */,
 				6830606E239E243F00362C59 /* tableViewCell.swift */,
 				04F38F8D23D451B500A9598E /* DHHomeTopView.swift */,
@@ -1133,6 +1138,7 @@
 				04F38F8423D41E8500A9598E /* FiveController.swift in Sources */,
 				680960DB240E232E005DF93E /* ZLaunchAdConfig.swift in Sources */,
 				685FFF8623B0650B009DDC25 /* HKRootViewController.swift in Sources */,
+				680BD6C224246A2F00EE298E /* SpectrumView.m in Sources */,
 				6830606F239E243F00362C59 /* tableViewCell.swift in Sources */,
 				68914874239F683800B5AA99 /* HKTextView.swift in Sources */,
 				680960E2240E232E005DF93E /* WelcomeView.m in Sources */,
