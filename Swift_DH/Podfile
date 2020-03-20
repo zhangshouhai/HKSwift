@@ -28,6 +28,8 @@ target 'BaseFramework' do
     pod 'SVProgressHUD'  #加载提示框
     pod 'IQKeyboardManagerSwift'  #键盘自适应
     pod 'SwiftTheme'     #主题颜色
+    pod 'JXSegmentedView' #分页选项卡
+    pod 'DZNEmptyDataSet' #tableView 无数据加载
 
     
     
