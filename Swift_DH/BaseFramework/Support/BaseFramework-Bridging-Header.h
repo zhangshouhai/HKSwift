@@ -17,7 +17,7 @@
 #import "WelcomeView.h"
 #import <YCShadowView/YCShadowView.h>
 #import "UIButton_EdgeInsetsStyle.h"
-
+#import "SpectrumView.h"
 
 
 

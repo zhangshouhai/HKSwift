@@ -2,8 +2,8 @@
 //  HKTextField.swift
 //  BaseFramework
 //
-//  Created by 曹泺恺 on 2019/12/10.
-//  Copyright © 2019 DH add LK. All rights reserved.
+//  Created by LukeCao on 2019/12/10.
+//  Copyright © 2019 DH and LK. All rights reserved.
 //
 
 import UIKit
@@ -27,6 +27,7 @@ class HKTextField: HKBaseView,UITextFieldDelegate {
         textfield.returnKeyType = UIReturnKeyType.done
         textfield.font = UIFont.systemFont(ofSize: font)
         textfield.text = text
+        textfield.autocapitalizationType = .none
         textfield.delegate = self
         
         self.addSubview(textfield)

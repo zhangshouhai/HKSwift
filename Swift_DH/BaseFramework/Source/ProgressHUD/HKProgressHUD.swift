@@ -2,8 +2,8 @@
 //  HKProgressHUD.swift
 //  BaseFramework
 //
-//  Created by 张寿海 on 2019/12/5.
-//  Copyright © 2019 DH add LK. All rights reserved.
+//  Created by LukeCao on 2019/12/5.
+//  Copyright © 2019 DH and LK. All rights reserved.
 //
 
 import UIKit
@@ -21,17 +21,21 @@ class HKProgressHUD: NSObject {
     
     class func initHKProgressHUD() {
         SVProgressHUD.setFont(UIFont.systemFont(ofSize: 14.0))
-        SVProgressHUD.setDefaultMaskType(.none)
+        SVProgressHUD.setBackgroundColor(UIColor.colorWithHexString(colorString: "#3D3D3D", 0.3))
+        SVProgressHUD.setDefaultMaskType(.clear)
         SVProgressHUD.setMinimumDismissTimeInterval(1.0)
     }
     
     class func showSuccess(_ status: String) {
+        initHKProgressHUD()
         self.showHKProgressHUD(type: .success, status: status)
     }
     class func showError(_ status: String) {
+        initHKProgressHUD()
         self.showHKProgressHUD(type: .error, status: status)
     }
     class func showLoading(_ status: String) {
+        initHKProgressHUD()
         self.showHKProgressHUD(type: .loading, status: status)
     }
     class func showInfo(_ status: String) {
@@ -54,7 +58,12 @@ extension HKProgressHUD {
         case .error:
             SVProgressHUD.showError(withStatus: status)
         case .loading:
-            SVProgressHUD.show(withStatus: status)
+            if status == "" {
+                SVProgressHUD.show()
+            }else {
+                SVProgressHUD.show(withStatus: status)
+            }
+            
         case .info:
             SVProgressHUD.showInfo(withStatus: status)
         case .progress:
