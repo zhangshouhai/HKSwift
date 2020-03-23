@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-BaseFramework/Pods-BaseFramework-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/CLImagePickerTool/CLImagePickerTool.framework
 ${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework
 ${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework
 ${BUILT_PRODUCTS_DIR}/FWCycleScrollView/FWCycleScrollView.framework

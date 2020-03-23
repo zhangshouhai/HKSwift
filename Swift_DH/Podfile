@@ -30,7 +30,7 @@ target 'BaseFramework' do
     pod 'SwiftTheme'     #主题颜色
     pod 'JXSegmentedView' #分页选项卡
     pod 'DZNEmptyDataSet' #tableView 无数据加载
-
+    pod 'CLImagePickerTool', :git => 'https://github.com/Darren-chenchen/CLImagePickerTool.git' #照片选择器
     
     
     

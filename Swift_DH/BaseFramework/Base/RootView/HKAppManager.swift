@@ -85,8 +85,7 @@ class HKAppManager: NSObject {
 
     // 选择根控制器
     func chooseRootVC(window: UIWindow) {
-        window.rootViewController = LoginViewController()
-//        window.rootViewController = myTabBar
+        window.rootViewController = myTabBar
         
     }
 

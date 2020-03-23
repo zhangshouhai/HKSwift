@@ -116,17 +116,6 @@ class HomeViewController: HKBaseViewController
         self.view.addSubview(view)
         
         button = HKButton(backColor: .systemBlue, text: "录音", image: "", isRadius: true)
-//        button.addTapAction { (tap) in
-//            if !self.audioRecorder.isRecording {
-//                print("录音开始")
-//                self.audioRecorder.record()
-//                self.spectrumView.start()
-//            } else {
-//                self.audioRecorder.stop()
-//                self.spectrumView.stop()
-//            }
-//
-//        }
         let Tap = UILongPressGestureRecognizer(target: self, action: #selector(recordStart(button:)))
         button.addGestureRecognizer(Tap)
         
@@ -171,13 +160,6 @@ class HomeViewController: HKBaseViewController
             make.centerY.equalToSuperview()
             make.width.equalTo(HKFixWidthFlaot(80))
         }
-        
-//        spectrumView.snp_makeConstraints { (make) in
-//            make.right.equalTo(button.snp_left)
-//            make.left.equalToSuperview()
-//            make.centerY.equalToSuperview()
-//            make.height.equalTo(HKFixHeightFlaot(50))
-//        }
     }
     
     
