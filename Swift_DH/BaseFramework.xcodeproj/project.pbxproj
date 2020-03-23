@@ -77,6 +77,7 @@
 		04EFB8C4242494090084B1D5 /* HKCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB8BF242494090084B1D5 /* HKCollectionCell.swift */; };
 		04EFB8C5242494090084B1D5 /* HKBaseConllectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB8C0242494090084B1D5 /* HKBaseConllectionHeader.swift */; };
 		04EFB8C6242494090084B1D5 /* HKCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB8C1242494090084B1D5 /* HKCollectionViewController.swift */; };
+		04EFB8D4242863B00084B1D5 /* HKTimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB8D3242863B00084B1D5 /* HKTimerButton.swift */; };
 		04F38F8423D41E8500A9598E /* FiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8323D41E8500A9598E /* FiveController.swift */; };
 		04F38F8C23D4482200A9598E /* DHNavSeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8B23D4482200A9598E /* DHNavSeachView.swift */; };
 		04F38F8E23D451B500A9598E /* DHHomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F38F8D23D451B500A9598E /* DHHomeTopView.swift */; };
@@ -205,6 +206,7 @@
 		04EFB8BF242494090084B1D5 /* HKCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCollectionCell.swift; sourceTree = "<group>"; };
 		04EFB8C0242494090084B1D5 /* HKBaseConllectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKBaseConllectionHeader.swift; sourceTree = "<group>"; };
 		04EFB8C1242494090084B1D5 /* HKCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCollectionViewController.swift; sourceTree = "<group>"; };
+		04EFB8D3242863B00084B1D5 /* HKTimerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKTimerButton.swift; sourceTree = "<group>"; };
 		04F38F8323D41E8500A9598E /* FiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveController.swift; sourceTree = "<group>"; };
 		04F38F8B23D4482200A9598E /* DHNavSeachView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHNavSeachView.swift; sourceTree = "<group>"; };
 		04F38F8D23D451B500A9598E /* DHHomeTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHHomeTopView.swift; sourceTree = "<group>"; };
@@ -714,6 +716,7 @@
 		04A80AC3239F209700541C7D /* HKButton */ = {
 			isa = PBXGroup;
 			children = (
+				04EFB8D3242863B00084B1D5 /* HKTimerButton.swift */,
 				044764A823993A2B005A4DFE /* HKButton.swift */,
 				0412E72523D526F900BC542D /* UIButton_EdgeInsetsStyle.h */,
 				0412E72623D526F900BC542D /* UIButton_EdgeInsetsStyle.m */,
@@ -1152,6 +1155,7 @@
 				04507C2723A357BC0086FE85 /* EWAddressModel.swift in Sources */,
 				04F38F8E23D451B500A9598E /* DHHomeTopView.swift in Sources */,
 				04EFB8C5242494090084B1D5 /* HKBaseConllectionHeader.swift in Sources */,
+				04EFB8D4242863B00084B1D5 /* HKTimerButton.swift in Sources */,
 				04477F31239A3A9D0044B7C4 /* ESTabBarItemMoreContentView.swift in Sources */,
 				0425118B2418DBD800A4734F /* HKThemes.swift in Sources */,
 				0447647F23993457005A4DFE /* HKNavigationController.swift in Sources */,

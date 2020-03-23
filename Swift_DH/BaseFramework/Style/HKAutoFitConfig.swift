@@ -22,8 +22,9 @@ public func HKFixWidthFlaot(_ width: CGFloat) -> CGFloat {
 public func HKFixHeightFlaot(_ height: CGFloat) -> CGFloat {
     var autoHeight : CGFloat?
     //屏幕高度自适配
-    autoSizeScaleH = kMainScreen_height/667;
-    autoHeight = height * autoSizeScaleH!
+//    autoSizeScaleH = kMainScreen_height/667;
+    autoSizeScaleW = kMainScreen_width/375;
+    autoHeight = height * autoSizeScaleW!
     return autoHeight!
 }
 
