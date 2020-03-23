@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import BaseFramework
+
 
 class BaseFrameworkTests: XCTestCase {
     

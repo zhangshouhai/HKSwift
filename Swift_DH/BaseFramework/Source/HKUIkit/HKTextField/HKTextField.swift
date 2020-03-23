@@ -57,17 +57,18 @@ class HKTextField: HKBaseView,UITextFieldDelegate {
             }
         }
         
-        if leftImgStr.count > 0 {
+        if leftImgStr.count > 0 && UIImage(named: leftImgStr) != nil {
             let leftImgView = HKImageView(radius: 0.0, isRadius: true)
             leftImgView.image = UIImage.init(named: leftImgStr)
             leftImgView.width = (leftImgView.image?.size.width)!+20
-            leftImgView.contentMode = UIView.ContentMode.center
+//            leftImgView.contentMode = UIView.ContentMode.center
+            leftImgView.contentMode = .scaleAspectFit
             self.addSubview(leftImgView)
             
             leftImgView.snp.makeConstraints { (make) in
-                make.left.equalTo(HKFixWidthFlaot(0))
+                make.left.equalTo(HKFixWidthFlaot(10))
                 make.centerY.equalToSuperview()
-                make.width.height.equalTo(30)
+                make.width.height.equalTo(25)
             }
             
             textfield.snp_remakeConstraints { (make) in
@@ -78,11 +79,11 @@ class HKTextField: HKBaseView,UITextFieldDelegate {
             }
         }
         
-        if rightImgStr.count > 0 {
+        if rightImgStr.count > 0  && UIImage(named: rightImgStr) != nil {
             rightImgView = HKImageView(radius: 0.0, isRadius: true)
             rightImgView.image = UIImage.init(named: rightImgStr)
             rightImgView.width = (rightImgView.image?.size.width)!+20
-            rightImgView.contentMode = UIView.ContentMode.center
+            rightImgView.contentMode = .scaleAspectFit
             textfield.rightView = rightImgView
             
            textfield.snp_remakeConstraints { (make) in
@@ -94,8 +95,8 @@ class HKTextField: HKBaseView,UITextFieldDelegate {
         }
         
         if showLine {
-            let lineView = HKBaseView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-            lineView.backgroundColor = UIColor.colorWithHexString(colorString: "#D5D5D5")
+            let lineView = HKBaseView()
+            lineView.backgroundColor = UIColor.colorWithHexString(colorString: "#EBEBEB")
             self.addSubview(lineView)
             lineView.snp.makeConstraints { (make) in
                 make.left.right.bottom.equalToSuperview()
