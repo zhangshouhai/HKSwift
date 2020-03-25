@@ -116,19 +116,38 @@ class HomeViewController: HKBaseViewController
         self.view.addSubview(view)
         
         button = HKButton(backColor: .systemBlue, text: "录音", image: "", isRadius: true)
-        let Tap = UILongPressGestureRecognizer(target: self, action: #selector(recordStart(button:)))
-        button.addGestureRecognizer(Tap)
+//        let Tap = UILongPressGestureRecognizer(target: self, action: #selector(recordStart(button:)))
+//        button.addGestureRecognizer(Tap)
         
-        //开始
-        button.addTarget(self, action: #selector(longVoiceBtnClick(sender:)), for:UIControl.Event.touchDown)
-        //取消
-        button.addTarget(self, action: #selector(recordCancel(button:)), for: .touchUpOutside)
-        //完成
-        button.addTarget(self, action: #selector(recordFinish(button:)), for: .touchUpInside)
-        //移出
-        button.addTarget(self, action: #selector(recordTouchDragExit(button:)), for: .touchDragExit)
-        //移入
-        button.addTarget(self, action: #selector(recordTouchDragEnter(button:)), for: .touchDragEnter)
+        button.addTapAction { (tap) in
+            if self.button.isSelected {
+                //开始
+                self.button.removeTarget(self, action: #selector(self.longVoiceBtnClick(sender:)), for:UIControl.Event.touchDown)
+                //取消
+                self.button.removeTarget(self, action: #selector(self.recordCancel(button:)), for: .touchUpOutside)
+                //完成
+                self.button.removeTarget(self, action: #selector(self.recordFinish(button:)), for: .touchUpInside)
+                //移出
+                self.button.removeTarget(self, action: #selector(self.recordTouchDragExit(button:)), for: .touchDragExit)
+                //移入
+                self.button.removeTarget(self, action: #selector(self.recordTouchDragEnter(button:)), for: .touchDragEnter)
+            } else {
+                //开始
+                self.button.addTarget(self, action: #selector(self.longVoiceBtnClick(sender:)), for:UIControl.Event.touchDown)
+                //取消
+                self.button.addTarget(self, action: #selector(self.recordCancel(button:)), for: .touchUpOutside)
+                //完成
+                self.button.addTarget(self, action: #selector(self.recordFinish(button:)), for: .touchUpInside)
+                //移出
+                self.button.addTarget(self, action: #selector(self.recordTouchDragExit(button:)), for: .touchDragExit)
+                //移入
+                self.button.addTarget(self, action: #selector(self.recordTouchDragEnter(button:)), for: .touchDragEnter)
+            }
+            
+            self.button.isSelected = !self.button.isSelected
+        }
+        
+        
         
         view.addSubview(button)
         
@@ -209,6 +228,8 @@ extension HomeViewController: AVAudioRecorderDelegate {
 extension HomeViewController {
     @objc func recordStart(button: UIButton) {
         print("长按")
+        
+        
     }
     
     @objc func longVoiceBtnClick(sender:UILongPressGestureRecognizer) {

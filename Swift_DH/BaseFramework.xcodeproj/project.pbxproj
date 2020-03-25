@@ -1376,7 +1376,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0;
-				DEVELOPMENT_TEAM = GFD2MWDV7L;
+				DEVELOPMENT_TEAM = KKF5WRAYQL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = BaseFramework/Info.plist;
@@ -1385,10 +1385,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DH.msunHealth.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eldermark.notifytest;
 				PRODUCT_NAME = "百灵健康";
 				PROVISIONING_PROFILE = "516528a9-e17a-4091-8c8d-57ce15ddf302";
-				PROVISIONING_PROFILE_SPECIFIER = DHMsunHealthDev;
+				PROVISIONING_PROFILE_SPECIFIER = NotifyPushDev;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BaseFramework/Support/BaseFramework-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1401,10 +1401,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0;
-				DEVELOPMENT_TEAM = GFD2MWDV7L;
+				DEVELOPMENT_TEAM = KKF5WRAYQL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = BaseFramework/Info.plist;
@@ -1413,10 +1413,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DH.msunHealth.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eldermark.notifytest;
 				PRODUCT_NAME = "百灵健康";
 				PROVISIONING_PROFILE = "516528a9-e17a-4091-8c8d-57ce15ddf302";
-				PROVISIONING_PROFILE_SPECIFIER = DHMsunHealthDis;
+				PROVISIONING_PROFILE_SPECIFIER = NotifyPushDev;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BaseFramework/Support/BaseFramework-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
