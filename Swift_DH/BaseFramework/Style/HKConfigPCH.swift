@@ -47,6 +47,10 @@ public let kMainBottomHeight: CGFloat    = kDevice_Is_iPhoneX ? 83 : 49
 public let kIPhoneXMargin: CGFloat       = 34
 
 
+// APP ID appStore
+public let APPID :String =  "1291661719"
+
+
 public var isDebug: Bool {
     #if DEBUG
     return true

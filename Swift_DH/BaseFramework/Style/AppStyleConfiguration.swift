@@ -278,6 +278,53 @@ class AppStyleConfiguration {
     
     
     
+     public class func getCurrentVC1() -> UIViewController? {
+            var result: UIViewController? = nil
+            if let window = UIApplication.shared.keyWindow{
+                var keyWindow = window
+             
+             // UIWindow.Level window三种等级 normal，alert，statusBar,可见normal才是我们真正要用到的，这段代码就是
+    //            排除其他两种level，找到所需的normalWindow
+                if window.windowLevel != UIWindow.Level.normal{
+                    let windows = UIApplication.shared.windows
+                    for tmp in windows{
+                        if tmp.windowLevel == UIWindow.Level.normal{
+                            keyWindow = tmp
+                            break
+                        }
+                    }
+                }
+                
+                func getCurrentVC1(root:UIViewController?) -> UIViewController?{
+                    var currentVC:UIViewController? = nil
+                    var rootVC = root
+                    
+                    while rootVC?.presentationController != nil {
+                        rootVC = rootVC?.presentedViewController
+                    }
+                    
+                    if let vc = rootVC as? UITabBarController{
+                        //UITabBarController.selectedViewController就是rootVC,而不是那个UITabBarController本身
+                        currentVC = getCurrentVC1(root: vc.selectedViewController)
+                    }else if let vc = rootVC as? UINavigationController{
+                        //UINavigationController.visibleViewController才是rootVC,而不是UINavigationController本身
+                        currentVC = getCurrentVC1(root: vc.visibleViewController)
+                    }else{
+                        //除过上面两种VC,比如UIViewController本身就是rootVC
+                        currentVC = rootVC
+                    }
+                    
+                    return currentVC
+                }
+                
+                result = getCurrentVC1(root: keyWindow.rootViewController)
+            }
+            
+            return result
+        }
+        
+
+    
     
 
 }

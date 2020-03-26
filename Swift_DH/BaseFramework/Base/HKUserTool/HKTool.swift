@@ -19,8 +19,50 @@ class HKTool :NSObject {
     //使用单例
     func userModel() -> UserModel {
 
-        let dic :NSDictionary = MyControl.getObjectForKey(HKUserKey as String) as! NSDictionary
-        let userModel = UserModel.deserialize(from: dic)
-        return userModel!
+        
+        
+        let dic = MyControl.getObjectForKey(HKUserKey as String)
+               
+        if dic == nil {
+            return UserModel()
+        }
+        else{
+                   
+            let dic1 :NSDictionary = MyControl.getObjectForKey(HKUserKey as String) as! NSDictionary
+            let userModel = UserModel.deserialize(from: dic1)
+            return userModel!
+        }
+        
+        
+      
+      
     }
+    
+    //使用单例
+    func islogin() -> Bool {
+
+//        let dic :NSDictionary = MyControl.getObjectForKey(HKUserKey as String) as! NSDictionary
+        
+        let dic = MyControl.getObjectForKey(HKUserKey as String)
+        
+        if dic == nil {
+             return false
+        }
+        else{
+            
+            let dic1 :NSDictionary = MyControl.getObjectForKey(HKUserKey as String) as! NSDictionary
+            let userModel = UserModel.deserialize(from: dic1)
+            if userModel?.userid?.count == 0 {
+                return false
+            }
+            else
+            {
+                return true
+            }
+        }
+
+    }
+    
+    
+    
 }
