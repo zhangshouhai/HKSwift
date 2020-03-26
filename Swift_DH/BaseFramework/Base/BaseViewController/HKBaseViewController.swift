@@ -15,11 +15,13 @@ import GuidePageView
     @objc optional func title_click_event()
     @objc optional func set_noNavView()
     @objc optional func set_noLeftButton()
+    
+    @objc optional func darkLeftButtonImage()
 }
 
 
 
-class HKBaseViewController: UIViewController {
+class HKBaseViewController: UIViewController,UIGestureRecognizerDelegate {
     
     //设置代理
     var delegate:HKBaseViewControllerDelegate?
@@ -42,14 +44,15 @@ class HKBaseViewController: UIViewController {
     
     //导航栏标题
     lazy var titleLabel:UILabel = {
-        let titleStr = HKLabel(font: fontSize15, color:UIColor.colorWithHexString(colorString: HKNavTitleColor), text: "")
+        let titleStr = HKLabel(font: fontSize15, color:UIColor.black, text: "")
         titleStr.textAlignment = NSTextAlignment.center
+        titleStr.theme_textColor = HKThemeColor.NavTitleColor
         return titleStr
     }()
     
     lazy var lineView :UIView = {
         let lineView1 = UIView.init()
-        lineView1.backgroundColor = UIColor.lightGray
+        lineView1.backgroundColor = UIColor.colorWithHexString(colorString: "#F4F4F4")
         return lineView1
     }()
     
@@ -63,12 +66,11 @@ class HKBaseViewController: UIViewController {
     }()
     //导航栏左侧按钮
     lazy var navLeftBtn:UIButton = {
-        let btn = HKButton(backColor: UIColor.clear, text: "", image: "", isRadius: true)
+        let btn = HKButton(backColor: UIColor.clear, text: "", image: "dark_back", isRadius: true)
 //        btn.addTarget(self, action: #selector(right_click), for: UIControl.Event.touchUpInside)
         btn.frame = CGRect(x: 10, y: kMainTopHeight - 40, width: 30, height: 30)
-        btn.setImage(UIImage(named: "icon_fanhui_xiangqing"), for: .normal)
-        btn.setImage(UIImage(named: "icon_fanhui_xiangqing"), for: .highlighted)
         btn.addTarget(self, action: #selector(left_click(_:)), for: .touchUpInside)
+//        btn.theme_setImage(HKThemeImage.NavLeftImage, forState: .normal)
         return btn
     }()
 
@@ -78,24 +80,32 @@ class HKBaseViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
         //解决下移
+
         self.navigationController?.navigationBar.isTranslucent = false
         self.automaticallyAdjustsScrollViewInsets = false
-        
-        
-        
+
         self.view.theme_backgroundColor = HKThemeColor.backgroundColor
         self.setnavViewUI()
         navView?.addSubview(self.navLeftBtn)
-        
-//        self.setWelcomeView()
+    
+
     }
+    
+    
+
+    
+  
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     
     func setnavViewUI() {
         
         navView = UIView(frame:CGRect(x: 0, y: 0, width:kMainScreen_width, height: kMainTopHeight))
 
         //当行颜色
-        navView?.theme_backgroundColor = HKThemeColor.NavColor
+        navView?.backgroundColor = UIColor.white
         navView?.addSubview(self.titleLabel)
         navView?.addSubview(self.navLeftBtn)
         navView?.addSubview(self.navRightBtn)
@@ -103,8 +113,7 @@ class HKBaseViewController: UIViewController {
         navView?.addSubview(self.lineView)
         self.lineView.isHidden = true
         
-        
-        
+
         self.navRightBtn.isHidden = true
         
         self.titleLabel.snp.makeConstraints { (make) in
@@ -125,6 +134,14 @@ class HKBaseViewController: UIViewController {
         
 
     }
+    func set_noNavView()  {
+        self.navView?.isHidden = true
+    }
+    
+    func darkLeftButtonImage()  {
+        self.navLeftBtn.setImage(UIImage(named: "icon_fanhui_xiangqing"), for: .normal)
+        self.titleLabel.textColor = .white
+    }
     
     func setHideLeftBtn() {
 
@@ -133,11 +150,12 @@ class HKBaseViewController: UIViewController {
 
     @objc func left_click(_ sender: UIButton?) {
         
-        if self.delegate != nil && (self.delegate?.responds(to: Selector.init(("left_button_event"))))! {
+        if self.delegate != nil && (self.delegate?.responds(to: #selector(HKBaseViewControllerDelegate.left_button_event)))! {
              self.delegate!.left_button_event?()
         }
         else{
              navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true, completion: nil)
         }
 
     }
@@ -175,21 +193,40 @@ class HKBaseViewController: UIViewController {
         self.view.addSubview(guideView)
     }
     
+    //跳转登录界面
+
+        func showLoginView() {
+            
+            if !HKTool.shardTool.islogin()
+            {
+                let loginVC = LoginViewController()
+                
+                let navigationloginVC = UINavigationController(rootViewController: loginVC)
+                navigationloginVC.modalPresentationStyle = .fullScreen
+                self.present(navigationloginVC, animated: true, completion: nil)
+                
+                return
+            }
+ 
+        }
+    
+    
+    
     
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         
-        if #available(iOS 13.0, *) {
-            if UITraitCollection.current.userInterfaceStyle == .dark {
-                 HKThemes.switchNight(isToNight: true)
-            }
-            else
-            {
-                 HKThemes.switchNight(isToNight: false)
-            }
-        } else {
-             HKThemes.switchNight(isToNight: false)
-        }
+//        if #available(iOS 13.0, *) {
+//            if UITraitCollection.current.userInterfaceStyle == .dark {
+//                 HKThemes.switchNight(isToNight: true)
+//            }
+//            else
+//            {
+//                 HKThemes.switchNight(isToNight: false)
+//            }
+//        } else {
+//             HKThemes.switchNight(isToNight: false)
+//        }
 
     }
     

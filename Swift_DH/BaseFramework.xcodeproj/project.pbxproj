@@ -64,6 +64,9 @@
 		04507C3723A35F4E0086FE85 /* UIView+Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C3223A35F4E0086FE85 /* UIView+Rect.swift */; };
 		04507C3823A35F4E0086FE85 /* LYPopMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C3323A35F4E0086FE85 /* LYPopMenuModel.swift */; };
 		04507C3923A35F4E0086FE85 /* LYPopMenuStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04507C3423A35F4E0086FE85 /* LYPopMenuStyle.swift */; };
+		04A326E2242C30D600ACDE1D /* HKCacheTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A326E0242C30D600ACDE1D /* HKCacheTool.swift */; };
+		04A326E3242C30D600ACDE1D /* HKVersionChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A326E1242C30D600ACDE1D /* HKVersionChecker.swift */; };
+		04A326E5242C30FC00ACDE1D /* UITextField+HKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A326E4242C30FC00ACDE1D /* UITextField+HKExtension.swift */; };
 		04A80ABE239E437300541C7D /* UIView+BlockGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ABC239E437300541C7D /* UIView+BlockGesture.m */; };
 		04A80AC0239E462400541C7D /* SecondPushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80ABF239E462400541C7D /* SecondPushView.swift */; };
 		04A80AC6239F20D400541C7D /* HKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A80AC5239F20D400541C7D /* HKImageView.swift */; };
@@ -190,6 +193,9 @@
 		04507C3223A35F4E0086FE85 /* UIView+Rect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Rect.swift"; sourceTree = "<group>"; };
 		04507C3323A35F4E0086FE85 /* LYPopMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYPopMenuModel.swift; sourceTree = "<group>"; };
 		04507C3423A35F4E0086FE85 /* LYPopMenuStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYPopMenuStyle.swift; sourceTree = "<group>"; };
+		04A326E0242C30D600ACDE1D /* HKCacheTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKCacheTool.swift; sourceTree = "<group>"; };
+		04A326E1242C30D600ACDE1D /* HKVersionChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKVersionChecker.swift; sourceTree = "<group>"; };
+		04A326E4242C30FC00ACDE1D /* UITextField+HKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+HKExtension.swift"; sourceTree = "<group>"; };
 		04A80ABC239E437300541C7D /* UIView+BlockGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlockGesture.m"; sourceTree = "<group>"; };
 		04A80ABD239E437300541C7D /* UIView+BlockGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlockGesture.h"; sourceTree = "<group>"; };
 		04A80ABF239E462400541C7D /* SecondPushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPushView.swift; sourceTree = "<group>"; };
@@ -462,6 +468,8 @@
 				0447647B23993308005A4DFE /* HKConfigPCH.swift */,
 				04A80AC7239F2BFA00541C7D /* AppStyleConfiguration.swift */,
 				685E00BF23A223AD007C34D1 /* MyControl.swift */,
+				04A326E0242C30D600ACDE1D /* HKCacheTool.swift */,
+				04A326E1242C30D600ACDE1D /* HKVersionChecker.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -727,6 +735,7 @@
 		04A80AC4239F209700541C7D /* HKTextField */ = {
 			isa = PBXGroup;
 			children = (
+				04A326E4242C30FC00ACDE1D /* UITextField+HKExtension.swift */,
 				04A80AC9239F33F700541C7D /* UITextField+Blocks.h */,
 				04A80ACA239F33F700541C7D /* UITextField+Blocks.m */,
 				68914870239F3EAA00B5AA99 /* HKTextField.swift */,
@@ -1112,6 +1121,7 @@
 				0410BCBF23CC5B0C00875FDE /* HKAccontCell.swift in Sources */,
 				68306072239E26D800362C59 /* HKBaseView.swift in Sources */,
 				04507C1923A22C770086FE85 /* HKTool.swift in Sources */,
+				04A326E5242C30FC00ACDE1D /* UITextField+HKExtension.swift in Sources */,
 				0401A3DA23CFF95A00D57346 /* HKStartAnimationView.swift in Sources */,
 				68AB5C8123C86E450036FB80 /* BaseTableViewController.swift in Sources */,
 				0447648323993543005A4DFE /* HKBaseViewController.swift in Sources */,
@@ -1143,6 +1153,7 @@
 				680960D8240E232E005DF93E /* ZLaunchAd.swift in Sources */,
 				043E6FBF24186976000033BF /* DHUserBaseClass.swift in Sources */,
 				04477F36239A3A9D0044B7C4 /* ESTabBar.swift in Sources */,
+				04A326E3242C30D600ACDE1D /* HKVersionChecker.swift in Sources */,
 				04EFB8C6242494090084B1D5 /* HKCollectionViewController.swift in Sources */,
 				68128AF223D43FD400C6D585 /* HKBaseTableView.swift in Sources */,
 				04A80ACB239F33F700541C7D /* UITextField+Blocks.m in Sources */,
@@ -1191,6 +1202,7 @@
 				04507C2823A357BC0086FE85 /* EWAddressPickViewTableViewCell.swift in Sources */,
 				680960DD240E232E005DF93E /* ZLaunchLog.swift in Sources */,
 				04507C1723A22B560086FE85 /* HKUserModel.swift in Sources */,
+				04A326E2242C30D600ACDE1D /* HKCacheTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
