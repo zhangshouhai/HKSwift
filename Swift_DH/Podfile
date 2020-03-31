@@ -33,5 +33,4 @@ target 'BaseFramework' do
     pod 'CLImagePickerTool', :git => 'https://github.com/Darren-chenchen/CLImagePickerTool.git' #照片选择器
     
     
-    
 end

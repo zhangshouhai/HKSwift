@@ -14,7 +14,6 @@ import AVFoundation
 
 
 
-
 class HomeViewController: HKBaseViewController
 {
     var dark = true
@@ -62,6 +61,11 @@ class HomeViewController: HKBaseViewController
         
         return recorder
     }()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        AppUpdateAlert.sharedInstance.showUpdateAlert(version: "1212", description: "adfasdfasdfasgasgdasdfasdasdf", isupdata: false)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
