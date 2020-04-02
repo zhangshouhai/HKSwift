@@ -34,14 +34,15 @@ public class HKHttpManager {
         return requestTimeoutClosure
     }
     
-    /// 通过HTTPHeader设置公共请求参数
-    private func endpointClosure<T:TargetType>(target:T) -> MoyaProvider<T>.EndpointClosure {
-        let endpointClosure = { (target: HKAPIManager) -> Endpoint in
-            let url: String = target.baseURL.absoluteString
-            return Endpoint(url: url, sampleResponseClosure: { .networkResponse(200, target.sampleData) }, method: target.method, task: target.task, httpHeaderFields: target.headers).adding(newHTTPHeaderFields: ["x-platform" : "iOS"])
-        }
-        return endpointClosure as! (T) -> Endpoint
-    }
+     /// 通过HTTPHeader设置公共请求参数
+       private func endpointClosure<T:TargetType>(target:T) -> MoyaProvider<T>.EndpointClosure {
+           let endpointClosure = { (target: HKAPIManager) -> Endpoint in
+               let url: String = target.baseURL.absoluteString
+               return Endpoint(url: url+target.path, sampleResponseClosure: { .networkResponse(200, target.sampleData) }, method: target.method, task: target.task, httpHeaderFields: target.headers).adding(newHTTPHeaderFields: ["Content-Type":"application/json"])
+           }
+
+           return endpointClosure as! (T) -> Endpoint
+       }
     
     /// 请求JSON数据
     func requestJSONData<T:TargetType>(target:T, successClosure:@escaping (_ result:JSON) -> Void, failClosure: @escaping (_ errorMsg: String?) -> Void) {
