@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "982A68D37F5DCBC1FC1FDC0BB2F0EB8E"
-               BuildableName = "IQKeyboardManagerSwift.bundle"
-               BlueprintName = "IQKeyboardManagerSwift-IQKeyboardManagerSwift"
+               BlueprintIdentifier = "478A57CC4A222189D7CC17170A855E69"
+               BuildableName = "CLImagePickerTool.bundle"
+               BlueprintName = "CLImagePickerTool-CLImagePickerTool"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

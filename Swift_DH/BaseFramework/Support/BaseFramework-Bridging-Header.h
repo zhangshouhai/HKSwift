@@ -19,6 +19,7 @@
 #import "UIButton_EdgeInsetsStyle.h"
 #import "SpectrumView.h"
 #import "UIScrollView+EmptyDataSet.h"
+#import <HKBaseConfig.h>
 
 
 
