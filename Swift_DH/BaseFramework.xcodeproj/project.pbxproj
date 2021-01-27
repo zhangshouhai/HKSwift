@@ -1401,10 +1401,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
-				DEVELOPMENT_TEAM = KKF5WRAYQL;
+				DEVELOPMENT_TEAM = L7Y62VFKUR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = BaseFramework/Info.plist;
@@ -1413,10 +1413,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.eldermark.notifytest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elderma;
 				PRODUCT_NAME = "百灵健康";
 				PROVISIONING_PROFILE = "516528a9-e17a-4091-8c8d-57ce15ddf302";
-				PROVISIONING_PROFILE_SPECIFIER = NotifyPushDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BaseFramework/Support/BaseFramework-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1429,10 +1429,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
-				DEVELOPMENT_TEAM = KKF5WRAYQL;
+				DEVELOPMENT_TEAM = L7Y62VFKUR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = BaseFramework/Info.plist;
@@ -1441,10 +1441,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.eldermark.notifytest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elderma;
 				PRODUCT_NAME = "百灵健康";
 				PROVISIONING_PROFILE = "516528a9-e17a-4091-8c8d-57ce15ddf302";
-				PROVISIONING_PROFILE_SPECIFIER = NotifyPushDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BaseFramework/Support/BaseFramework-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1456,7 +1456,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZYC4CW9KJV;
+				DEVELOPMENT_TEAM = L7Y62VFKUR;
 				INFOPLIST_FILE = BaseFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1475,7 +1475,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZYC4CW9KJV;
+				DEVELOPMENT_TEAM = L7Y62VFKUR;
 				INFOPLIST_FILE = BaseFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
